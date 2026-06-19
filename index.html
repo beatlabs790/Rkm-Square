@@ -279,7 +279,8 @@
                     </div>
                 </div>
 
-           <div id="admin-panel" class="hidden glass-panel rounded-3xl p-5 border border-emerald-500/20 space-y-4">
+         <!-- Admin Announcement Console Panel -->
+<div id="admin-panel" class="hidden glass-panel rounded-3xl p-5 border border-emerald-500/20 space-y-4">
     <div class="flex items-center justify-between border-b border-white/10 pb-3">
         <h4 class="text-sm font-bold text-emerald-500 flex items-center gap-2"><i class="fa-solid fa-terminal"></i> Bulletin Manager</h4>
         <button onclick="deauthenticateAdmin()" class="text-xs font-bold text-rose-500 hover:text-rose-400">End Session</button>
@@ -289,15 +290,17 @@
             <input type="text" id="admin-notice-tag" placeholder="Notice Category" class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-amber-500">
             <input type="text" id="admin-notice-title" placeholder="Announcement Title" class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-amber-500">
         </div>
-        <textarea id="admin-notice-body" rows="3" placeholder="Type notice parameters..." class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-amber-500"></textarea>
+        <!-- NEW: Timing Field -->
+        <input type="text" id="admin-notice-time" placeholder="Event Time (e.g., 07:00 PM, June 20)" class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-amber-500">
+        
+        <textarea id="admin-notice-body" rows="3" placeholder="Type announcement details..." class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-amber-500"></textarea>
         
         <div class="grid grid-cols-2 gap-3">
             <button onclick="dispatchCloudAnnouncement()" class="py-3 bg-emerald-500 text-slate-950 font-bold uppercase tracking-wider rounded-xl hover:bg-emerald-400 transition">Broadcast</button>
-            <button onclick="prepareWhatsAppBroadcast()" class="py-3 bg-green-600 text-white font-bold uppercase tracking-wider rounded-xl hover:bg-green-500 transition">Prep WhatsApp</button>
+            <button onclick="prepareWhatsAppBroadcast()" class="py-3 bg-green-600 text-white font-bold uppercase tracking-wider rounded-xl hover:bg-green-500 transition">Share to WA</button>
         </div>
     </div>
 </div>
-
                 <div class="glass-panel rounded-3xl p-5 sm:p-6 space-y-4 border">
                     <h4 class="text-sm font-bold text-white flex items-center gap-2">
                         <i class="fa-solid fa-chalkboard-user text-amber-500"></i> Official Notice Board
@@ -636,19 +639,18 @@
     </footer>
 
     <script>
-        function prepareWhatsAppBroadcast() {
+ function prepareWhatsAppBroadcast() {
     const title = document.getElementById('admin-notice-title').value.trim();
     const body = document.getElementById('admin-notice-body').value.trim();
+    const time = document.getElementById('admin-notice-time').value.trim();
     
     if (!title || !body) {
         alert("Please enter a Title and Body before preparing the WhatsApp message.");
         return;
     }
 
-    const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-    
-    // Your requested professional format
-    const message = `*Announcement!* 🚨\n\n*${title.toUpperCase()}*\n\n_${body}_\n\n*${time}*\n\n_Thanks!_`;
+    // Format: Includes the custom time input provided in the new field
+    const message = `*Announcement!* 🚨\n\n*${title.toUpperCase()}*\n\n_${body}_\n\n📅 *Event Time:* ${time || 'Check Board'}\n\n_Thanks!_`;
     
     const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
