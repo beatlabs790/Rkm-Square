@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
 <head>
+    <meta name="google-site-verification" content="_VcsB-p9ObAD2xWVJylitzjf-Zum0-8YcISZxGO5CX4" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="icon" type="image/png" href="https://i.ibb.co/CpWcZsp6/image.png">
@@ -74,8 +75,20 @@
             transform: translateY(-4px);
         }
 
-        .dark body { background-color: #060913; color: #f1f5f9; }
-        .light body { background-color: #f8fafc; color: #0f172a; }
+        /* Grid Background variables */
+        html.dark {
+            --bg-color: #020307;
+            --grid-color: rgba(245, 158, 11, 0.08);
+            --glow-color: rgba(245, 158, 11, 0.05);
+        }
+        html.light {
+            --bg-color: #f8fafc;
+            --grid-color: rgba(245, 158, 11, 0.04);
+            --glow-color: rgba(245, 158, 11, 0.03);
+        }
+
+        .dark body { background-color: transparent; color: #f1f5f9; }
+        .light body { background-color: transparent; color: #0f172a; }
 
         .light .glass-base { background: rgba(15, 23, 42, 0.02); border-color: rgba(15, 23, 42, 0.05); }
         .light .glass-panel { background: rgba(255, 255, 255, 0.9); border-color: rgba(15, 23, 42, 0.06); box-shadow: 0 15px 30px rgba(0,0,0,0.03); }
@@ -123,9 +136,59 @@
             .hero-viewport { background-attachment: scroll !important; }
             .glass-panel { padding: 1.5rem !important; }
         }
+
+        /* Live Interactive Grid Background styling */
+        .live-interactive-canvas {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            background-color: var(--bg-color);
+            overflow: hidden;
+        }
+
+        /* Moving Grid Mesh */
+        .grid-mesh {
+            position: absolute;
+            inset: -50%;
+            width: 200%;
+            height: 200%;
+            background-image: 
+                linear-gradient(var(--grid-color) 1px, transparent 1px),
+                linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+            background-size: 60px 60px;
+            transform: perspective(1000px) rotateX(60deg) translateY(0);
+            animation: gridMove 20s linear infinite;
+            mask-image: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), black, transparent 70%);
+            -webkit-mask-image: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), black, transparent 70%);
+        }
+
+        @keyframes gridMove {
+            from { background-position: 0 0; }
+            to { background-position: 0 600px; }
+        }
+
+        /* Subtle Glow Pulse */
+        .glow-pulse {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), var(--glow-color), transparent 70%);
+            animation: pulseGlow 4s ease-in-out infinite;
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
     </style>
 </head>
 <body class="antialiased selection:bg-amber-500 selection:text-slate-900 relative">
+    
+    <!-- Live Interactive Grid Background -->
+    <div class="live-interactive-canvas">
+        <div class="grid-mesh"></div>
+        <div class="glow-pulse"></div>
+    </div>
 
     <div id="loading-screen" class="flex flex-col space-y-6">
         <div class="relative w-32 h-32 flex items-center justify-center">
@@ -985,7 +1048,15 @@
             document.documentElement.classList.remove('dark');            
             document.documentElement.classList.add('light');            
             document.getElementById('theme-toggle-icon').className = "fa-solid fa-sun text-base";        
-        }    
+        }
+
+        // Live Interactive Grid Cursor Tracking
+        document.addEventListener('mousemove', (e) => {
+            const x = (e.clientX / window.innerWidth) * 100;
+            const y = (e.clientY / window.innerHeight) * 100;
+            document.documentElement.style.setProperty('--mouse-x', `${x}%`);
+            document.documentElement.style.setProperty('--mouse-y', `${y}%`);
+        });
     </script>
 </body>
 </html>
