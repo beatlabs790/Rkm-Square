@@ -445,6 +445,18 @@
                     </div>
                 </div>
             </div>
+            <div class="glass-card p-5 rounded-2xl border border-amber-500/20 space-y-3">
+    <h4 class="text-xs font-bold uppercase tracking-widest text-amber-500 flex items-center gap-2">
+        <i class="fa-solid fa-shield-halved"></i> Active Security Guard
+    </h4>
+    <div class="flex items-center justify-between">
+        <span id="active-guard-label" class="text-sm font-bold text-white">Loading shift...</span>
+        <a id="active-guard-phone" href="tel:" class="px-4 py-2 bg-amber-500 text-slate-950 text-xs font-bold rounded-lg hover:bg-amber-400 transition">
+            Call Guard
+        </a>
+    </div>
+    <p class="text-[10px] text-slate-400 italic">This number updates automatically based on current shift hours.</p>
+</div>
 
             <div class="lg:col-span-6">
                 <div class="glass-panel rounded-3xl p-6 sm:p-8 space-y-6 border relative overflow-hidden">
@@ -754,6 +766,28 @@
     </footer>
 
     <script> 
+    function updateGuardShift() {
+    // Current time in India (Patna is GMT+5:30)
+    const now = new Date();
+    const hours = now.getHours();
+    
+    const guardLabel = document.getElementById('active-guard-label');
+    const guardPhone = document.getElementById('active-guard-phone');
+    
+    // Shifts: 8 AM to 6 PM (08:00 - 18:00) is Day Guard
+    if (hours >= 8 && hours < 18) {
+        guardLabel.innerText = "Mahesh Guard (6AM - 6PM)";
+        guardPhone.href = "tel:9934013773";
+    } else {
+        // Night Shift: 6 PM to 8 AM
+        guardLabel.innerText = "Kaushal Guard (6PM - 6AM)";
+        guardPhone.href = "tel:8294952601";
+    }
+}
+
+// Initialize on page load and refresh every 5 minutes
+updateGuardShift();
+setInterval(updateGuardShift, 300000);
         function prepareWhatsAppBroadcast() {    
             const title = document.getElementById('admin-notice-title').value.trim();    
             const body = document.getElementById('admin-notice-body').value.trim();    
