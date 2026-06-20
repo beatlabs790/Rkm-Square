@@ -445,19 +445,27 @@
                     </div>
                 </div>
             </div>
-            <div class="glass-card p-5 rounded-2xl border border-amber-500/20 space-y-3">
-    <h4 class="text-xs font-bold uppercase tracking-widest text-amber-500 flex items-center gap-2">
-        <i class="fa-solid fa-shield-halved"></i> Active Security Guard
-    </h4>
-    <div class="flex items-center justify-between">
-        <span id="active-guard-label" class="text-sm font-bold text-white">Loading shift...</span>
-        <a id="active-guard-phone" href="tel:" class="px-4 py-2 bg-amber-500 text-slate-950 text-xs font-bold rounded-lg hover:bg-amber-400 transition">
-            Call Guard
-        </a>
-    </div>
-    <p class="text-[10px] text-slate-400 italic">This number updates automatically based on current shift hours.</p>
-</div>
+ <!-- Security Guard Component (Style: image_b069c0.png) -->
+<div class="glass-panel rounded-[2rem] p-6 border border-amber-500/20 flex flex-col items-start justify-between min-h-[220px] max-w-[240px]">
+    <div class="space-y-4">
+        <div class="flex items-center gap-2 text-amber-500 font-bold uppercase tracking-widest text-xs">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Active Security Guard</span>
+        </div>
+        
+        <div class="space-y-1">
+            <h4 id="active-guard-label" class="text-white font-black text-xl leading-tight">Loading...</h4>
+        </div>
 
+        <p class="text-[10px] text-slate-500 italic font-medium leading-relaxed">
+            This number updates automatically based on current shift hours.
+        </p>
+    </div>
+
+    <a id="active-guard-phone" href="tel:" class="mt-4 px-6 py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-xl text-sm transition-all duration-300 w-full text-center">
+        Call Guard
+    </a>
+</div>
             <div class="lg:col-span-6">
                 <div class="glass-panel rounded-3xl p-6 sm:p-8 space-y-6 border relative overflow-hidden">
                     <div class="flex items-center justify-between border-b dark:border-white/5 border-slate-200 pb-4">
