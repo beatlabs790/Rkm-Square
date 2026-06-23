@@ -3,18 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <!-- Custom Favicon Link -->
     <link rel="icon" type="image/png" href="https://i.ibb.co/CpWcZsp6/image.png">
+    
+    <title>RKM Square Gallery | Architectural Showcase & Floor Plans, Patna</title>
+    <meta name="description" content="Browse photos and layout schematics of Shivam RKM Square on Khagaul Road, Patna. Premium 3 & 4 BHK apartments, commercial spaces, and Independence Day community events." />
+    <meta name="keywords" content="RKM Square gallery, RKM Square images, apartments photos Patna, 3 BHK floor plans Patna, RKM Square architecture, Shivam Constructions gallery" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://beatlabs790.github.io/Rkm-Square/gallery.html" />
+    <meta property="og:title" content="RKM Square Gallery | Architectural Showcase & Floor Plans, Patna" />
+    <meta property="og:description" content="Browse photos and layout schematics of Shivam RKM Square on Khagaul Road, Patna. Premium 3 & 4 BHK apartments, commercial spaces, and Independence Day community events." />
+    <meta property="og:image" content="https://i.ibb.co/1tkpRtjW/image.png" />
 
-    <title>RKM Square | Architectural Media Portfolio</title>
-    <!-- Tailwind CSS CDN -->
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://beatlabs790.github.io/Rkm-Square/gallery.html" />
+    <meta property="twitter:title" content="RKM Square Gallery | Architectural Showcase & Floor Plans, Patna" />
+    <meta property="twitter:description" content="Browse photos and layout schematics of Shivam RKM Square on Khagaul Road, Patna. Premium 3 & 4 BHK apartments, commercial spaces, and Independence Day community events." />
+    <meta property="twitter:image" content="https://i.ibb.co/1tkpRtjW/image.png" />
+
+    <link rel="canonical" href="https://beatlabs790.github.io/Rkm-Square/gallery.html" />
+
+    <!-- Tailwind & Icons -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Clean Google Font -->
+    
+    <!-- Modern Typography Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <script>
         tailwind.config = {
@@ -22,279 +40,362 @@
             theme: {
                 extend: {
                     colors: {
-                        brandDark: '#060913',
-                        brandDeepBlack: '#020307',
-                        glassWhite: 'rgba(255, 255, 255, 0.03)',
-                        glassBorder: 'rgba(255, 255, 255, 0.08)'
+                        brandDark: '#030712',
+                        brandDeepBlack: '#02040a',
+                        brandCardDark: '#0b0f19',
+                        brandAccent: '#06b6d4',
+                        brandOrange: '#6366f1',
+                        glassBorder: 'rgba(255, 255, 255, 0.05)',
+                        glassWhite: 'rgba(255, 255, 255, 0.02)'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        outfit: ['Outfit', 'sans-serif']
                     }
                 }
             }
         }
     </script>
-
+    
     <style>
-        /* Responsive Mobile Layout Constraints */
         html, body {
             max-width: 100vw;
             overflow-x: hidden;
             position: relative;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            transition: background-color 0.4s ease, color 0.4s ease;
-        }
-        html {
             scroll-behavior: smooth;
+            transition: background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
-        /* Elegant Glassmorphism Variables */
-        .glass-base {
-            background: rgba(255, 255, 255, 0.02);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.06);
-        }
-        
-        .glass-panel {
-            background: rgba(10, 15, 30, 0.7);
+        .glass-premium {
+            background: rgba(11, 15, 25, 0.7);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.07);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+        }
+        
+        .light .glass-premium {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(15, 23, 42, 0.06);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
         }
 
-        .glass-card {
-            background: rgba(255, 255, 255, 0.01);
+        .glass-capsule {
+            background: rgba(11, 15, 25, 0.6);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .light .glass-capsule {
+            background: rgba(255, 255, 255, 0.75);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+        }
+
+        .card-premium {
+            background: rgba(255, 255, 255, 0.01);
             border: 1px solid rgba(255, 255, 255, 0.04);
-            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .glass-card:hover {
-            background: rgba(255, 255, 255, 0.04);
-            border-color: rgba(255, 255, 255, 0.1);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-            transform: translateY(-4px);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            transform: translateZ(0);
         }
 
-        /* Light & Dark Transitions */
-        .dark body { background-color: #060913; color: #f1f5f9; }
-        .light body { background-color: #f8fafc; color: #0f172a; }
+        .card-premium:hover {
+            background: rgba(255, 255, 255, 0.03);
+            border-color: rgba(6, 182, 212, 0.2);
+            box-shadow: 0 15px 35px rgba(6, 182, 212, 0.04), 0 0 1px 1px rgba(6, 182, 212, 0.1) inset;
+            transform: translateY(-6px);
+        }
 
-        .light .glass-base { background: rgba(15, 23, 42, 0.02); border-color: rgba(15, 23, 42, 0.05); }
-        .light .glass-panel { background: rgba(255, 255, 255, 0.9); border-color: rgba(15, 23, 42, 0.06); box-shadow: 0 15px 30px rgba(0,0,0,0.03); }
-        .light .glass-card { background: rgba(15, 23, 42, 0.01); border-color: rgba(15, 23, 42, 0.04); }
-        .light .glass-card:hover { background: rgba(15, 23, 42, 0.02); border-color: rgba(15, 23, 42, 0.06); box-shadow: 0 15px 30px rgba(0,0,0,0.05); }
+        .light .card-premium {
+            background: rgba(15, 23, 42, 0.01);
+            border-color: rgba(15, 23, 42, 0.03);
+        }
 
-        /* Menu Sidebar Animation */
+        .light .card-premium:hover {
+            background: rgba(15, 23, 42, 0.02);
+            border-color: rgba(6, 182, 212, 0.3);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.03);
+        }
+
+        html.dark {
+            --bg-base: #030712;
+            --grid-line: rgba(6, 182, 212, 0.04);
+            --radial-glow: rgba(6, 182, 212, 0.03);
+        }
+        html.light {
+            --bg-base: #f8fafc;
+            --grid-line: rgba(6, 182, 212, 0.02);
+            --radial-glow: rgba(6, 182, 212, 0.01);
+        }
+
+        .dark body { background-color: var(--bg-base); color: #f3f4f6; }
+        .light body { background-color: var(--bg-base); color: #1e293b; }
+
+        .interactive-canvas {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            background-color: var(--bg-base);
+            overflow: hidden;
+            transform: translateZ(0);
+        }
+
+        .mesh-grid {
+            position: absolute;
+            inset: -50%;
+            width: 200%;
+            height: 200%;
+            background-image: linear-gradient(var(--grid-line) 1px, transparent 1px), linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+            background-size: 50px 50px;
+            transform: perspective(1000px) rotateX(50deg);
+            mask-image: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), black, transparent 65%);
+            -webkit-mask-image: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), black, transparent 65%);
+        }
+
+        @media (pointer: coarse) {
+            .mesh-grid {
+                mask-image: none !important;
+                -webkit-mask-image: none !important;
+                transform: none !important;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0.5;
+            }
+        }
+
+        .mouse-glow {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), var(--radial-glow), transparent 60%);
+        }
+
+        .gradient-text-amber {
+            background: linear-gradient(to right, #fbbf24, #f97316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
         #menu-drawer {
             transform: translateX(100%);
-            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
         }
-        #menu-drawer.active { transform: translateX(0); }
+        #menu-drawer.active {
+            transform: translateX(0);
+        }
 
-        /* Full Screen Preloader Canvas */
         #loading-screen {
             position: fixed;
             inset: 0;
             z-index: 100;
-            background-color: #020307;
+            background-color: #02040a;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: opacity 0.5s ease, visibility 0.5s ease;
+            transition: opacity 0.4s ease, visibility 0.4s ease;
         }
         #loading-screen.fade-out { opacity: 0; visibility: hidden; pointer-events: none; }
-
-        @media (max-width: 640px) {
-            .glass-panel { padding: 1.25rem !important; }
-        }
     </style>
 </head>
-<body class="antialiased selection:bg-amber-500 selection:text-slate-900">
+<body class="antialiased selection:bg-cyan-500 selection:text-slate-900 pb-20 md:pb-0">
 
-    <!-- Loading Preloader Layer -->
+    <div class="interactive-canvas">
+        <div class="mesh-grid"></div>
+        <div class="mouse-glow"></div>
+    </div>
+
+    <!-- Web App Preloader -->
     <div id="loading-screen" class="flex flex-col space-y-6">
         <div class="relative w-32 h-32 flex items-center justify-center">
-            <img src="https://i.ibb.co/CpWcZsp6/image.png" alt="RKM Core Logo" class="w-24 h-24 object-contain rounded-xl animate-pulse">
-            <div class="absolute inset-0 border-2 border-t-amber-500 border-r-transparent border-b-amber-500 border-l-transparent rounded-full animate-spin"></div>
+            <img src="https://i.ibb.co/CpWcZsp6/image.png" alt="RKM Core Logo" class="w-20 h-20 object-contain rounded-xl animate-pulse">
+            <div class="absolute inset-0 border-2 border-t-cyan-500 border-r-transparent border-b-cyan-500 border-l-transparent rounded-full animate-spin"></div>
         </div>
         <div class="text-center space-y-1">
-            <p class="text-xs uppercase tracking-[0.3em] text-amber-500 font-bold animate-pulse">Loading Gallery...</p>
-            <p class="text-[10px] uppercase tracking-widest text-slate-500">Built With ❤️ By BeatLabs</p>
+            <p class="text-xs uppercase tracking-[0.4em] text-cyan-500 font-bold font-outfit animate-pulse">Loading Corporate Files</p>
+            <p class="text-[10px] uppercase tracking-widest text-slate-500 font-medium">Shivam Constructions Patna</p>
         </div>
     </div>
 
-    <!-- Sticky Navigation Bar -->
-    <nav class="fixed top-0 left-0 w-full z-50 glass-base border-b px-4 sm:px-6 lg:px-16 py-4 flex items-center justify-between">
-        <div class="flex flex-col">
-            <span class="text-xl sm:text-2xl font-black tracking-tight dark:text-white text-slate-900">RKM <span class="text-amber-500">SQUARE</span></span>
-            <span class="text-[9px] sm:text-[10px] uppercase tracking-[0.2em] text-slate-400 font-medium">Portfolio Showcase</span>
-        </div>
+    <!-- Capsule Sticky Header Navigation -->
+    <nav id="main-navigation" class="fixed top-0 left-0 w-full z-40 px-4 sm:px-8 lg:px-16 py-4 flex items-center justify-between transition-all duration-300">
+        <div class="glass-premium border rounded-3xl w-full max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex flex-col">
+                <span class="text-lg sm:text-2xl font-black tracking-tight font-outfit">RKM <span class="text-cyan-500">SQUARE</span></span>
+                <span class="text-[9px] uppercase tracking-[0.25em] text-slate-400 font-bold leading-none mt-0.5">Corporate Manifesto</span>
+            </div>
+            
+            <div class="flex items-center space-x-3 relative">
+                <button onclick="toggleThemeSystem()" class="p-3 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 hover:bg-cyan-500/20 text-cyan-500 transition">
+                    <i id="theme-toggle-icon" class="fa-solid fa-moon text-base"></i>
+                </button>
 
-        <div class="flex items-center space-x-4">
-            <!-- Interface Theme Switching Trigger Button -->
-            <button onclick="toggleThemeSystem()" aria-label="Toggle Interface Theme" class="p-2.5 sm:p-3 rounded-xl bg-amber-500/10 border border-amber-500/20 hover:bg-amber-500/20 text-amber-500 transition">
-                <i id="theme-toggle-icon" class="fa-solid fa-moon text-sm"></i>
-            </button>
-
-            <!-- Navigation Drawer Menu Toggle Button -->
-            <button onclick="toggleDrawerMenu()" aria-label="Toggle Navigation Menu" class="p-2.5 sm:p-3 rounded-xl bg-white/5 border border-white/10 dark:text-white text-slate-900 transition focus:outline-none">
-                <div id="hamburger-bars-container" class="space-y-1.5 w-5 sm:w-6">
-                    <span class="block h-0.5 bg-current transition-all duration-300"></span>
-                    <span class="block h-0.5 bg-current transition-all duration-300"></span>
-                    <span class="block h-0.5 bg-amber-500 transition-all duration-300"></span>
+                <div class="hidden md:flex items-center space-x-1 text-cyan-500/80">
+                    <span class="text-[10px] font-extrabold uppercase tracking-widest font-outfit">Open Menu</span>
+                    <i class="fa-solid fa-arrow-right-long text-[10px]"></i>
                 </div>
-            </button>
+                
+                <button onclick="toggleDrawerMenu()" aria-label="Menu Switcher" class="p-3 rounded-2xl bg-white/5 border border-white/10 dark:text-white text-slate-900 transition focus:outline-none relative">
+                    <div id="hamburger-bars-container" class="space-y-1.5 w-6">
+                        <span class="block h-0.5 bg-current transition-all duration-300"></span>
+                        <span class="block h-0.5 bg-current transition-all duration-300"></span>
+                        <span class="block h-0.5 bg-cyan-500 transition-all duration-300"></span>
+                    </div>
+                </button>
+            </div>
         </div>
     </nav>
 
-    <!-- Navigation Drawer Sidebar Overlay -->
-    <div id="menu-drawer" class="fixed inset-y-0 right-0 w-full sm:w-[420px] z-40 glass-panel border-l p-8 sm:p-12 pt-32 flex flex-col justify-between shadow-2xl">
-        <div class="space-y-8">
-            <p class="text-[11px] font-bold uppercase tracking-[0.2em] text-amber-500">Navigation</p>
-            <div class="space-y-6 font-bold text-2xl sm:text-4xl tracking-tight">
-                <a href="index.html" class="block text-slate-400 hover:text-amber-500 dark:hover:text-white transition-colors py-1">Home</a>
-                <a href="about.html" class="block text-slate-400 hover:text-amber-500 dark:hover:text-white transition-colors py-1">About</a>
-                <a href="contact.html" class="block text-slate-400 hover:text-amber-500 dark:hover:text-white transition-colors py-1">Contact</a>
-                <a href="gallery.html" class="block text-amber-500 dark:text-white transition-colors py-1">Gallery</a>
-                <a href="developer.html" class="block text-slate-400 hover:text-amber-500 dark:hover:text-white transition-colors py-1">Developer</a>
+    <!-- Slideout Side Drawer -->
+    <div id="menu-drawer" class="fixed inset-y-0 right-0 w-full sm:w-[420px] z-40 glass-premium border-l p-8 sm:p-12 pt-36 flex flex-col justify-between shadow-2xl">
+        <div class="space-y-10">
+            <p class="text-xs font-bold uppercase tracking-[0.25em] text-cyan-500 font-outfit">Navigation Matrix</p>
+            <div class="space-y-6 font-bold text-3xl sm:text-4xl tracking-tight font-outfit">
+                <a href="index.html" class="block text-slate-400 hover:text-cyan-500 dark:hover:text-white transition-colors py-1">Home</a>
+                <a href="about.html" class="block text-slate-400 hover:text-cyan-500 dark:hover:text-white transition-colors py-1">About</a>
+                <a href="contact.html" class="block text-slate-400 hover:text-cyan-500 dark:hover:text-white transition-colors py-1">Contact</a>
+                <a href="gallery.html" class="block text-cyan-500 dark:text-white transition-colors py-1">Gallery</a>
+                <a href="developer.html" class="block text-slate-400 hover:text-cyan-500 dark:hover:text-white transition-colors py-1">Developer</a>
             </div>
         </div>
-        <div class="pt-8 border-t border-white/5 space-y-1">
-            <span class="text-[10px] uppercase tracking-widest text-slate-500 block">Location</span>
-            <p class="text-xs sm:text-sm text-slate-400">Khagaul-Anisabad Road, New Sabajpura, Patna, Bihar (801105)</p>
+        <div class="pt-8 border-t border-white/5 space-y-2">
+            <span class="text-xs uppercase tracking-widest text-slate-500 block font-bold font-outfit">Location Desk</span>
+            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed font-semibold">Khagaul-Anisabad Road, New Sabajpura, Patna, Bihar (801105)</p>
         </div>
     </div>
 
-    <!-- Main Gallery Showcase Container Content Stack -->
-    <main class="pt-32 pb-24 px-4 sm:px-6 lg:px-16 max-w-7xl mx-auto space-y-24">
+    <!-- Main Content Container -->
+    <main class="pt-32 pb-24 px-4 sm:px-6 lg:px-16 max-w-7xl mx-auto space-y-20 relative z-10 animate-fade-in">
         
-        <!-- Section Header Copy Context -->
+        <!-- Section Header -->
         <div class="border-b dark:border-white/5 border-slate-200 pb-10">
-            <span class="text-xs font-bold uppercase tracking-wider text-amber-500 block mb-1">Media Portfolio Gallery</span>
-            <h1 class="text-3xl sm:text-6xl font-extrabold tracking-tight dark:text-white text-slate-900 leading-none">
-                Visual Assets & <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">Community Records</span>
+            <span class="text-xs font-bold uppercase tracking-[0.3em] text-cyan-500 block font-outfit mb-2">Media Portfolio Gallery</span>
+            <h1 class="text-4xl sm:text-5xl font-black tracking-tight dark:text-white text-slate-900 leading-tight font-outfit">
+                Visual Assets & <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-cyan-600">Community Records</span>
             </h1>
-            <p class="text-xs sm:text-sm text-slate-400 mt-4 max-w-2xl leading-relaxed">
+            <p class="text-sm text-slate-400 mt-4 max-w-2xl leading-relaxed font-medium">
                 Review verified planning layouts, blueprints, and snapshots tracking real on-site cultural festivals and neighborhood community gatherings at RKM Square.
             </p>
         </div>
 
-        <!-- Section 1: Brand Commemorative & Community Festivals Horizontal Layout Showcase -->
-        <section class="space-y-6">
+        <!-- Section 1: Community Celebrations -->
+        <section class="space-y-8">
             <div class="flex items-center space-x-3">
-                <span class="font-mono text-xs font-bold bg-amber-500/10 text-amber-500 px-2.5 py-1 rounded border border-amber-500/20">EVENT-LOGS</span>
-                <h3 class="text-md sm:text-lg font-bold uppercase tracking-wider dark:text-white text-slate-800">Community Celebrations</h3>
+                <span class="font-mono text-xs font-bold bg-cyan-500/10 text-cyan-500 px-3 py-1 rounded-lg border border-cyan-500/20">EVENT-LOGS</span>
+                <h3 class="text-lg font-bold uppercase tracking-wider dark:text-white text-slate-800 font-outfit">Community Celebrations</h3>
             </div>
             
-            <!-- Configured to display as a row layout on tablets/desktops with uncropped full image visibility -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Event Image 1: Republic Day 2025 -->
-                <div class="glass-panel rounded-3xl p-4 flex flex-col space-y-3 group border transition-all duration-300">
-                    <div class="rounded-2xl overflow-hidden bg-black/20 dark:bg-black/40 flex items-center justify-center p-1 h-64 sm:h-72">
-                        <img src="https://i.ibb.co/23TMX1hw/IMG-20260614-213038-190.jpg" alt="RKM Square Republic Day 2025 Celebration Flag Hoisting" class="max-w-full max-h-full object-contain group-hover:scale-[1.02] transition-transform duration-500">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Event Image 1 -->
+                <div class="glass-premium rounded-3xl p-4 flex flex-col space-y-4 group border transition-all duration-300">
+                    <div class="rounded-2xl overflow-hidden bg-black/20 dark:bg-black/40 flex items-center justify-center p-2 h-64 sm:h-72">
+                        <img src="https://i.ibb.co/23TMX1hw/IMG-20260614-213038-190.jpg" loading="lazy" alt="RKM Square Republic Day 2025 Celebration Flag Hoisting" class="max-w-full max-h-full object-contain rounded-xl group-hover:scale-[1.03] transition-transform duration-500">
                     </div>
-                    <div class="px-1 pb-1">
-                        <h4 class="text-sm font-bold dark:text-white text-slate-900">Republic Day Celebration</h4>
-                        <p class="text-[11px] text-slate-400 mt-0.5">Commemorative community gather tracking inside compound corridors — January 2025</p>
-                    </div>
-                </div>
-
-                <!-- Event Image 2: Independence Day 2025 (A) -->
-                <div class="glass-panel rounded-3xl p-4 flex flex-col space-y-3 group border transition-all duration-300">
-                    <div class="rounded-2xl overflow-hidden bg-black/20 dark:bg-black/40 flex items-center justify-center p-1 h-64 sm:h-72">
-                        <img src="https://i.ibb.co/DDSthyn2/IMG-20260614-212426-010.jpg" alt="RKM Square Independence Day 2025 Flag Hoisting Ceremony Event" class="max-w-full max-h-full object-contain group-hover:scale-[1.02] transition-transform duration-500">
-                    </div>
-                    <div class="px-1 pb-1">
-                        <h4 class="text-sm font-bold dark:text-white text-slate-900">Independence Day Event</h4>
-                        <p class="text-[11px] text-slate-400 mt-0.5">Flag hoisting ceremony and resident gathering arrays — August 2025</p>
+                    <div class="px-2 pb-2">
+                        <h4 class="text-base font-bold dark:text-white text-slate-900 font-outfit">Republic Day Celebration</h4>
+                        <p class="text-xs text-slate-400 mt-1 font-medium">Commemorative community gather tracking inside compound corridors — January 2025</p>
                     </div>
                 </div>
 
-                <!-- Event Image 3: Independence Day 2025 (B) -->
-                <div class="glass-panel rounded-3xl p-4 flex flex-col space-y-3 group border transition-all duration-300">
-                    <div class="rounded-2xl overflow-hidden bg-black/20 dark:bg-black/40 flex items-center justify-center p-1 h-64 sm:h-72">
-                        <img src="https://i.ibb.co/V01zRsCD/IMG-20260614-212420-199.jpg" alt="RKM Square Independence Day 2025 Community Celebration Records" class="max-w-full max-h-full object-contain group-hover:scale-[1.02] transition-transform duration-500">
+                <!-- Event Image 2 -->
+                <div class="glass-premium rounded-3xl p-4 flex flex-col space-y-4 group border transition-all duration-300">
+                    <div class="rounded-2xl overflow-hidden bg-black/20 dark:bg-black/40 flex items-center justify-center p-2 h-64 sm:h-72">
+                        <img src="https://i.ibb.co/DDSthyn2/IMG-20260614-212426-010.jpg" loading="lazy" alt="RKM Square Independence Day 2025 Flag Hoisting Ceremony Event" class="max-w-full max-h-full object-contain rounded-xl group-hover:scale-[1.03] transition-transform duration-500">
                     </div>
-                    <div class="px-1 pb-1">
-                        <h4 class="text-sm font-bold dark:text-white text-slate-900">Independence Day Assembly</h4>
-                        <p class="text-[11px] text-slate-400 mt-0.5">Resident alignment photographs inside the central courtyard — August 2025</p>
+                    <div class="px-2 pb-2">
+                        <h4 class="text-base font-bold dark:text-white text-slate-900 font-outfit">Independence Day Event</h4>
+                        <p class="text-xs text-slate-400 mt-1 font-medium">Flag hoisting ceremony and resident gathering arrays — August 2025</p>
+                    </div>
+                </div>
+
+                <!-- Event Image 3 -->
+                <div class="glass-premium rounded-3xl p-4 flex flex-col space-y-4 group border transition-all duration-300">
+                    <div class="rounded-2xl overflow-hidden bg-black/20 dark:bg-black/40 flex items-center justify-center p-2 h-64 sm:h-72">
+                        <img src="https://i.ibb.co/V01zRsCD/IMG-20260614-212420-199.jpg" loading="lazy" alt="RKM Square Independence Day 2025 Community Celebration Records" class="max-w-full max-h-full object-contain rounded-xl group-hover:scale-[1.03] transition-transform duration-500">
+                    </div>
+                    <div class="px-2 pb-2">
+                        <h4 class="text-base font-bold dark:text-white text-slate-900 font-outfit">Independence Day Assembly</h4>
+                        <p class="text-xs text-slate-400 mt-1 font-medium">Resident alignment photographs inside the central courtyard — August 2025</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Section 2: Exterior Elevation Blueprint Render Architecture -->
-        <section class="space-y-6">
+        <section class="space-y-8">
             <div class="flex items-center space-x-3">
-                <span class="font-mono text-xs font-bold bg-amber-500/10 text-amber-500 px-2.5 py-1 rounded border border-amber-500/20">ARCH-01</span>
-                <h3 class="text-md sm:text-lg font-bold uppercase tracking-wider dark:text-white text-slate-800">Primary External Elevation</h3>
+                <span class="font-mono text-xs font-bold bg-cyan-500/10 text-cyan-500 px-3 py-1 rounded-lg border border-cyan-500/20">ARCH-01</span>
+                <h3 class="text-lg font-bold uppercase tracking-wider dark:text-white text-slate-800 font-outfit">Primary External Elevation</h3>
             </div>
             
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                <div class="lg:col-span-8 group relative rounded-3xl overflow-hidden glass-panel border p-3 sm:p-4 transition-all duration-300">
-                    <img src="https://i.ibb.co/fVktgPYR/image.png" alt="RKM Square Exterior Structural Elevation Rendering Layout" class="w-full h-auto rounded-2xl object-cover shadow-md group-hover:scale-[1.01] transition-transform duration-500">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-8 group relative rounded-3xl overflow-hidden glass-premium border p-4 transition-all duration-300">
+                    <img src="https://i.ibb.co/fVktgPYR/image.png" loading="lazy" alt="RKM Square Exterior Structural Elevation Rendering Layout" class="w-full h-auto rounded-2xl object-cover shadow-md group-hover:scale-[1.01] transition-transform duration-500">
                 </div>
-                <div class="lg:col-span-4 space-y-4 lg:pt-2">
-                    <h4 class="text-md font-bold dark:text-slate-200 text-slate-800">Facade Architectural Specs</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed">
+                <div class="lg:col-span-4 space-y-4">
+                    <h4 class="text-lg font-bold dark:text-slate-200 text-slate-800 font-outfit">Facade Architectural Specs</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed font-medium">
                         A rendering tracking structural composition rules, optimizing natural window lighting arrays, thermal barriers, and earthquake code absorption distributions built for Danapur's landscape.
                     </p>
-                    <div class="space-y-2 text-xs font-mono pt-2">
+                    <div class="space-y-2 text-xs font-mono pt-4">
                         <div class="flex justify-between border-b dark:border-white/5 border-slate-200 pb-2">
                             <span class="text-slate-500">Render Context:</span>
-                            <span class="dark:text-slate-300 text-slate-700">Daylight Baseline Setup</span>
+                            <span class="dark:text-slate-300 text-slate-700 font-bold">Daylight Baseline Setup</span>
                         </div>
                         <div class="flex justify-between">
                             <span class="text-slate-500">Aspect Projection:</span>
-                            <span class="dark:text-slate-300 text-slate-700">North-East Axis Facing</span>
+                            <span class="dark:text-slate-300 text-slate-700 font-bold">North-East Axis Facing</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section 3: Interior Spacing Layouts & Mechanical Mapping Blueprint -->
-        <section class="space-y-6">
+        <!-- Section 3: Interior Spacing Layouts -->
+        <section class="space-y-8">
             <div class="flex items-center space-x-3">
-                <span class="font-mono text-xs font-bold bg-amber-500/10 text-amber-500 px-2.5 py-1 rounded border border-amber-500/20">ARCH-02</span>
-                <h3 class="text-md sm:text-lg font-bold uppercase tracking-wider dark:text-white text-slate-800">Spatial Configuration & Floor Layout Map</h3>
+                <span class="font-mono text-xs font-bold bg-cyan-500/10 text-cyan-500 px-3 py-1 rounded-lg border border-cyan-500/20">ARCH-02</span>
+                <h3 class="text-lg font-bold uppercase tracking-wider dark:text-white text-slate-800 font-outfit">Spatial Configuration & Floor Layout Map</h3>
             </div>
             
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                <div class="lg:col-span-4 order-2 lg:order-1 space-y-4 lg:pt-2">
-                    <h4 class="text-md font-bold dark:text-slate-200 text-slate-800">Interior Floor Layout Map</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-4 order-2 lg:order-1 space-y-4">
+                    <h4 class="text-lg font-bold dark:text-slate-200 text-slate-800 font-outfit">Interior Floor Layout Map</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed font-medium">
                         Exhibiting comprehensive cross-sectional utility allocations. Each zone features structured layout properties designed to enhance airflow matrices and maximize carpet spaces.
                     </p>
-                    <div class="p-4 rounded-xl bg-amber-500/5 border border-amber-500/10 text-[11px] text-amber-500 font-medium">
-                        <i class="fa-solid fa-circle-info mr-2"></i> Document tracks exact carpet layout data verified under official RERA records.
+                    <div class="p-4 rounded-2xl bg-cyan-500/5 border border-cyan-500/10 text-xs text-cyan-500 font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-circle-info"></i> 
+                        <span>Document tracks exact carpet layout data verified under RERA.</span>
                     </div>
                 </div>
-                <div class="lg:col-span-8 order-1 lg:order-2 group relative rounded-3xl overflow-hidden glass-panel border p-3 sm:p-4 transition-all duration-300">
-                    <img src="https://i.ibb.co/1YmxG3c9/image.png" alt="RKM Square Interior Dimensional Structural Map" class="w-full h-auto rounded-2xl object-cover shadow-md group-hover:scale-[1.01] transition-transform duration-500">
+                <div class="lg:col-span-8 order-1 lg:order-2 group relative rounded-3xl overflow-hidden glass-premium border p-4 transition-all duration-300">
+                    <img src="https://i.ibb.co/1YmxG3c9/image.png" loading="lazy" alt="RKM Square Interior Dimensional Structural Map" class="w-full h-auto rounded-2xl object-cover shadow-md group-hover:scale-[1.01] transition-transform duration-500">
                 </div>
             </div>
         </section>
 
         <!-- Section 4: Detailed Blueprint Infrastructure Drafting Diagrams -->
-        <section class="space-y-6">
+        <section class="space-y-8">
             <div class="flex items-center space-x-3">
-                <span class="font-mono text-xs font-bold bg-amber-500/10 text-amber-500 px-2.5 py-1 rounded border border-amber-500/20">ARCH-03</span>
-                <h3 class="text-md sm:text-lg font-bold uppercase tracking-wider dark:text-white text-slate-800">Detailed Structural Drafting Specs</h3>
+                <span class="font-mono text-xs font-bold bg-cyan-500/10 text-cyan-500 px-3 py-1 rounded-lg border border-cyan-500/20">ARCH-03</span>
+                <h3 class="text-lg font-bold uppercase tracking-wider dark:text-white text-slate-800 font-outfit">Detailed Structural Drafting Specs</h3>
             </div>
             
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                <div class="lg:col-span-8 group relative rounded-3xl overflow-hidden glass-panel border p-3 sm:p-4 transition-all duration-300">
-                    <img src="https://i.ibb.co/YxKMDDG/image.png" alt="RKM Square Drafting Structural Engineering Plan Diagram" class="w-full h-auto rounded-2xl object-cover shadow-md group-hover:scale-[1.01] transition-transform duration-500">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-8 group relative rounded-3xl overflow-hidden glass-premium border p-4 transition-all duration-300">
+                    <img src="https://i.ibb.co/YxKMDDG/image.png" loading="lazy" alt="RKM Square Drafting Structural Engineering Plan Diagram" class="w-full h-auto rounded-2xl object-cover shadow-md group-hover:scale-[1.01] transition-transform duration-500">
                 </div>
-                <div class="lg:col-span-4 space-y-4 lg:pt-2">
-                    <h4 class="text-md font-bold dark:text-slate-200 text-slate-800">Engineering Blueprint Model</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed">
+                <div class="lg:col-span-4 space-y-4">
+                    <h4 class="text-lg font-bold dark:text-slate-200 text-slate-800 font-outfit">Engineering Blueprint Model</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed font-medium">
                         High-precision layout metrics specifying exact dimension configurations, multi-apartment load paths, and electrical grid alignments.
                     </p>
-                    <a href="contact.html" class="inline-flex items-center space-x-1.5 text-xs font-bold text-amber-500 hover:text-amber-400 transition uppercase tracking-wider">
+                    <a href="contact.html" class="inline-flex items-center gap-2 text-xs font-bold text-cyan-500 hover:text-cyan-400 transition-colors uppercase tracking-wider font-outfit mt-2">
                         <span>Request Structural Document Pack</span>
-                        <i class="fa-solid fa-circle-arrow-down text-[11px]"></i>
+                        <i class="fa-solid fa-circle-arrow-down text-sm"></i>
                     </a>
                 </div>
             </div>
@@ -302,63 +403,85 @@
 
     </main>
 
-    <!-- Expanded Corporate Compliance Footer Matrix -->
-    <footer class="border-t dark:border-white/5 border-slate-200 bg-slate-950/40 pt-12 sm:pt-16 pb-8 text-[11px] sm:text-xs text-slate-400 relative z-10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10 pb-10 border-b dark:border-white/5 border-slate-200">
-            <div class="md:col-span-5 space-y-3 sm:space-y-4">
-                <span class="text-md sm:text-lg font-black tracking-tight dark:text-white text-slate-900">RKM <span class="text-amber-500">SQUARE</span></span>
-                <p class="leading-relaxed text-slate-500 max-w-sm">
+    <!-- Footer -->
+    <footer class="border-t dark:border-white/5 border-slate-200 bg-slate-950/45 pt-12 sm:pt-16 pb-8 text-xs text-slate-400 relative z-10 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 grid grid-cols-1 md:grid-cols-12 gap-10 pb-10 border-b dark:border-white/5 border-slate-200">
+            <div class="md:col-span-5 space-y-4">
+                <span class="text-xl sm:text-2xl font-black tracking-tight dark:text-white text-slate-900 font-outfit">RKM <span class="text-cyan-500">SQUARE</span></span>
+                <p class="leading-relaxed text-slate-500 max-w-sm font-medium">
                     A prominent mixed-use complex located on the Khagaul-Anisabad Road, New Sabajpura, Khagaul, Patna, Bihar (Pin: 801105). Configured by Shivam Constructions Patna.
                 </p>
             </div>
-            <div class="md:col-span-3 space-y-3">
-                <h5 class="text-[11px] sm:text-xs uppercase font-bold tracking-wider dark:text-slate-300 text-slate-800">Quick Navigation</h5>
-                <ul class="space-y-2 font-medium">
-                    <li><a href="index.html" class="hover:text-amber-500 transition">Home Overview</a></li>
-                    <li><a href="about.html" class="hover:text-amber-500 transition">About Architecture</a></li>
-                    <li><a href="gallery.html" class="hover:text-amber-500 transition">Media Gallery</a></li>
-                    <li><a href="contact.html" class="hover:text-amber-500 transition">Enquire Portals</a></li>
+            <div class="md:col-span-3 space-y-4">
+                <h5 class="text-xs uppercase font-bold tracking-widest dark:text-slate-300 text-slate-800 font-outfit">Quick Navigation</h5>
+                <ul class="space-y-3 font-semibold text-slate-500">
+                    <li><a href="index.html" class="hover:text-cyan-500 transition">Home Overview</a></li>
+                    <li><a href="about.html" class="hover:text-cyan-500 transition">About Architecture</a></li>
+                    <li><a href="gallery.html" class="hover:text-cyan-500 transition">Media Gallery</a></li>
+                    <li><a href="contact.html" class="hover:text-cyan-500 transition">Enquire Portals</a></li>
                 </ul>
             </div>
-            <div class="md:col-span-4 space-y-3">
-                <h5 class="text-[11px] sm:text-xs uppercase font-bold tracking-wider dark:text-slate-300 text-slate-800">Regulatory Compliance</h5>
-                <p class="leading-relaxed text-slate-500">
-                    Registered transparently with the Bihar Real Estate Regulatory Authority under registration reference ID: <span class="font-mono font-bold dark:text-slate-400 text-slate-700">BRERAP00085-2/815/R-514/2019</span>. All rights reserved.
+            <div class="md:col-span-4 space-y-4">
+                <h5 class="text-xs uppercase font-bold tracking-widest dark:text-slate-300 text-slate-800 font-outfit">Regulatory Compliance</h5>
+                <p class="leading-relaxed text-slate-500 font-medium">
+                    Registered transparently with the Bihar Real Estate Regulatory Authority under registration reference ID: <span class="font-mono font-bold dark:text-slate-400 text-slate-700">BRERAP00085-2/815/R-514/2019</span>.
                 </p>
             </div>
         </div>
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-[10px] sm:text-[11px] text-slate-500 font-medium">
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-slate-500 font-semibold">
             <p class="text-center sm:text-left">© 2026 Shivam Constructions Patna. All layouts map securely to official records.</p>
-            <p class="flex items-center gap-1.5 bg-white/5 border dark:border-white/5 border-slate-200 px-3 py-1.5 rounded-xl font-mono text-xs dark:text-slate-400 text-slate-600">
+            <p class="flex items-center gap-2 bg-white/5 border dark:border-white/5 border-slate-200 px-4 py-2 rounded-xl font-mono text-xs dark:text-slate-400 text-slate-600">
                 <span>Built with</span>
                 <i class="fa-solid fa-heart text-rose-500 animate-pulse"></i>
                 <span>by</span>
-                <a href="developer.html" class="text-amber-500 hover:underline">BeatLabs</a>
+                <a href="developer.html" class="text-cyan-500 hover:underline">ZephyrDevs</a>
             </p>
         </div>
     </footer>
 
-    <!-- Global Dynamic Interactions Scripts -->
+    <!-- Mobile Bottom Tab Navigation -->
+    <div class="md:hidden fixed bottom-0 left-0 w-full bg-slate-950/90 backdrop-blur-xl border-t border-white/5 z-50 py-3 px-6 flex justify-between items-center shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
+        <a href="index.html" class="flex flex-col items-center gap-1 text-slate-400 hover:text-cyan-500 transition">
+            <i class="fa-solid fa-house-chimney text-base"></i>
+            <span class="text-[9px] uppercase tracking-widest font-bold font-outfit">Home</span>
+        </a>
+        <a href="gallery.html" class="flex flex-col items-center gap-1 text-cyan-500 transition">
+            <i class="fa-solid fa-images text-base"></i>
+            <span class="text-[9px] uppercase tracking-widest font-bold font-outfit">Gallery</span>
+        </a>
+        <a href="index.html#dashboard" class="flex flex-col items-center gap-1 text-slate-400 hover:text-cyan-500 transition">
+            <i class="fa-solid fa-folder-open text-base"></i>
+            <span class="text-[9px] uppercase tracking-widest font-bold font-outfit">Portal</span>
+        </a>
+        <a href="contact.html" class="flex flex-col items-center gap-1 text-slate-400 hover:text-cyan-500 transition">
+            <i class="fa-solid fa-paper-plane text-base"></i>
+            <span class="text-[9px] uppercase tracking-widest font-bold font-outfit">Contact</span>
+        </a>
+        <a href="index.html#dashboard" class="flex flex-col items-center gap-1 text-slate-400 hover:text-cyan-500 transition">
+            <i class="fa-solid fa-key text-base"></i>
+            <span class="text-[9px] uppercase tracking-widest font-bold font-outfit">Admin</span>
+        </a>
+    </div>
+
+    <!-- Interactions script -->
     <script>
-        // Trigger preloader fade sequence on screen mount
         window.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
-                document.getElementById('loading-screen').classList.add('fade-out');
+                const loader = document.getElementById('loading-screen');
+                if(loader) loader.classList.add('fade-out');
             }, 800);
         });
 
-        // Sidebar Navigation Controls
         function toggleDrawerMenu() {
             const drawerElement = document.getElementById('menu-drawer');
             const transformationIconGroup = document.getElementById('hamburger-bars-container').children;
-            
             drawerElement.classList.toggle('active');
-            
+
             if (drawerElement.classList.contains('active')) {
-                transformationIconGroup[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+                transformationIconGroup[0].style.transform = 'rotate(45deg) translate(6px, 5px)';
                 transformationIconGroup[1].style.opacity = '0';
-                transformationIconGroup[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+                transformationIconGroup[2].style.transform = 'rotate(-45deg) translate(6px, -5px)';
             } else {
                 transformationIconGroup[0].style.transform = 'none';
                 transformationIconGroup[1].style.opacity = '1';
@@ -366,29 +489,40 @@
             }
         }
 
-        // Adaptive Dark/Light Theme Switching Engine
         function toggleThemeSystem() {
             const htmlRoot = document.documentElement;
             const themeIcon = document.getElementById('theme-toggle-icon');
-            
             htmlRoot.classList.toggle('dark');
             htmlRoot.classList.toggle('light');
-            
+
             if(htmlRoot.classList.contains('dark')) {
-                themeIcon.className = "fa-solid fa-moon text-sm";
+                themeIcon.className = "fa-solid fa-moon text-base";
                 localStorage.setItem('rkm-theme-preference', 'dark');
             } else {
-                themeIcon.className = "fa-solid fa-sun text-sm";
+                themeIcon.className = "fa-solid fa-sun text-base";
                 localStorage.setItem('rkm-theme-preference', 'light');
             }
         }
 
-        // Apply theme preference immediately on layout ready routine
         if (localStorage.getItem('rkm-theme-preference') === 'light') {
             document.documentElement.classList.remove('dark');
             document.documentElement.classList.add('light');
-            document.getElementById('theme-toggle-icon').className = "fa-solid fa-sun text-sm";
+            document.getElementById('theme-toggle-icon').className = "fa-solid fa-sun text-base";
         }
+
+        let ticking = false;
+        document.addEventListener('mousemove', (e) => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    const x = (e.clientX / window.innerWidth) * 100;
+                    const y = (e.clientY / window.innerHeight) * 100;
+                    document.documentElement.style.setProperty('--mouse-x', `${x}%`);
+                    document.documentElement.style.setProperty('--mouse-y', `${y}%`);
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
     </script>
 </body>
 </html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://beatlabs790.github.io/Rkm-Square/sitemap.xml

@@ -6,14 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="icon" type="image/png" href="https://i.ibb.co/CpWcZsp6/image.png">
     
-    <title>Shivam RKM Square | Residential & Commercial Complex, Patna</title>
+    <title>Shivam RKM Square | Premium 3 & 4 BHK Apartments, Khagaul Road, Patna</title>
+    <meta name="description" content="Discover Shivam RKM Square, a premium ready-to-move residential & commercial complex on Khagaul-Anisabad Road, Patna by Shivam Constructions. Zero brokerage 3 & 4 BHK apartments, active security, on-site Domino's, close to Danapur Station." />
+    <meta name="keywords" content="RKM Square, RKM Square Patna, Shivam RKM Square, apartments for rent Khagaul Road Patna, 3 BHK flat for rent in Patna, 4 BHK apartments Patna, commercial shops for rent Patna, ready to move flats Patna, Shivam Constructions Patna, flats near Danapur station, apartments in Patna Bihar, RKM Square rent price" />
     
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://beatlabs790.github.io/Rkm-Square/index.html" />
+    <meta property="og:title" content="Shivam RKM Square | Residential & Commercial Complex, Patna" />
+    <meta property="og:description" content="Premium ready-to-move apartments on Khagaul-Anisabad Road, Patna by Shivam Constructions. Zero brokerage 3 & 4 BHK configurations." />
+    <meta property="og:image" content="https://i.ibb.co/1tkpRtjW/image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://beatlabs790.github.io/Rkm-Square/index.html" />
+    <meta property="twitter:title" content="Shivam RKM Square | Residential & Commercial Complex, Patna" />
+    <meta property="twitter:description" content="Premium ready-to-move apartments on Khagaul-Anisabad Road, Patna by Shivam Constructions. Zero brokerage 3 & 4 BHK configurations." />
+    <meta property="twitter:image" content="https://i.ibb.co/1tkpRtjW/image.png" />
+
+    <link rel="canonical" href="https://beatlabs790.github.io/Rkm-Square/index.html" />
+
+    <!-- JSON-LD Structured Data Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ApartmentComplex",
+      "name": "Shivam RKM Square",
+      "description": "Premium mixed-use residential & commercial complex on Khagaul-Anisabad Road, Patna, developed by Shivam Constructions.",
+      "image": [
+        "https://i.ibb.co/1tkpRtjW/image.png",
+        "https://i.ibb.co/fVktgPYR/image.png"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Khagaul-Anisabad Road, New Sabajpura",
+        "addressLocality": "Patna",
+        "addressRegion": "Bihar",
+        "postalCode": "801105",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 25.57873,
+        "longitude": 85.05536
+      },
+      "url": "https://beatlabs790.github.io/Rkm-Square/index.html",
+      "telephone": "+919934013773",
+      "priceRange": "₹15000 - ₹20000",
+      "amenityFeature": [
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "24-Hour Water Supply",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Power Backup Elevator",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Commercial Tier Parking",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Domino's Pizza on Site",
+          "value": true
+        }
+      ]
+    }
+    </script>
+
+    <!-- Tailwind & Icons -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Modern Typography Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
+    <!-- Firebase Compat SDKs -->
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
     
@@ -23,10 +97,17 @@
             theme: {
                 extend: {
                     colors: {
-                        brandDark: '#060913',
-                        brandDeepBlack: '#020307',
-                        glassWhite: 'rgba(255, 255, 255, 0.03)',
-                        glassBorder: 'rgba(255, 255, 255, 0.08)'
+                        brandDark: '#030712',
+                        brandDeepBlack: '#02040a',
+                        brandCardDark: '#0b0f19',
+                        brandAccent: '#06b6d4',
+                        brandOrange: '#6366f1',
+                        glassBorder: 'rgba(255, 255, 255, 0.05)',
+                        glassWhite: 'rgba(255, 255, 255, 0.02)'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        outfit: ['Outfit', 'sans-serif']
                     }
                 }
             }
@@ -38,398 +119,406 @@
             max-width: 100vw;
             overflow-x: hidden;
             position: relative;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            transition: background-color 0.4s ease, color 0.4s ease;
-        }
-        html {
             scroll-behavior: smooth;
+            transition: background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
-        /* HARDWARE ACCELERATED GLASSMORPHISM */
-        .glass-base {
-            background: rgba(255, 255, 255, 0.02);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
+        /* PREMIUM GLASSMORPHISM SYSTEM */
+        .glass-premium {
+            background: rgba(11, 15, 25, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.06);
-            transform: translateZ(0); /* Force GPU Layer initialization */
-            will-change: transform;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
         }
-        .glass-panel {
-            background: rgba(10, 15, 30, 0.75);
+        
+        .light .glass-premium {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(15, 23, 42, 0.06);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+        }
+
+        .glass-capsule {
+            background: rgba(11, 15, 25, 0.6);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.07);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
-            transform: translateZ(0);
-        }
-        .glass-card {
-            background: rgba(255, 255, 255, 0.01);
-            backdrop-filter: blur(4px);
-            -webkit-backdrop-filter: blur(4px);
-            border: 1px solid rgba(255, 255, 255, 0.04);
-            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-            transform: translateZ(0);
-            will-change: transform;
-        }
-        .glass-card:hover {
-            background: rgba(255, 255, 255, 0.04);
-            border-color: rgba(255, 255, 255, 0.1);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-            transform: translateY(-4px) translateZ(0);
+            border: 1px solid rgba(255, 255, 255, 0.08);
         }
 
+        .light .glass-capsule {
+            background: rgba(255, 255, 255, 0.75);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+        }
+
+        /* INTERACTIVE NEON CARDS */
+        .card-premium {
+            background: rgba(255, 255, 255, 0.01);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            transform: translateZ(0);
+        }
+
+        .card-premium:hover {
+            background: rgba(255, 255, 255, 0.03);
+            border-color: rgba(6, 182, 212, 0.2);
+            box-shadow: 0 15px 35px rgba(6, 182, 212, 0.04), 0 0 1px 1px rgba(6, 182, 212, 0.1) inset;
+            transform: translateY(-6px);
+        }
+
+        .light .card-premium {
+            background: rgba(15, 23, 42, 0.01);
+            border-color: rgba(15, 23, 42, 0.03);
+        }
+
+        .light .card-premium:hover {
+            background: rgba(15, 23, 42, 0.02);
+            border-color: rgba(6, 182, 212, 0.3);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.03);
+        }
+
+        /* THEME MATRIX SETTINGS */
         html.dark {
-            --bg-color: #020307;
-            --grid-color: rgba(245, 158, 11, 0.06);
-            --glow-color: rgba(245, 158, 11, 0.04);
+            --bg-base: #030712;
+            --grid-line: rgba(6, 182, 212, 0.04);
+            --radial-glow: rgba(6, 182, 212, 0.03);
         }
         html.light {
-            --bg-color: #f8fafc;
-            --grid-color: rgba(245, 158, 11, 0.03);
-            --glow-color: rgba(245, 158, 11, 0.02);
+            --bg-base: #f8fafc;
+            --grid-line: rgba(6, 182, 212, 0.02);
+            --radial-glow: rgba(6, 182, 212, 0.01);
         }
 
-        .dark body { background-color: transparent; color: #f1f5f9; }
-        .light body { background-color: transparent; color: #0f172a; }
+        .dark body { background-color: var(--bg-base); color: #f3f4f6; }
+        .light body { background-color: var(--bg-base); color: #1e293b; }
 
-        .light .glass-base { background: rgba(15, 23, 42, 0.01); border-color: rgba(15, 23, 42, 0.04); backdrop-filter: none; -webkit-backdrop-filter: none; }
-        .light .glass-panel { background: rgba(255, 255, 255, 0.95); border-color: rgba(15, 23, 42, 0.05); box-shadow: 0 15px 30px rgba(0,0,0,0.03); backdrop-filter: none; -webkit-backdrop-filter: none; }
-        .light .glass-card { background: rgba(15, 23, 42, 0.01); border-color: rgba(15, 23, 42, 0.02); backdrop-filter: none; -webkit-backdrop-filter: none; }
-        .light .glass-card:hover { background: rgba(15, 23, 42, 0.02); border-color: rgba(15, 23, 42, 0.05); box-shadow: 0 15px 30px rgba(0,0,0,0.04); }
-
-        #menu-drawer {
-            transform: translateX(100%);
-            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-            will-change: transform;
-        }
-        #menu-drawer.active { transform: translateX(0); }
-
-        #loading-screen {
-            position: fixed;
-            inset: 0;
-            z-index: 100;
-            background-color: #020307;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-        }
-        #loading-screen.fade-out { opacity: 0; visibility: hidden; pointer-events: none; }
-
-        .hero-viewport {
-            background-image: linear-gradient(to bottom, rgba(6, 9, 19, 0.3) 0%, rgba(6, 9, 19, 0.95) 100%), url('https://i.ibb.co/fVktgPYR/image.png');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }
-
-        .faq-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .faq-item.active .faq-content {
-            max-height: 180px;
-        }
-        .faq-item.active .faq-icon {
-            transform: rotate(180deg);
-        }
-
-        /* INTERACTIVE PERFORMANCE LAYER TUNING */
-        .live-interactive-canvas {
+        /* MOUSE COORDINATES INTERACTIVE MESH */
+        .interactive-canvas {
             position: fixed;
             inset: 0;
             z-index: -1;
-            background-color: var(--bg-color);
+            background-color: var(--bg-base);
             overflow: hidden;
             transform: translateZ(0);
         }
 
-        .grid-mesh {
+        .mesh-grid {
             position: absolute;
             inset: -50%;
             width: 200%;
             height: 200%;
-            background-image: linear-gradient(var(--grid-color) 1px, transparent 1px), linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
-            background-size: 60px 60px;
-            transform: perspective(1000px) rotateX(60deg);
-            mask-image: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), black, transparent 70%);
-            -webkit-mask-image: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), black, transparent 70%);
+            background-image: linear-gradient(var(--grid-line) 1px, transparent 1px), linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+            background-size: 50px 50px;
+            transform: perspective(1000px) rotateX(50deg);
+            mask-image: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), black, transparent 65%);
+            -webkit-mask-image: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), black, transparent 65%);
         }
 
-        /* Disable expensive calculations loop on devices that don't support pointer depth accuracy properly */
-        @media (match-media: -moz-touch-enabled), (pointer: coarse) {
-            .grid-mesh {
-                animation: none !important;
+        @media (pointer: coarse) {
+            .mesh-grid {
                 mask-image: none !important;
                 -webkit-mask-image: none !important;
                 transform: none !important;
                 inset: 0;
                 width: 100%;
                 height: 100%;
-                opacity: 0.4;
+                opacity: 0.5;
             }
-            .hero-viewport { background-attachment: scroll !important; }
-            .glass-panel, .glass-base, .glass-card { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
-            .glow-pulse { display: none !important; }
         }
 
-        .glow-pulse {
+        .mouse-glow {
             position: absolute;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), var(--glow-color), transparent 70%);
+            background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), var(--radial-glow), transparent 60%);
         }
 
-        @keyframes macAppOpen {
-            0% {
-                opacity: 0;
-                transform: scale(0.9) translateY(40px);
-                filter: blur(8px);
-            }
-            100% {
-                opacity: 1;
-                transform: scale(1) translateY(0);
-                filter: blur(0);
-            }
+        /* TEXT GRADIENTS */
+        .gradient-text-amber {
+            background: linear-gradient(to right, #fbbf24, #f97316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
-        @keyframes macTextFlyUp {
-            0% {
-                opacity: 0;
-                transform: translateY(30px);
-                filter: blur(4px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-                filter: blur(0);
-            }
+        /* FAQ CONTAINER ACCORDIONS */
+        .faq-item .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+            opacity: 0;
+        }
+        .faq-item.active .faq-content {
+            max-height: 200px;
+            opacity: 1;
+        }
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
         }
 
-        .mac-opening-effect {
-            animation: macAppOpen 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        /* SLIDEOUT SIDE NAVIGATION */
+        #menu-drawer {
+            transform: translateX(100%);
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        #menu-drawer.active {
+            transform: translateX(0);
         }
 
-        .mac-text-flight {
-            animation: macTextFlyUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        /* HERO TRANSIT STACKS */
+        .hero-bg {
+            background-image: linear-gradient(to bottom, rgba(3, 7, 18, 0.35) 0%, rgba(3, 7, 18, 0.98) 100%), url('https://i.ibb.co/fVktgPYR/image.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
+        .light .hero-bg {
+            background-image: linear-gradient(to bottom, rgba(248, 250, 252, 0.4) 0%, rgba(248, 250, 252, 1) 100%), url('https://i.ibb.co/fVktgPYR/image.png');
+        }
+
+        @media (pointer: coarse) {
+            .hero-bg { background-attachment: scroll !important; }
+        }
+
+        /* PRELOADER SCREEN */
+        #loading-screen {
+            position: fixed;
+            inset: 0;
+            z-index: 100;
+            background-color: #02040a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.4s ease, visibility 0.4s ease;
+        }
+        #loading-screen.fade-out { opacity: 0; visibility: hidden; pointer-events: none; }
 
         .reveal-hidden {
             opacity: 0;
             transform: translateY(20px);
-            transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
             will-change: transform, opacity;
         }
-
         .reveal-visible {
             opacity: 1;
             transform: translateY(0);
         }
-
-        .virtual-dock {
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            transition: all 0.3s ease;
-        }
-        .virtual-dock-item {
-            transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        
+        .dock-btn {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         }
         @media (pointer: fine) {
-            .virtual-dock-item:hover {
-                transform: scale(1.2) translateY(-4px);
+            .dock-btn:hover {
+                transform: scale(1.15) translateY(-6px);
             }
         }
     </style>
 </head>
-<body class="antialiased selection:bg-amber-500 selection:text-slate-900 relative">
+<body class="antialiased selection:bg-cyan-500 selection:text-slate-900 pb-20 md:pb-0">
 
-    <div class="live-interactive-canvas">
-        <div class="grid-mesh"></div>
-        <div class="glow-pulse"></div>
+    <div class="interactive-canvas">
+        <div class="mesh-grid"></div>
+        <div class="mouse-glow"></div>
     </div>
 
+    <!-- Web App Preloader -->
     <div id="loading-screen" class="flex flex-col space-y-6">
         <div class="relative w-32 h-32 flex items-center justify-center">
-            <img src="https://i.ibb.co/CpWcZsp6/image.png" alt="RKM Core Logo" class="w-24 h-24 object-contain rounded-xl animate-pulse">
-            <div class="absolute inset-0 border-2 border-t-amber-500 border-r-transparent border-b-amber-500 border-l-transparent rounded-full animate-spin"></div>
+            <img src="https://i.ibb.co/CpWcZsp6/image.png" alt="RKM Core Logo" class="w-20 h-20 object-contain rounded-xl animate-pulse">
+            <div class="absolute inset-0 border-2 border-t-cyan-500 border-r-transparent border-b-cyan-500 border-l-transparent rounded-full animate-spin"></div>
         </div>
         <div class="text-center space-y-1">
-            <p class="text-sm uppercase tracking-[0.3em] text-amber-500 font-bold animate-pulse">Loading Web Experience</p>
-            <p class="text-xs uppercase tracking-widest text-slate-500">Built By BeatLabs</p>
+            <p class="text-xs uppercase tracking-[0.4em] text-cyan-500 font-bold font-outfit animate-pulse">Initializing Portal</p>
+            <p class="text-[10px] uppercase tracking-widest text-slate-500 font-medium">Shivam Constructions Patna</p>
         </div>
     </div>
 
-    <div id="live-popup-notice-card" class="hidden fixed inset-0 z-50 bg-black/75 backdrop-blur-md flex items-center justify-center p-4 transition-all duration-300">
-        <div class="glass-panel w-full max-w-xl rounded-[2.5rem] p-6 sm:p-10 border border-amber-500/30 shadow-2xl relative space-y-6 text-center mac-opening-effect">
-            <div class="w-16 h-14 bg-amber-500/10 text-amber-400 rounded-2xl flex items-center justify-center text-2xl mx-auto border border-amber-500/20">
+    <!-- Live Urgent Announcement Popup -->
+    <div id="live-popup-notice-card" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4 transition-all duration-300">
+        <div class="glass-premium w-full max-w-xl rounded-[2.5rem] p-6 sm:p-10 border border-cyan-500/20 shadow-2xl relative space-y-6 text-center">
+            <div class="w-16 h-16 bg-cyan-500/10 text-cyan-500 rounded-2xl flex items-center justify-center text-3xl mx-auto border border-cyan-500/20">
                 <i class="fa-solid fa-bullhorn animate-pulse"></i>
             </div>
             <div class="space-y-4">
                 <div class="flex items-center justify-center gap-2 flex-wrap">
-                    <span id="popup-notice-tag" class="text-xs uppercase tracking-[0.2em] font-extrabold px-3 py-1 bg-amber-500/10 text-amber-400 rounded-full border border-amber-500/20">Category</span>
-                    <span id="popup-notice-time-badge" class="text-xs uppercase tracking-wider font-extrabold px-3 py-1 bg-purple-500/10 text-purple-400 rounded-full border border-purple-500/20">Execution Time</span>
+                    <span id="popup-notice-tag" class="text-xs uppercase tracking-[0.2em] font-extrabold px-3.5 py-1 bg-cyan-500/10 text-cyan-400 rounded-full border border-cyan-500/20">Category</span>
+                    <span id="popup-notice-time-badge" class="text-xs uppercase tracking-wider font-extrabold px-3.5 py-1 bg-purple-500/10 text-purple-400 rounded-full border border-purple-500/20">Time Info</span>
                 </div>
-                <h3 id="popup-notice-title" class="text-2xl sm:text-4xl font-black tracking-tight text-white pt-1 leading-tight">Announcement Title</h3>
-                <div class="p-5 bg-white/[0.02] border border-white/5 rounded-2xl text-left">
-                    <span class="text-xs uppercase font-bold text-slate-500 tracking-wider block mb-2">Detailed Reason / Description:</span>
-                    <p id="popup-notice-body" class="text-sm sm:text-base text-slate-200 font-medium leading-relaxed">Detailed summary parameters pulling dynamically straight from real-time instance nodes.</p>
+                <h3 id="popup-notice-title" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white dark:text-white text-slate-900 leading-tight font-outfit">Announcement Title</h3>
+                <div class="p-5 bg-white/[0.02] dark:bg-black/20 border border-white/5 rounded-2xl text-left">
+                    <span class="text-[10px] uppercase font-bold text-slate-500 tracking-widest block mb-2 font-outfit">Description Details:</span>
+                    <p id="popup-notice-body" class="text-sm text-slate-300 dark:text-slate-300 text-slate-600 font-medium leading-relaxed">Announcement contents streaming dynamically from server matrix.</p>
                 </div>
             </div>
-            <button onclick="closeLiveNoticePopup()" class="w-full py-4 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 text-sm font-bold uppercase tracking-wider rounded-xl transition shadow-lg shadow-amber-500/10 focus:outline-none">
-                <i class="fa-solid fa-circle-xmark mr-2"></i> Close Announcement Notice
+            <button onclick="closeLiveNoticePopup()" class="w-full py-4 bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-slate-950 text-sm font-bold uppercase tracking-wider rounded-xl transition shadow-lg focus:outline-none">
+                <i class="fa-solid fa-circle-xmark mr-2"></i> Close Notice
             </button>
         </div>
     </div>
 
-    <div id="top-alert-banner" class="hidden fixed top-0 left-0 w-full z-50 bg-red-950/90 border-b border-red-500/30 backdrop-blur-md px-6 py-4 text-center text-red-200 shadow-xl transition-all duration-300">
-        <div class="max-w-7xl mx-auto flex items-center justify-center space-x-4">
-            <span class="inline-flex items-center px-3 py-1 rounded bg-red-500 text-white text-xs font-extrabold tracking-wider uppercase animate-pulse shrink-0">
-                Notice Update
+    <!-- Top Alert Sync Banner -->
+    <div id="top-alert-banner" class="hidden fixed top-0 left-0 w-full z-50 bg-rose-950/90 border-b border-rose-500/30 backdrop-blur-md px-6 py-3.5 text-center text-rose-200 shadow-xl transition-all duration-300">
+        <div class="max-w-7xl mx-auto flex items-center justify-center space-x-3 text-xs sm:text-sm font-semibold tracking-wide">
+            <span class="inline-flex items-center px-2 py-0.5 rounded bg-rose-600 text-white text-[9px] font-black tracking-widest uppercase animate-pulse">
+                Live Broadcast
             </span>
-            <p id="top-alert-text" class="text-sm sm:text-base font-bold tracking-wide leading-tight text-red-100 truncate">
-                Synchronizing with live community network...
+            <p id="top-alert-text" class="truncate text-rose-100 max-w-2xl">
+                Synchronizing bulletins stream...
             </p>
         </div>
     </div>
 
-    <nav id="main-navigation" class="fixed top-0 left-0 w-full z-40 glass-base border-b px-4 sm:px-8 lg:px-16 py-5 flex items-center justify-between transition-all duration-300">
-        <div class="flex flex-col">
-            <span class="text-2xl sm:text-3xl font-black tracking-tight dark:text-white text-slate-900">RKM <span class="text-amber-500">SQUARE</span></span>
-            <span class="text-xs uppercase tracking-[0.2em] text-slate-400 font-semibold mt-0.5">By Shivam Constructions</span>
-        </div>
-        <div class="flex items-center space-x-3 sm:space-x-5 relative">
-            <button onclick="toggleThemeSystem()" class="p-3 rounded-xl bg-amber-500/10 border border-amber-500/20 hover:bg-amber-500/20 text-amber-500 transition">
-                <i id="theme-toggle-icon" class="fa-solid fa-moon text-base"></i>
-            </button>
+    <!-- Capsule Sticky Header Navigation -->
+    <nav id="main-navigation" class="fixed top-0 left-0 w-full z-40 px-4 sm:px-8 lg:px-16 py-4 flex items-center justify-between transition-all duration-300">
+        <div class="glass-premium border rounded-3xl w-full max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex flex-col">
+                <span class="text-lg sm:text-2xl font-black tracking-tight font-outfit">RKM <span class="text-cyan-500">SQUARE</span></span>
+                <span class="text-[9px] uppercase tracking-[0.25em] text-slate-400 font-bold leading-none mt-0.5">Shivam Constructions</span>
+            </div>
             
-            <div class="relative inline-block">
-                <button onclick="toggleNotificationHubDropdown()" class="p-3 rounded-xl bg-white/5 border border-white/10 text-slate-400 hover:text-amber-500 transition relative focus:outline-none">
-                    <i class="fa-solid fa-bell text-base"></i>
-                    <span class="absolute top-1 right-1 w-4 h-4 bg-red-500 text-white text-[9px] font-black rounded-full flex items-center justify-center border border-brandDark">1</span>
+            <div class="flex items-center space-x-3 relative">
+                <button onclick="toggleThemeSystem()" class="p-3 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 hover:bg-cyan-500/20 text-cyan-500 transition">
+                    <i id="theme-toggle-icon" class="fa-solid fa-moon text-base"></i>
                 </button>
-                <div id="notification-hub-dropdown" class="hidden absolute right-0 mt-3 w-80 sm:w-96 glass-panel rounded-2xl border p-4 shadow-2xl space-y-3 z-50 text-left">
-                    <div class="flex items-center justify-between border-b dark:border-white/10 border-slate-200 pb-2">
-                        <span class="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5"><i class="fa-solid fa-bell-ring text-red-400"></i> Notifications</span>
-                        <button onclick="markNotificationsAsRead()" class="text-[10px] text-amber-500 hover:text-amber-400 font-bold uppercase tracking-wider transition">Mark all read</button>
-                    </div>
-                    <div class="bg-amber-500/5 border border-amber-500/20 rounded-xl p-4 flex gap-3 items-start relative overflow-hidden group hover:bg-amber-500/10 transition duration-300">
-                        <div class="p-2 bg-amber-500/10 text-amber-500 rounded-lg text-sm shrink-0 mt-0.5">
-                            <i class="fa-solid fa-house-chimney-user"></i>
+                
+                <!-- Notification Bell -->
+                <div class="relative inline-block">
+                    <button onclick="toggleNotificationHubDropdown()" class="p-3 rounded-2xl bg-white/5 border border-white/10 text-slate-400 hover:text-cyan-500 transition relative focus:outline-none">
+                        <i class="fa-solid fa-bell text-base"></i>
+                        <span class="absolute top-1 right-1 w-4 h-4 bg-rose-500 text-white text-[9px] font-black rounded-full flex items-center justify-center border border-brandDark">1</span>
+                    </button>
+                    <button onclick="toggleAdminViewGate()" class="inline-flex items-center gap-2 text-lg font-bold uppercase tracking-wider text-white glass-premium border border-cyan-500/20 rounded-xl py-2 px-4 transition-colors hover:bg-cyan-500/20">
+                        <i class="fa-solid fa-key text-xl"></i>
+                        <span>Admin Panel</span>
+                    </button>
+                    <div id="notification-hub-dropdown" class="hidden absolute right-0 mt-3 w-80 sm:w-96 glass-premium rounded-2xl border p-4 shadow-2xl space-y-3 z-50 text-left">
+                        <div class="flex items-center justify-between border-b dark:border-white/10 border-slate-200 pb-2">
+                            <span class="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5 font-outfit"><i class="fa-solid fa-bell-ring text-rose-400"></i> Notifications</span>
+                            <button onclick="markNotificationsAsRead()" class="text-[10px] text-cyan-500 hover:text-cyan-400 font-bold uppercase tracking-wider transition">Mark all read</button>
                         </div>
-                        <div class="space-y-1">
-                            <h4 class="text-xs sm:text-sm font-bold text-white leading-tight">Flats Available for Rent! 🔑</h4>
-                            <p class="text-[11px] sm:text-xs text-slate-400 leading-normal font-medium">Configurations open for beautifully finished 3 BHK & 4 BHK units layout options setup on main Khagaul Road terminal.</p>
-                            <div class="flex items-center justify-between pt-2">
-                                <a href="contact.html" onclick="toggleNotificationHubDropdown()" class="text-[10px] font-extrabold uppercase tracking-wide bg-amber-500 text-slate-950 px-2.5 py-1 rounded hover:bg-amber-400 transition">Apply Now</a>
-                                <span class="text-[9px] font-mono text-slate-500 font-medium">Just now</span>
+                        <div class="bg-cyan-500/5 border border-cyan-500/20 rounded-xl p-4 flex gap-3 items-start relative overflow-hidden group hover:bg-cyan-500/10 transition duration-300">
+                            <div class="p-2 bg-cyan-500/10 text-cyan-500 rounded-lg text-sm shrink-0 mt-0.5">
+                                <i class="fa-solid fa-house-chimney-user"></i>
+                            </div>
+                            <div class="space-y-1">
+                                <h4 class="text-xs sm:text-sm font-bold text-white dark:text-white text-slate-900 leading-tight">Flats Available for Rent! 🔑</h4>
+                                <p class="text-[11px] text-slate-400 dark:text-slate-400 text-slate-600 leading-normal font-medium">3 BHK & 4 BHK units open for leasing. Direct landlord deal with zero broker fees on Khagaul Road.</p>
+                                <div class="flex items-center justify-between pt-2">
+                                    <a href="contact.html" onclick="toggleNotificationHubDropdown()" class="text-[10px] font-extrabold uppercase tracking-wide bg-cyan-500 text-slate-950 px-2.5 py-1 rounded hover:bg-cyan-400 transition">Apply Now</a>
+                                    <span class="text-[9px] font-mono text-slate-500 font-medium">Just now</span>
+                                </div>
                             </div>
                         </div>
+                        <a href="#dashboard" onclick="toggleNotificationHubDropdown()" class="block text-center text-[10px] font-bold text-cyan-500 hover:underline pt-1 uppercase tracking-wider">View all announcements →</a>
                     </div>
-                    <a href="#dashboard" onclick="toggleNotificationHubDropdown()" class="block text-center text-[11px] font-bold text-amber-500 hover:underline pt-1">View all announcements →</a>
                 </div>
-            </div>
 
-            <div class="hidden md:flex items-center space-x-1.5 text-amber-500/80">
-                <span class="text-[10px] font-extrabold uppercase tracking-widest">Open Menu</span>
-                <i class="fa-solid fa-arrow-right-long text-xs shrink-0"></i>
-            </div>
-            <button onclick="toggleDrawerMenu()" aria-label="Toggle Navigation Stack" class="p-3 rounded-xl bg-white/5 border border-white/10 dark:text-white text-slate-900 transition focus:outline-none relative">
-                <div id="hamburger-bars-container" class="space-y-2 w-6">
-                    <span class="block h-0.5 bg-current transition-all duration-300"></span>
-                    <span class="block h-0.5 bg-current transition-all duration-300"></span>
-                    <span class="block h-0.5 bg-amber-500 transition-all duration-300"></span>
+                <div class="hidden md:flex items-center space-x-1 text-cyan-500/80">
+                    <span class="text-[10px] font-extrabold uppercase tracking-widest font-outfit">Open Menu</span>
+                    <i class="fa-solid fa-arrow-right-long text-[10px]"></i>
                 </div>
-            </button>
+                
+                <button onclick="toggleDrawerMenu()" aria-label="Menu Switcher" class="p-3 rounded-2xl bg-white/5 border border-white/10 dark:text-white text-slate-900 transition focus:outline-none relative">
+                    <div id="hamburger-bars-container" class="space-y-1.5 w-6">
+                        <span class="block h-0.5 bg-current transition-all duration-300"></span>
+                        <span class="block h-0.5 bg-current transition-all duration-300"></span>
+                        <span class="block h-0.5 bg-cyan-500 transition-all duration-300"></span>
+                    </div>
+                </button>
+            </div>
         </div>
     </nav>
 
-    <div id="menu-drawer" class="fixed inset-y-0 right-0 w-full sm:w-[450px] z-40 glass-panel border-l p-8 sm:p-12 pt-36 flex flex-col justify-between shadow-2xl">
+    <!-- Slideout Side Drawer -->
+    <div id="menu-drawer" class="fixed inset-y-0 right-0 w-full sm:w-[420px] z-40 glass-premium border-l p-8 sm:p-12 pt-36 flex flex-col justify-between shadow-2xl">
         <div class="space-y-10">
-            <p class="text-xs font-bold uppercase tracking-[0.2em] text-amber-500">Navigation</p>
-            <div class="space-y-6 font-bold text-3xl sm:text-5xl tracking-tight">
-                <a href="index.html" class="block text-amber-500 dark:text-white transition-colors py-1">Home</a>
-                <a href="about.html" class="block text-slate-400 hover:text-amber-500 dark:hover:text-white transition-colors py-1">About</a>
-                <a href="contact.html" class="block text-slate-400 hover:text-amber-500 dark:hover:text-white transition-colors py-1">Contact</a>
-                <a href="gallery.html" class="block text-slate-400 hover:text-amber-500 dark:hover:text-white transition-colors py-1">Gallery</a>
-                <a href="developer.html" class="block text-slate-400 hover:text-amber-500 dark:hover:text-white transition-colors py-1">Developer</a>
+            <p class="text-xs font-bold uppercase tracking-[0.25em] text-cyan-500 font-outfit">Navigation Matrix</p>
+            <div class="space-y-6 font-bold text-3xl sm:text-4xl tracking-tight font-outfit">
+                <a href="index.html" class="block text-cyan-500 dark:text-white transition-colors py-1">Home</a>
+                <a href="about.html" class="block text-slate-400 hover:text-cyan-500 dark:hover:text-white transition-colors py-1">About</a>
+                <a href="contact.html" class="block text-slate-400 hover:text-cyan-500 dark:hover:text-white transition-colors py-1">Contact</a>
+                <a href="gallery.html" class="block text-slate-400 hover:text-cyan-500 dark:hover:text-white transition-colors py-1">Gallery</a>
+                <a href="developer.html" class="block text-slate-400 hover:text-cyan-500 dark:hover:text-white transition-colors py-1">Developer</a>
             </div>
         </div>
         <div class="pt-8 border-t border-white/5 space-y-2">
-            <span class="text-xs uppercase tracking-widest text-slate-500 block font-bold">Location</span>
-            <p class="text-sm sm:text-base text-slate-400 leisure-relaxed">Khagaul-Anisabad Road, New Sabajpura, Patna, Bihar (801105)</p>
+            <span class="text-xs uppercase tracking-widest text-slate-500 block font-bold font-outfit">Location Desk</span>
+            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed font-semibold">Khagaul-Anisabad Road, New Sabajpura, Patna, Bihar (801105)</p>
         </div>
     </div>
 
-    <section class="hero-viewport min-h-[90vh] sm:min-h-screen flex flex-col justify-center px-4 sm:px-8 lg:px-16 pt-40 pb-20">
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-[92vh] sm:min-h-screen flex flex-col justify-center px-4 sm:px-8 lg:px-16 pt-36 pb-20 relative">
         <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center flex-grow">
             
             <div class="lg:col-span-7 space-y-8 text-left">
                 <div class="flex flex-wrap gap-2.5">
-                    <span class="inline-flex items-center px-3.5 py-1.5 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 uppercase tracking-wider">
-                        Ready to Move (Since July 2021)
+                    <span class="inline-flex items-center px-3.5 py-1.5 rounded-xl text-[10px] font-bold bg-emerald-500/10 text-emerald-400 border border-cyan-500/20 uppercase tracking-widest">
+                        Ready to Move
                     </span>
-                    <span class="inline-flex items-center px-3.5 py-1.5 rounded-full text-xs font-bold bg-blue-500/10 text-blue-400 border border-blue-500/20 uppercase tracking-wider">
-                        Mixed-Use Complex
+                    <span class="inline-flex items-center px-3.5 py-1.5 rounded-xl text-[10px] font-bold bg-blue-500/10 text-blue-400 border border-blue-500/20 uppercase tracking-widest">
+                        RERA Bihar Approved
                     </span>
-                    <span class="inline-flex items-center px-3.5 py-1.5 rounded-full text-xs font-bold bg-amber-500/10 text-amber-400 border border-amber-500/20 uppercase tracking-wider">
+                    <span class="inline-flex items-center px-3.5 py-1.5 rounded-xl text-[10px] font-bold bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 uppercase tracking-widest">
                         Zero Brokerage Fees
                     </span>
                 </div>
                 
-                <div class="relative min-h-[140px] sm:min-h-[220px] flex items-center">
-                    <h1 id="mac-flight-title" class="mac-text-flight text-4xl sm:text-6xl lg:text-8xl font-extrabold tracking-tight dark:text-white text-slate-900 leading-tight">
-                        Modern Living & Dining on <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">Khagaul Road</span>
+                <div class="relative min-h-[140px] sm:min-h-[200px] flex items-center">
+                    <h1 id="mac-flight-title" class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight dark:text-white text-slate-900 leading-tight font-outfit">
+                        Modern Living & <br>Dining on <span class="gradient-text-amber">Khagaul Road</span>
                     </h1>
                 </div>
 
-                <p class="text-base sm:text-xl lg:text-2xl text-slate-400 dark:text-slate-300 max-w-3xl leading-relaxed font-medium">
+                <p class="text-sm sm:text-base lg:text-lg text-slate-400 dark:text-slate-300 max-w-2xl leading-relaxed font-medium">
                     Located on the Khagaul-Anisabad Road at New Sabajpura, RKM Square combines premium residential apartments with a vibrant commercial ground tier format layout. Developed to modern structural benchmarks by Shivam Constructions Patna.
                 </p>
                 <div class="pt-4 flex flex-wrap gap-4 sm:gap-6">
-                    <a href="#floorplans" class="px-8 py-4 rounded-xl text-sm font-bold uppercase tracking-wider bg-amber-500 text-slate-950 hover:bg-amber-400 transition shadow-lg shadow-amber-500/20">
-                        View Floor Plans
+                    <a href="#floorplans" class="px-8 py-4 rounded-2xl text-xs font-bold uppercase tracking-widest bg-gradient-to-r from-cyan-500 to-indigo-600 text-slate-950 hover:opacity-90 transition shadow-lg shadow-cyan-500/15">
+                        Explore Floor Plans
                     </a>
-                    <a href="#dashboard" class="px-8 py-4 rounded-xl text-sm font-bold uppercase tracking-wider glass-base hover:bg-white/5 transition text-slate-300">
-                        Resident Utilities
+                    <a href="#dashboard" class="px-8 py-4 rounded-2xl text-xs font-bold uppercase tracking-widest glass-capsule hover:bg-white/10 transition text-slate-300 dark:text-slate-200 text-slate-800">
+                        Resident utilities
                     </a>
                 </div>
             </div>
             
-            <div class="lg:col-span-5 w-full mac-opening-effect" style="animation-delay: 0.1s;">
-                <div class="glass-panel rounded-[2.5rem] p-8 sm:p-12 space-y-6 sm:space-y-8">
+            <!-- Hero Side Card -->
+            <div class="lg:col-span-5 w-full">
+                <div class="glass-premium rounded-[2.5rem] p-8 sm:p-10 space-y-6 sm:space-y-8 border border-white/10">
                     <div class="flex justify-between items-center">
                         <div>
-                            <h3 class="text-xl sm:text-3xl font-extrabold dark:text-white text-slate-900 tracking-tight">Project Profile</h3>
-                            <p class="text-sm text-slate-400 mt-1">RERA Bihar Approved Architecture</p>
+                            <h3 class="text-xl sm:text-2xl font-extrabold dark:text-white text-slate-900 tracking-tight font-outfit">Project Profile</h3>
+                            <p class="text-[11px] text-slate-400 mt-1 font-semibold">Khagaul-Anisabad Transit Corridor</p>
                         </div>
-                        <span class="px-3 py-1.5 rounded-lg bg-emerald-500/10 text-emerald-400 text-xs font-extrabold tracking-widest uppercase border border-emerald-500/20">Verified</span>
+                        <span class="px-3 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 text-[10px] font-black tracking-widest uppercase border border-cyan-500/20">Verified</span>
                     </div>
-                    <div class="space-y-4 pt-2 border-t dark:border-white/5 border-slate-200 text-sm sm:text-base font-medium leading-relaxed">
+                    
+                    <div class="space-y-4 pt-2 border-t dark:border-white/5 border-slate-200 text-sm font-medium leading-relaxed">
                         <div class="flex justify-between gap-6">
                             <span class="text-slate-400">Address</span>
-                            <span class="dark:text-slate-200 text-slate-800 text-right font-semibold">New Sabajpura, Khagaul, Patna</span>
+                            <span class="dark:text-slate-200 text-slate-800 text-right font-bold">New Sabajpura, Khagaul, Patna</span>
                         </div>
                         <div class="flex justify-between">
-                            <span class="text-slate-400">Pin Code</span>
-                            <span class="dark:text-slate-200 text-slate-800 font-mono font-semibold">801105</span>
+                            <span class="text-slate-400">Postal Index Code</span>
+                            <span class="dark:text-slate-200 text-slate-800 font-mono font-bold">801105</span>
                         </div>
                         <div class="flex justify-between">
                             <span class="text-slate-400">Configurations</span>
-                            <span class="dark:text-slate-200 text-slate-800 font-bold text-amber-500 text-right">3 & 4 BHK Apartments</span>
+                            <span class="dark:text-slate-200 text-slate-800 font-bold text-cyan-500 text-right font-outfit">3 & 4 BHK Layouts</span>
                         </div>
                     </div>
+                    
                     <div class="space-y-4 pt-6 border-t dark:border-white/5 border-slate-200">
-                        <span class="text-xs uppercase font-extrabold tracking-wider text-slate-400 block">Rental Pricing Schedule</span>
+                        <span class="text-[10px] uppercase font-bold tracking-widest text-slate-500 block font-outfit">Rental Pricing Schedule</span>
                         <div class="grid grid-cols-2 gap-4">
-                            <div class="bg-black/40 rounded-xl p-4 border border-white/5 space-y-1">
-                                <span class="text-xs text-slate-500 font-bold block uppercase tracking-wider">3 BHK Layouts</span>
-                                <span class="text-xl sm:text-2xl font-extrabold text-amber-500">₹15,000 <span class="text-xs font-normal text-slate-400">/mo</span></span>
+                            <div class="bg-black/35 dark:bg-black/45 rounded-2xl p-4 border border-white/5 space-y-1">
+                                <span class="text-[10px] text-slate-500 font-bold block uppercase tracking-wider font-outfit">3 BHK Layout</span>
+                                <span class="rent-3bhk-val text-lg sm:text-xl font-black text-cyan-500 font-outfit">₹15,000 <span class="text-[10px] font-normal text-slate-400">/mo</span></span>
                             </div>
-                            <div class="bg-black/40 rounded-xl p-4 border border-white/5 space-y-1">
-                                <span class="text-xs text-slate-500 font-bold block uppercase tracking-wider">4 BHK Layouts</span>
-                                <span class="text-xl sm:text-2xl font-extrabold text-amber-500">₹20,000 <span class="text-xs font-normal text-slate-400">/mo</span></span>
+                            <div class="bg-black/35 dark:bg-black/45 rounded-2xl p-4 border border-white/5 space-y-1">
+                                <span class="text-[10px] text-slate-500 font-bold block uppercase tracking-wider font-outfit">4 BHK Layout</span>
+                                <span class="rent-4bhk-val text-lg sm:text-xl font-black text-cyan-500 font-outfit">₹20,000 <span class="text-[10px] font-normal text-slate-400">/mo</span></span>
                             </div>
                         </div>
                     </div>
@@ -438,178 +527,265 @@
 
         </div>
 
-        <div class="w-full flex justify-center pt-12">
-            <div class="virtual-dock rounded-2xl px-6 py-3 flex items-center space-x-6">
-                <button onclick="triggerMacFlight('primary')" class="virtual-dock-item text-center focus:outline-none group">
-                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors shadow-lg">
+        <!-- macOS Dock Slider controls -->
+        <div class="w-full flex justify-center pt-16">
+            <div class="glass-capsule rounded-2xl px-6 py-3 flex items-center space-x-6">
+                <button onclick="triggerMacFlight('primary')" class="dock-btn text-center focus:outline-none group">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-500 group-hover:bg-cyan-500 group-hover:text-slate-950 transition shadow-lg">
                         <i class="fa-solid fa-hotel text-lg"></i>
                     </div>
-                    <span class="text-[10px] font-mono mt-1 block opacity-60">Layout A</span>
+                    <span class="text-[9px] font-mono mt-1.5 block opacity-50 font-semibold uppercase tracking-wider">Layout A</span>
                 </button>
-                <button onclick="triggerMacFlight('secondary')" class="virtual-dock-item text-center focus:outline-none group">
-                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 group-hover:bg-purple-500 group-hover:text-white transition-colors shadow-lg">
+                <button onclick="triggerMacFlight('secondary')" class="dock-btn text-center focus:outline-none group">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 group-hover:bg-purple-500 group-hover:text-white transition shadow-lg">
                         <i class="fa-solid fa-city text-lg"></i>
                     </div>
-                    <span class="text-[10px] font-mono mt-1 block opacity-60">Layout B</span>
+                    <span class="text-[9px] font-mono mt-1.5 block opacity-50 font-semibold uppercase tracking-wider">Layout B</span>
                 </button>
-                <button onclick="triggerMacFlight('tertiary')" class="virtual-dock-item text-center focus:outline-none group">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 group-hover:bg-emerald-500 group-hover:text-slate-950 transition-colors shadow-lg">
+                <button onclick="triggerMacFlight('tertiary')" class="dock-btn text-center focus:outline-none group">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 group-hover:bg-emerald-500 group-hover:text-slate-950 transition shadow-lg">
                         <i class="fa-solid fa-map-location-dot text-lg"></i>
                     </div>
-                    <span class="text-[10px] font-mono mt-1 block opacity-60">Layout C</span>
+                    <span class="text-[9px] font-mono mt-1.5 block opacity-50 font-semibold uppercase tracking-wider">Layout C</span>
                 </button>
             </div>
         </div>
     </section>
 
-    <section id="dashboard" class="reveal-hidden py-20 sm:py-28 max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 border-t border-b dark:border-white/5 border-slate-200 space-y-12">
+    <!-- Resident Dashboard Component Area -->
+    <section id="dashboard" class="reveal-hidden py-20 sm:py-28 max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 border-t border-b dark:border-white/5 border-slate-200 space-y-12 relative z-10">
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
-            <div class="text-left max-w-2xl space-y-2">
-                <span class="text-xs font-bold uppercase tracking-wider text-amber-500">Community Services</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight dark:text-white text-slate-900 leading-tight">Resident Dashboard</h2>
-                <p class="text-sm sm:text-base text-slate-400 font-medium">Access official announcements and log system suggestions or complaints securely.</p>
+            <div class="text-left space-y-2">
+                <span class="text-xs font-bold uppercase tracking-wider text-cyan-500 font-outfit">Community Utilities</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight dark:text-white text-slate-900 leading-tight font-outfit">Resident Service Portal</h2>
+                <p class="text-sm text-slate-400 font-medium">Access cloud notice streams or lodge suggestions & grievances directly.</p>
             </div>
-            <button onclick="toggleAdminViewGate()" class="flex items-center justify-center space-x-3 px-6 py-4.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black uppercase text-sm tracking-wider rounded-2xl shadow-xl shadow-amber-500/10 transition group transform active:scale-95 shrink-0">
-                <i class="fa-solid fa-user-gear text-lg group-hover:rotate-45 transition-transform duration-300"></i>
-                <span>⚠️ Open Admin Control Console</span>
+            <button onclick="toggleAdminViewGate()" class="flex items-center justify-center space-x-3 px-6 py-4.5 bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-slate-950 font-bold uppercase text-xs tracking-wider rounded-2xl shadow-xl transition transform active:scale-95 shrink-0">
+                <i class="fa-solid fa-user-gear text-base group-hover:rotate-45 transition-transform duration-300"></i>
+                <span>Open Admin Console</span>
             </button>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             
             <div class="lg:col-span-6 space-y-6">
-                <div id="password-gate-panel" class="hidden glass-panel rounded-3xl p-6 border border-amber-500/20 space-y-4 shadow-xl">
-                    <h4 class="text-sm font-bold uppercase tracking-widest text-amber-500 text-center">Administrative Authentication</h4>
+                <!-- Administrative Login gate -->
+                <div id="password-gate-panel" class="hidden glass-premium rounded-3xl p-6 sm:p-8 border border-cyan-500/20 space-y-4 shadow-xl">
+                    <h4 class="text-sm font-bold uppercase tracking-widest text-cyan-500 text-center font-outfit">Administrative Access Validation</h4>
                     <div class="space-y-3">
-                        <input type="password" id="gate-password-input" placeholder="Enter Admin Password" class="w-full text-center bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-amber-500 font-semibold tracking-wider">
-                        <button onclick="verifyAdminCredentials()" class="w-full py-3 bg-amber-500 text-slate-950 font-bold uppercase tracking-wider rounded-xl hover:bg-amber-400 transition text-sm">Authorize Session</button>
+                        <input type="password" id="gate-password-input" placeholder="Enter System Password" class="w-full text-center bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-cyan-500 font-semibold tracking-widest font-mono">
+                        <button onclick="verifyAdminCredentials()" class="w-full py-3 bg-gradient-to-r from-cyan-500 to-indigo-600 text-slate-950 font-bold uppercase tracking-widest rounded-xl hover:opacity-90 transition text-xs">Verify Credentials</button>
                     </div>
                 </div>
 
-                <div id="admin-panel" class="hidden glass-panel rounded-3xl p-6 border border-emerald-500/20 space-y-5 shadow-xl">
-                    <div class="flex items-center justify-between border-b border-white/10 pb-3">
-                        <h4 class="text-sm font-extrabold text-emerald-500 flex items-center gap-2"><i class="fa-solid fa-terminal"></i> Bulletin Manager</h4>
-                        <button onclick="deauthenticateAdmin()" class="text-xs font-bold uppercase tracking-wider text-rose-500 hover:text-rose-400">End Session</button>
+                <!-- Tabbed Dashboard Admin Console -->
+                <div id="admin-panel" class="hidden glass-premium rounded-3xl p-6 sm:p-8 border border-cyan-500/20 space-y-6 shadow-xl">
+                    <div class="flex items-center justify-between border-b border-white/10 pb-3 flex-wrap gap-2">
+                        <h4 class="text-sm font-extrabold text-emerald-500 flex items-center gap-2">
+                            <i class="fa-solid fa-gauge-high"></i> Administrative Control Console
+                        </h4>
+                        <button onclick="deauthenticateAdmin()" class="text-[10px] font-bold uppercase tracking-widest text-rose-500 hover:text-rose-400">End Session</button>
                     </div>
-                    <div class="space-y-4 text-sm font-medium">
+
+                    <!-- Tabs Navigation -->
+                    <div class="flex border-b border-white/5 pb-1 gap-2 overflow-x-auto">
+                        <button onclick="selectAdminTab('notices')" id="admin-tab-btn-notices" class="px-4 py-2 text-xs font-bold uppercase tracking-wider border-b-2 border-cyan-500 text-cyan-500 transition focus:outline-none shrink-0">
+                            <i class="fa-solid fa-bullhorn mr-1.5"></i> Broadcast Notice
+                        </button>
+                        <button onclick="selectAdminTab('feedbacks')" id="admin-tab-btn-feedbacks" class="px-4 py-2 text-xs font-bold uppercase tracking-wider border-b-2 border-transparent text-slate-400 hover:text-slate-200 transition focus:outline-none shrink-0">
+                            <i class="fa-solid fa-comments mr-1.5"></i> Grievances
+                        </button>
+                        <button onclick="selectAdminTab('settings')" id="admin-tab-btn-settings" class="px-4 py-2 text-xs font-bold uppercase tracking-wider border-b-2 border-transparent text-slate-400 hover:text-slate-200 transition focus:outline-none shrink-0">
+                            <i class="fa-solid fa-gears mr-1.5"></i> Config Settings
+                        </button>
+                    </div>
+
+                    <!-- Tab 1: Notices Manager -->
+                    <div id="admin-tab-pane-notices" class="space-y-4 text-sm font-medium">
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div class="space-y-1">
-                                <label class="text-xs font-bold uppercase tracking-wider text-slate-400">Notice Category</label>
-                                <input type="text" id="admin-notice-tag" placeholder="Notice Category" class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-amber-500">
+                                <label class="text-xs font-bold uppercase tracking-wider text-slate-400">Category Tag</label>
+                                <input type="text" id="admin-notice-tag" placeholder="Category (e.g. General)" class="w-full bg-black/35 border border-white/10 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-cyan-500 text-xs">
                             </div>
                             <div class="space-y-1">
-                                <label class="text-xs font-bold uppercase tracking-wider text-slate-400">Announcement Title</label>
-                                <input type="text" id="admin-notice-title" placeholder="Announcement Title" class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-amber-500">
+                                <label class="text-xs font-bold uppercase tracking-wider text-slate-400">Title Header</label>
+                                <input type="text" id="admin-notice-title" placeholder="Announcement Title" class="w-full bg-black/35 border border-white/10 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-cyan-500 text-xs">
                             </div>
                         </div>
                         <div class="space-y-1">
-                            <label class="text-xs font-bold uppercase tracking-wider text-slate-400">Event Time</label>
-                            <input type="text" id="admin-notice-time" placeholder="Event Time (e.g., 10:00 AM to 02:00 PM, June 25)" class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500">
+                            <label class="text-xs font-bold uppercase tracking-wider text-slate-400">Schedule Time / Duration</label>
+                            <input type="text" id="admin-notice-time" placeholder="Event Time (e.g. 10:00 AM, June 25)" class="w-full bg-black/35 border border-white/10 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-cyan-500 text-xs">
                         </div>
                         <div class="space-y-1">
-                            <label class="text-xs font-bold uppercase tracking-wider text-slate-400">Detailed Description / Reason</label>
-                            <textarea id="admin-notice-body" rows="3" placeholder="Provide complete notice instructions..." class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-amber-500"></textarea>
+                            <label class="text-xs font-bold uppercase tracking-wider text-slate-400">Notice Body Context</label>
+                            <textarea id="admin-notice-body" rows="3" placeholder="Provide complete notice statement parameters..." class="w-full bg-black/35 border border-white/10 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-cyan-500 text-xs"></textarea>
                         </div>
-                        <div class="grid grid-cols-2 gap-3">
-                            <button onclick="dispatchCloudAnnouncement()" class="py-3.5 bg-emerald-500 text-slate-950 font-bold uppercase tracking-wider rounded-xl hover:bg-emerald-400 transition text-xs shadow-md">Broadcast Notice</button>
-                            <button onclick="prepareWhatsAppBroadcast()" class="py-3.5 bg-green-600 text-white font-bold uppercase tracking-wider rounded-xl hover:bg-green-500 transition text-xs shadow-md">Share to WA Group</button>
+                        <div class="grid grid-cols-2 gap-3 pt-2">
+                            <button onclick="dispatchCloudAnnouncement()" class="py-3 bg-emerald-500 text-slate-950 font-bold uppercase tracking-wider rounded-xl hover:bg-emerald-400 transition text-xs shadow-md">Broadcast Notice</button>
+                            <button onclick="prepareWhatsAppBroadcast()" class="py-3 bg-green-600 text-white font-bold uppercase tracking-wider rounded-xl hover:bg-green-500 transition text-xs shadow-md">WhatsApp Group</button>
                         </div>
                     </div>
+
+                    <!-- Tab 2: Feedback & Grievances Viewer -->
+                    <div id="admin-tab-pane-feedbacks" class="hidden space-y-4">
+                        <div class="flex items-center justify-between pb-2 border-b border-white/5">
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Active Complaints & Suggestions</span>
+                            <span class="text-[10px] font-mono text-emerald-400">Real-time Stream</span>
+                        </div>
+                        <div id="admin-tickets-container" class="space-y-3 max-h-[300px] overflow-y-auto pr-1">
+                            <p class="text-xs text-slate-500 italic text-center py-4">No active suggestions or complaints logged.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tab 3: Rent & Guard settings -->
+                    <form id="admin-tab-pane-settings" onsubmit="saveRentSettings(event)" class="hidden space-y-4 text-sm font-medium">
+                        <div class="flex items-center justify-between pb-2 border-b border-white/5">
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Configure System Parameters</span>
+                            <span class="text-[10px] font-mono text-cyan-500">Live Client sync</span>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="space-y-1">
+                                <label class="text-xs font-bold uppercase tracking-wider text-slate-400">3 BHK Monthly Rent (₹)</label>
+                                <input type="number" id="setting-rent-3bhk" required class="w-full bg-black/35 border border-white/10 rounded-xl px-4 py-2 text-white focus:outline-none focus:border-cyan-500 text-xs">
+                            </div>
+                            <div class="space-y-1">
+                                <label class="text-xs font-bold uppercase tracking-wider text-slate-400">3 BHK Status</label>
+                                <select id="setting-status-3bhk" class="w-full bg-brandCardDark border border-white/10 rounded-xl px-3 py-2 text-white focus:outline-none focus:border-cyan-500 text-xs cursor-pointer">
+                                    <option value="Available">Available</option>
+                                    <option value="Fully Occupied">Fully Occupied</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="space-y-1">
+                                <label class="text-xs font-bold uppercase tracking-wider text-slate-400">4 BHK Monthly Rent (₹)</label>
+                                <input type="number" id="setting-rent-4bhk" required class="w-full bg-black/35 border border-white/10 rounded-xl px-4 py-2 text-white focus:outline-none focus:border-cyan-500 text-xs">
+                            </div>
+                            <div class="space-y-1">
+                                <label class="text-xs font-bold uppercase tracking-wider text-slate-400">4 BHK Status</label>
+                                <select id="setting-status-4bhk" class="w-full bg-brandCardDark border border-white/10 rounded-xl px-3 py-2 text-white focus:outline-none focus:border-cyan-500 text-xs cursor-pointer">
+                                    <option value="Available">Available</option>
+                                    <option value="Fully Occupied">Fully Occupied</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-white/5 pt-3 my-1 space-y-3">
+                            <h5 class="text-xs font-bold uppercase tracking-wider text-cyan-500"><i class="fa-solid fa-user-shield"></i> Security Guard Shift Override</h5>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div class="space-y-1">
+                                    <label class="text-xs font-bold uppercase tracking-wider text-slate-400">Temporary Guard Name</label>
+                                    <input type="text" id="setting-guard-name" placeholder="Leave empty for shift default" class="w-full bg-black/35 border border-white/10 rounded-xl px-4 py-2 text-white focus:outline-none focus:border-cyan-500 text-xs">
+                                </div>
+                                <div class="space-y-1">
+                                    <label class="text-xs font-bold uppercase tracking-wider text-slate-400">Guard Phone Number</label>
+                                    <input type="tel" id="setting-guard-phone" placeholder="e.g. 99340XXXXX" class="w-full bg-black/35 border border-white/10 rounded-xl px-4 py-2 text-white focus:outline-none focus:border-cyan-500 text-xs">
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="w-full py-3 bg-gradient-to-r from-cyan-500 to-indigo-600 text-slate-950 font-bold uppercase tracking-wider rounded-xl hover:opacity-90 transition text-xs shadow-md">Update Configuration</button>
+                    </form>
                 </div>
 
-                <div class="glass-panel rounded-3xl p-6 space-y-4 border">
-                    <h4 class="text-sm font-bold text-white flex items-center gap-2">
-                        <i class="fa-solid fa-chalkboard-user text-amber-500"></i> Official Notice Board
+                <!-- Bulletin Board Display -->
+                <div class="glass-premium rounded-3xl p-6 sm:p-8 space-y-4 border border-white/10">
+                    <h4 class="text-sm font-bold text-white dark:text-white text-slate-900 flex items-center gap-2 font-outfit">
+                        <i class="fa-solid fa-chalkboard-user text-cyan-500"></i> Official Notices & Bulletins
                     </h4>
                     <div id="notice-board-container" class="space-y-4 pt-1 font-medium">
                         <p class="text-sm text-slate-500 animate-pulse">Syncing data parameters with cloud server stream...</p>
                     </div>
                 </div>
 
-                <div class="glass-panel rounded-[2rem] p-6 border border-amber-500/20 flex flex-col justify-between min-h-[160px] w-full">
+                <!-- Guard Shift Panel -->
+                <div class="glass-premium rounded-[2rem] p-6 border border-cyan-500/20 flex flex-col justify-between min-h-[150px] w-full">
                     <div class="space-y-4">
-                        <div class="flex items-center gap-2 text-amber-500 font-bold uppercase tracking-widest text-xs">
+                        <div class="flex items-center gap-2 text-cyan-500 font-bold uppercase tracking-widest text-[10px] font-outfit">
                             <i class="fa-solid fa-shield-halved"></i>
-                            <span>Active Security Guard</span>
+                            <span>Active Security Guard Shift</span>
                         </div>
                         <div class="flex items-center justify-between w-full gap-4">
-                            <h4 id="active-guard-label" class="text-white font-black text-xl leading-tight sm:text-2xl">Loading Shift...</h4>
-                            <a id="active-guard-phone" href="tel:" class="px-6 py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-xl text-sm transition-all duration-300 shrink-0 shadow-lg shadow-amber-500/10">
+                            <h4 id="active-guard-label" class="text-white dark:text-white text-slate-900 font-black text-lg leading-tight sm:text-xl font-outfit">Loading Shift...</h4>
+                            <a id="active-guard-phone" href="tel:" class="px-5 py-3 bg-gradient-to-r from-cyan-500 to-indigo-600 hover:opacity-95 text-slate-950 font-bold rounded-xl text-xs uppercase tracking-widest transition-all shrink-0 shadow-lg shadow-cyan-500/10">
                                 Call Guard
                             </a>
                         </div>
-                        <p class="text-[11px] text-slate-400 italic font-medium leading-relaxed">
-                            This number updates automatically based on current shift hours.
+                        <p class="text-[10px] text-slate-400 italic font-medium leading-relaxed">
+                            Number rotates dynamically based on shift assignments (Day Shift: 8 AM - 6 PM | Night Shift: 6 PM - 8 AM).
                         </p>
                     </div>
                 </div>
             </div>
 
+            <!-- Resident Feedback Ticket Form -->
             <div class="lg:col-span-6">
-                <div class="glass-panel rounded-3xl p-6 sm:p-8 space-y-6 border relative overflow-hidden">
+                <div class="glass-premium rounded-3xl p-6 sm:p-8 space-y-6 border border-white/10 relative overflow-hidden">
                     <div class="flex items-center justify-between border-b dark:border-white/5 border-slate-200 pb-4">
                         <div>
-                            <h4 class="text-lg sm:text-xl font-bold dark:text-white text-slate-900 flex items-center gap-2">
-                                <i class="fa-solid fa-comment-medical text-amber-500"></i> Resident Feedback Portal
+                            <h4 class="text-lg sm:text-xl font-bold dark:text-white text-slate-900 flex items-center gap-2 font-outfit">
+                                <i class="fa-solid fa-comment-medical text-cyan-500"></i> Resident Feedback Portal
                             </h4>
-                            <p class="text-xs text-slate-500 mt-1">Submit inquiries or requests directly to the estate committee.</p>
+                            <p class="text-xs text-slate-500 mt-1 font-semibold">Submit ticket classification parameters directly to the secretariat.</p>
                         </div>
-                        <span class="text-[10px] font-mono font-bold px-2 py-1 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20 tracking-wider uppercase">Direct Link</span>
                     </div>
-                    <form id="grievance-ticket-form" onsubmit="handleTicketSubmission(event)" class="space-y-4 text-sm font-medium">
+                    <form id="grievance-ticket-form" onsubmit="handleTicketSubmission(event)" class="space-y-5 text-sm font-medium">
                         <div class="grid grid-cols-2 gap-4">
                             <div class="space-y-2 col-span-2">
-                                <label class="text-xs font-bold text-slate-400 uppercase tracking-wider block">Submission Classification</label>
+                                <label class="text-[10px] font-bold text-slate-400 uppercase tracking-widest block font-outfit">Classification</label>
                                 <div class="grid grid-cols-2 gap-2">
-                                    <button type="button" onclick="setFormMode('complaint')" id="btn-mode-complaint" class="py-2.5 px-4 rounded-xl font-bold transition border border-amber-500 bg-amber-500/10 text-amber-400">
-                                        <i class="fa-solid fa-triangle-exclamation mr-2"></i> Lodge Complaint
+                                    <button type="button" onclick="setFormMode('complaint')" id="btn-mode-complaint" class="py-3 px-4 rounded-xl font-bold transition border border-cyan-500 bg-cyan-500/10 text-cyan-400 text-xs">
+                                        <i class="fa-solid fa-triangle-exclamation mr-1.5"></i> Lodge Complaint
                                     </button>
-                                    <button type="button" onclick="setFormMode('suggestion')" id="btn-mode-suggestion" class="py-2.5 px-4 rounded-xl font-bold transition border dark:border-white/10 border-slate-200 bg-white/5 text-slate-400 hover:bg-white/10">
-                                        <i class="fa-solid fa-lightbulb mr-2"></i> Submit Suggestion
+                                    <button type="button" onclick="setFormMode('suggestion')" id="btn-mode-suggestion" class="py-3 px-4 rounded-xl font-bold transition border dark:border-white/10 border-slate-200 bg-white/5 text-slate-400 hover:bg-white/10 text-xs">
+                                        <i class="fa-solid fa-lightbulb mr-1.5"></i> Suggestion
                                     </button>
                                 </div>
                             </div>
-                            <div class="space-y-2">
-                                <label class="text-xs font-bold text-slate-400 uppercase tracking-wider">Full Name</label>
-                                <input type="text" id="ticket-user-name" required placeholder="Enter full name" class="w-full bg-black/40 border dark:border-white/10 border-slate-200 rounded-xl px-4 py-2.5 dark:text-white text-slate-900 focus:outline-none focus:border-amber-500">
+                            <div class="space-y-1.5">
+                                <label class="text-[10px] font-bold text-slate-400 uppercase tracking-widest font-outfit">Full Name</label>
+                                <input type="text" id="ticket-user-name" required placeholder="Enter full name" class="w-full bg-black/35 border dark:border-white/10 border-slate-200 rounded-xl px-4 py-2.5 dark:text-white text-slate-900 focus:outline-none focus:border-cyan-500 text-xs font-semibold">
                             </div>
-                            <div class="space-y-2">
-                                <label class="text-xs font-bold text-slate-400 uppercase tracking-wider">Flat Number</label>
-                                <input type="text" id="ticket-flat-no" required placeholder="e.g., Flat 302, Block A" class="w-full bg-black/40 border dark:border-white/10 border-slate-200 rounded-xl px-4 py-2.5 dark:text-white text-slate-900 focus:outline-none focus:border-amber-500">
+                            <div class="space-y-1.5">
+                                <label class="text-[10px] font-bold text-slate-400 uppercase tracking-widest font-outfit">Flat Number</label>
+                                <input type="text" id="ticket-flat-no" required placeholder="e.g. Flat 302, Block A" class="w-full bg-black/35 border dark:border-white/10 border-slate-200 rounded-xl px-4 py-2.5 dark:text-white text-slate-900 focus:outline-none focus:border-cyan-500 text-xs font-semibold">
                             </div>
                         </div>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
-                            <div class="space-y-2">
-                                <label class="text-xs font-bold text-slate-400 uppercase tracking-wider">Urgency Status</label>
-                                <select id="ticket-urgency-mode" class="w-full bg-brandDark border dark:border-white/10 border-slate-200 rounded-xl px-4 py-2.5 dark:text-white text-slate-900 focus:outline-none focus:border-amber-500 cursor-pointer">
+                            <div class="space-y-1.5">
+                                <label class="text-[10px] font-bold text-slate-400 uppercase tracking-widest font-outfit">Urgency Status</label>
+                                <select id="ticket-urgency-mode" class="w-full bg-brandDark border dark:border-white/10 border-slate-200 rounded-xl px-3 py-2.5 dark:text-white text-slate-900 focus:outline-none focus:border-cyan-500 text-xs font-bold cursor-pointer">
                                     <option value="normal" selected>Normal Priority</option>
                                     <option value="important">Emergency Priority</option>
                                 </select>
                             </div>
-                            <div class="text-left sm:text-right pt-2 sm:pt-4">
-                                <span class="text-xs text-slate-500 font-mono italic block">
-                                    <i class="fa-solid fa-user-secret text-amber-500/60 mr-1"></i> Your information stays anonymous
+                            <div class="text-left sm:text-right pt-2">
+                                <span class="text-[10px] text-slate-500 font-mono italic block">
+                                    <i class="fa-solid fa-user-secret text-cyan-500/60 mr-1 animate-pulse"></i> Anonymous logging supported
                                 </span>
                             </div>
                         </div>
-                        <div class="space-y-2">
-                            <label id="label-textarea-title" class="text-xs font-bold text-slate-400 uppercase tracking-wider">Detailed Description</label>
-                            <textarea id="ticket-body-text" required rows="3" placeholder="Provide a comprehensive summary details..." class="w-full bg-black/40 border dark:border-white/10 border-slate-200 rounded-xl px-4 py-2.5 dark:text-white text-slate-900 focus:outline-none focus:border-amber-500"></textarea>
+                        <div class="space-y-1.5">
+                            <label id="label-textarea-title" class="text-[10px] font-bold text-slate-400 uppercase tracking-widest font-outfit">Detailed Complaint Description</label>
+                            <textarea id="ticket-body-text" required rows="3" placeholder="Provide complete ticket specifics details..." class="w-full bg-black/35 border dark:border-white/10 border-slate-200 rounded-xl px-4 py-2.5 dark:text-white text-slate-900 focus:outline-none focus:border-cyan-500 text-xs font-semibold"></textarea>
                         </div>
-                        <button type="submit" class="w-full py-3.5 bg-amber-500 text-slate-950 font-bold uppercase tracking-wider rounded-xl hover:bg-amber-400 transition shadow-lg shadow-amber-500/10 text-sm">Transmit To Secretariat Desk</button>
+                        <button type="submit" class="w-full py-4 bg-gradient-to-r from-cyan-500 to-indigo-600 text-slate-950 font-bold uppercase tracking-wider rounded-xl hover:opacity-95 transition text-xs shadow-lg shadow-cyan-500/10">Transmit Ticket To Desk</button>
                     </form>
                     
-                    <div id="ticket-success-card" class="hidden absolute inset-0 bg-brandDark/95 flex flex-col items-center justify-center text-center p-6 space-y-4 z-10">
-                        <div class="w-14 h-14 rounded-full bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl border border-emerald-500/30">
+                    <!-- Ticket submission success message overlay -->
+                    <div id="ticket-success-card" class="hidden absolute inset-0 bg-brandDark/98 dark:bg-brandDark/98 bg-slate-100/98 flex flex-col items-center justify-center text-center p-6 space-y-4 z-10 transition-all duration-300">
+                        <div class="w-16 h-16 rounded-full bg-emerald-500/10 text-emerald-500 flex items-center justify-center text-3xl border border-emerald-500/25 shadow-lg shadow-emerald-500/5 animate-bounce">
                             <i class="fa-solid fa-circle-check"></i>
                         </div>
-                        <div class="space-y-1 max-w-sm">
-                            <h5 class="text-base font-bold text-white">Submission Acknowledged</h5>
-                            <p class="text-sm text-slate-400 leading-relaxed">
-                                Thanks, your <span id="success-type-label">entry</span> will be evaluated accordingly.
+                        <div class="space-y-1.5 max-w-sm">
+                            <h5 class="text-lg font-bold text-white dark:text-white text-slate-900 font-outfit">Submission Logged</h5>
+                            <p class="text-xs text-slate-400 leading-relaxed font-semibold">
+                                Thank you, your <span id="success-type-label" class="text-cyan-500 font-bold font-mono">entry</span> classification is successfully registered.
                             </p>
                         </div>
-                        <button onclick="resetTicketFormLayout()" class="px-5 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-white/5 border border-white/10 text-slate-300 hover:bg-white/10 transition">Submit New Ticket</button>
+                        <button onclick="resetTicketFormLayout()" class="px-6 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider bg-white/5 border border-white/10 text-slate-300 hover:bg-white/10 transition font-outfit">File New Ticket</button>
                     </div>
                 </div>
             </div>
@@ -617,151 +793,250 @@
         </div>
     </section>
 
-    <section class="reveal-hidden py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 space-y-10">
+    <!-- Premium Infrastructure Grid -->
+    <section class="reveal-hidden py-24 max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 space-y-12 relative z-10">
         <div class="text-center max-w-3xl mx-auto space-y-2">
-            <span class="text-xs font-bold uppercase tracking-wider text-amber-500">Structure Highlights</span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight dark:text-white text-slate-900 leading-tight">Premium Infrastructure Elements</h2>
-            <p class="text-sm sm:text-base text-slate-400 font-medium">Engineered to bring utility comfort and reliable facilities parameters to our residents 24/7.</p>
+            <span class="text-xs font-bold uppercase tracking-wider text-cyan-500 font-outfit">Structure Highlights</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight dark:text-white text-slate-900 leading-tight font-outfit">Elite Utilities Matrix</h2>
+            <p class="text-sm text-slate-400 font-medium font-sans">Engineered to bring utility comfort and reliable facilities parameters to our residents 24/7.</p>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 font-medium">
-            <div class="p-6 rounded-3xl bg-white/[0.01] border dark:border-white/5 border-slate-200 space-y-3 hover:border-amber-500/30 transition duration-300">
-                <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center text-xl"><i class="fa-solid fa-droplet"></i></div>
-                <h4 class="text-base font-bold text-white">Continuous Water Supply</h4>
-                <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">Integrated deep plumbing boring rigs map stable 24-hour supply across all bathroom layout nodes.</p>
+            <div class="p-6 rounded-3xl card-premium border space-y-4">
+                <div class="w-12 h-12 rounded-2xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl border border-blue-500/20"><i class="fa-solid fa-droplet"></i></div>
+                <h4 class="text-md font-bold dark:text-white text-slate-900 font-outfit">Continuous Water Supply</h4>
+                <p class="text-xs text-slate-400 leading-relaxed">Integrated deep plumbing boring rigs map stable 24-hour supply across all bathroom layout nodes.</p>
             </div>
-            <div class="p-6 rounded-3xl bg-white/[0.01] border dark:border-white/5 border-slate-200 space-y-3 hover:border-amber-500/30 transition duration-300">
-                <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center text-xl"><i class="fa-solid fa-elevator"></i></div>
-                <h4 class="text-base font-bold text-white">Modern Lift Utilities</h4>
-                <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">High-capacity automated vertical elevators servicing residential blocks with dedicated backup generator loops.</p>
+            <div class="p-6 rounded-3xl card-premium border space-y-4">
+                <div class="w-12 h-12 rounded-2xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl border border-purple-500/20"><i class="fa-solid fa-elevator"></i></div>
+                <h4 class="text-md font-bold dark:text-white text-slate-900 font-outfit">Modern Lift Utilities</h4>
+                <p class="text-xs text-slate-400 leading-relaxed">High-capacity automated vertical elevators servicing residential blocks with dedicated backup generator loops.</p>
             </div>
-            <div class="p-6 rounded-3xl bg-white/[0.01] border dark:border-white/5 border-slate-200 space-y-3 hover:border-amber-500/30 transition duration-300">
-                <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center text-xl"><i class="fa-solid fa-square-parking"></i></div>
-                <h4 class="text-base font-bold text-white">Commercial Tier Parking</h4>
-                <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">Spacious ground floor configuration designed specifically to accommodate resident transit and commercial clients.</p>
+            <div class="p-6 rounded-3xl card-premium border space-y-4">
+                <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl border border-cyan-500/20"><i class="fa-solid fa-square-parking"></i></div>
+                <h4 class="text-md font-bold dark:text-white text-slate-900 font-outfit">Commercial Tier Parking</h4>
+                <p class="text-xs text-slate-400 leading-relaxed">Spacious ground floor configuration designed specifically to accommodate resident transit and commercial clients.</p>
             </div>
-            <div class="p-6 rounded-3xl bg-white/[0.01] border dark:border-white/5 border-slate-200 space-y-3 hover:border-amber-500/30 transition duration-300">
-                <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center text-xl"><i class="fa-solid fa-bolt"></i></div>
-                <h4 class="text-base font-bold text-white">Active Power Backup</h4>
-                <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">Emergency generator configurations map automatic power routing lines to common corridor public lights.</p>
+            <div class="p-6 rounded-3xl card-premium border space-y-4">
+                <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 text-cyan-500 flex items-center justify-center text-xl border border-cyan-500/20"><i class="fa-solid fa-bolt"></i></div>
+                <h4 class="text-md font-bold dark:text-white text-slate-900 font-outfit">Active Power Backup</h4>
+                <p class="text-xs text-slate-400 leading-relaxed">Emergency generator configurations map automatic power routing lines to common corridor public lights.</p>
             </div>
         </div>
     </section>
 
-    <section class="reveal-hidden max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 pb-16">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white/[0.01] border dark:border-white/5 border-slate-200 rounded-3xl p-6 sm:p-8">
+    <!-- Livability score -->
+    <section class="reveal-hidden max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 pb-16 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white/[0.01] dark:bg-brandCardDark/30 border dark:border-white/5 border-slate-200 rounded-[2rem] p-8 sm:p-10">
             <div class="grid lg:col-span-4 text-center lg:text-left space-y-1">
-                <span class="text-xs font-bold uppercase tracking-wider text-amber-500">Locality Evaluation</span>
-                <h3 class="text-xl sm:text-2xl font-bold dark:text-white text-slate-900">Property Quality Score</h3>
+                <span class="text-xs font-bold uppercase tracking-wider text-cyan-500 font-outfit">Locality Evaluation</span>
+                <h3 class="text-xl sm:text-2xl font-bold dark:text-white text-slate-900 font-outfit">Property Quality Index</h3>
                 <div class="flex items-center justify-center lg:justify-start space-x-2 pt-1">
-                    <span class="text-3xl font-extrabold text-white">4.9</span>
-                    <span class="text-slate-500 font-semibold text-sm">/ 5.0</span>
-                    <div class="flex text-amber-400 text-xs pl-2">
+                    <span class="text-3xl font-black text-white dark:text-white text-slate-900 font-outfit">4.9</span>
+                    <span class="text-slate-500 font-semibold text-xs">/ 5.0</span>
+                    <div class="flex text-cyan-500 text-xs pl-2 gap-0.5">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
                 </div>
             </div>
-            <div class="lg:col-span-8 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
-                <div class="p-4 rounded-xl glass-base">
-                    <span class="text-lg font-bold text-white block">4.9 / 5</span>
-                    <span class="text-xs text-slate-400 block mt-0.5 font-semibold uppercase tracking-wider">Connectivity</span>
+            <div class="lg:col-span-8 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center font-outfit">
+                <div class="p-4 rounded-2xl glass-capsule border">
+                    <span class="text-lg font-black text-white dark:text-white text-slate-900 block">4.9 / 5</span>
+                    <span class="text-[9px] text-slate-400 block mt-0.5 font-bold uppercase tracking-widest">Connectivity</span>
                 </div>
-                <div class="p-4 rounded-xl glass-base">
-                    <span class="text-lg font-bold text-white block">4.9 / 5</span>
-                    <span class="text-xs text-slate-400 block mt-0.5 font-semibold uppercase tracking-wider">Neighbourhood</span>
-                </div>                <div class="p-4 rounded-xl glass-base">
-                    <span class="text-lg font-bold text-white block">4.9 / 5</span>
-                    <span class="text-xs text-slate-400 block mt-0.5 font-semibold uppercase tracking-wider">Safety Index</span>
+                <div class="p-4 rounded-2xl glass-capsule border">
+                    <span class="text-lg font-black text-white dark:text-white text-slate-900 block">4.9 / 5</span>
+                    <span class="text-[9px] text-slate-400 block mt-0.5 font-bold uppercase tracking-widest">Neighbourhood</span>
                 </div>
-                <div class="p-4 rounded-xl glass-base">
-                    <span class="text-lg font-bold text-white block">4.9 / 5</span>
-                    <span class="text-xs text-slate-400 block mt-0.5 font-semibold uppercase tracking-wider">Livability</span>
+                <div class="p-4 rounded-2xl glass-capsule border">
+                    <span class="text-lg font-black text-white dark:text-white text-slate-900 block">4.9 / 5</span>
+                    <span class="text-[9px] text-slate-400 block mt-0.5 font-bold uppercase tracking-widest">Safety Index</span>
+                </div>
+                <div class="p-4 rounded-2xl glass-capsule border">
+                    <span class="text-lg font-black text-white dark:text-white text-slate-900 block">4.9 / 5</span>
+                    <span class="text-[9px] text-slate-400 block mt-0.5 font-bold uppercase tracking-widest">Livability</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="reveal-hidden py-16 max-w-7xl mx-auto px-4 sm:px-8 lg:px-16">
+    <!-- Floor Elevation View -->
+    <section class="reveal-hidden py-16 max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            <div class="lg:col-span-7 w-full group relative rounded-3xl overflow-hidden glass-panel border p-3 transition-all duration-300">
-                <img src="https://i.ibb.co/1tkpRtjW/image.png" alt="Shivam RKM Square Front Facade Architectural Rendering" class="w-full h-auto rounded-2xl object-cover shadow-md transition-transform duration-500">
+            <div class="lg:col-span-7 w-full group relative rounded-3xl overflow-hidden glass-premium border p-3 transition-all duration-300">
+                <img src="https://i.ibb.co/1tkpRtjW/image.png" alt="RKM Square Front Facade" class="w-full h-auto rounded-2xl object-cover shadow-md transition-transform duration-500">
             </div>
             <div class="lg:col-span-5 space-y-4">
-                <span class="text-xs font-bold uppercase tracking-wider text-amber-500">Architectural Premium View</span>
-                <h3 class="text-2xl sm:text-3xl font-bold tracking-tight dark:text-white text-slate-900">Front Elevation Showcase</h3>
-                <p class="text-sm sm:text-base text-slate-400 leading-relaxed font-medium">
+                <span class="text-xs font-bold uppercase tracking-wider text-cyan-500 font-outfit">Premium Facade Elevation</span>
+                <h3 class="text-2xl sm:text-3xl font-bold tracking-tight dark:text-white text-slate-900 font-outfit">Front Elevation Showcase</h3>
+                <p class="text-sm text-slate-400 leading-relaxed font-medium">
                     A clean perspective look showing the premium concrete facade treatment, optimized glass deck partitions, and spacious commercial parking layouts flanking the main Khagaul Road entrance.
                 </p>
                 <div class="pt-2">
-                    <a href="gallery.html" class="inline-flex items-center space-x-2 text-sm font-bold uppercase tracking-wider text-amber-500 hover:text-amber-400 transition">
+                    <a href="gallery.html" class="inline-flex items-center space-x-2 text-xs font-bold uppercase tracking-widest text-cyan-500 hover:text-cyan-400 transition font-outfit">
                         <span>Browse Media Portfolio</span>
-                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="location" class="reveal-hidden py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 border-t dark:border-white/5 border-slate-200 space-y-12">
+    <!-- Interactive Floor Plans Widget -->
+    <section id="floorplans" class="reveal-hidden py-20 sm:py-28 max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 border-t dark:border-white/5 border-slate-200 space-y-12 relative z-10">
+        <div class="text-center max-w-3xl mx-auto space-y-2">
+            <span class="text-xs font-bold uppercase tracking-wider text-cyan-500 font-outfit">Interactive Architectural Layouts</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight dark:text-white text-slate-900 leading-tight font-outfit">Floor Plans & Live Availability</h2>
+            <p class="text-sm text-slate-400 font-medium">Select a configuration layout to view architectural schematics and pricing details.</p>
+        </div>
+
+        <div class="flex justify-center">
+            <div class="inline-flex p-1.5 bg-white/5 border border-white/10 rounded-2xl">
+                <button onclick="switchFloorPlan('3bhk')" id="btn-fp-3bhk" class="px-6 py-3 rounded-xl font-bold text-xs uppercase tracking-widest transition duration-300 bg-gradient-to-r from-cyan-500 to-indigo-600 text-slate-950 shadow-md">3 BHK Layout</button>
+                <button onclick="switchFloorPlan('4bhk')" id="btn-fp-4bhk" class="px-6 py-3 rounded-xl font-bold text-xs uppercase tracking-widest transition duration-300 text-slate-400 hover:text-white">4 BHK Layout</button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center pt-4">
+            
+            <div class="lg:col-span-5 space-y-6">
+                <!-- 3 BHK specs -->
+                <div id="fp-details-3bhk" class="space-y-6">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-2xl font-bold dark:text-white text-slate-900 font-outfit">3 BHK Premium Unit</h3>
+                        <span id="fp-status-3bhk" class="status-3bhk-badge px-3 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 border border-cyan-500/20 text-[10px] font-black uppercase tracking-widest">Available</span>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed font-medium">
+                        Optimized for comfortable family living, the 3 BHK layout provides generous natural light, ventilation, and premium construction quality by Shivam Constructions Patna.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 font-outfit">
+                        <div class="p-4 rounded-2xl bg-white/[0.02] border border-white/5 space-y-1">
+                            <span class="text-[9px] text-slate-500 uppercase tracking-widest font-black block">Monthly Rent</span>
+                            <span class="rent-3bhk-val text-xl font-black text-cyan-500">₹15,000</span>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-white/[0.02] border border-white/5 space-y-1">
+                            <span class="text-[9px] text-slate-500 uppercase tracking-widest font-black block">Carpet Area</span>
+                            <span class="text-base font-bold text-white dark:text-white text-slate-800 block">1,250 Sq. Ft.</span>
+                        </div>
+                    </div>
+                    <div class="space-y-3 pt-2 text-xs font-semibold text-slate-400 dark:text-slate-300">
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-bed text-cyan-500 w-4 text-center text-sm"></i> <span>3 Bedrooms Configurations</span></div>
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-bath text-cyan-500 w-4 text-center text-sm"></i> <span>2 Modern Bathrooms</span></div>
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-table-columns text-cyan-500 w-4 text-center text-sm"></i> <span>2 Balconies with road views</span></div>
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-kitchen-set text-cyan-500 w-4 text-center text-sm"></i> <span>Spacious Modular Kitchen layout</span></div>
+                    </div>
+                </div>
+
+                <!-- 4 BHK specs -->
+                <div id="fp-details-4bhk" class="hidden space-y-6">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-2xl font-bold dark:text-white text-slate-900 font-outfit">4 BHK Elite Unit</h3>
+                        <span id="fp-status-4bhk" class="status-4bhk-badge px-3 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 border border-cyan-500/20 text-[10px] font-black uppercase tracking-widest">Available</span>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed font-medium">
+                        The 4 BHK unit features expansive bedroom dimensions, extra storage spaces, and multiple balconies, perfect for grand living in Patna's premium transit corridor.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 font-outfit">
+                        <div class="p-4 rounded-2xl bg-white/[0.02] border border-white/5 space-y-1">
+                            <span class="text-[9px] text-slate-500 uppercase tracking-widest font-black block">Monthly Rent</span>
+                            <span class="rent-4bhk-val text-xl font-black text-cyan-500">₹20,000</span>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-white/[0.02] border border-white/5 space-y-1">
+                            <span class="text-[9px] text-slate-500 uppercase tracking-widest font-black block">Carpet Area</span>
+                            <span class="text-base font-bold text-white dark:text-white text-slate-800 block">1,650 Sq. Ft.</span>
+                        </div>
+                    </div>
+                    <div class="space-y-3 pt-2 text-xs font-semibold text-slate-400 dark:text-slate-300">
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-bed text-cyan-500 w-4 text-center text-sm"></i> <span>4 Large Bedrooms Setup</span></div>
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-bath text-cyan-500 w-4 text-center text-sm"></i> <span>3 Premium Bathrooms</span></div>
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-table-columns text-cyan-500 w-4 text-center text-sm"></i> <span>3 Balconies with deck setup</span></div>
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-kitchen-set text-cyan-500 w-4 text-center text-sm"></i> <span>Modular kitchen + dedicated pantry</span></div>
+                    </div>
+                </div>
+
+                <div class="pt-4">
+                    <a href="contact.html" class="w-full inline-flex items-center justify-center gap-2 py-4 bg-gradient-to-r from-cyan-500 to-indigo-600 text-slate-950 font-bold uppercase tracking-widest text-xs rounded-xl shadow-lg hover:opacity-95 transition">
+                        <i class="fa-solid fa-calendar-check text-sm"></i> Schedule Site Visit
+                    </a>
+                </div>
+            </div>
+
+            <!-- Floor plans schematics view -->
+            <div class="lg:col-span-7">
+                <div class="glass-premium p-2 rounded-3xl border border-white/10 overflow-hidden shadow-2xl relative">
+                    <div id="fp-img-3bhk" class="w-full h-[300px] sm:h-[400px] flex items-center justify-center bg-black/45 rounded-2xl overflow-hidden group">
+                        <img src="https://i.ibb.co/1YmxG3c9/image.png" alt="3 BHK Layout Blueprint Map" class="max-w-full max-h-full object-contain p-4 group-hover:scale-[1.03] transition duration-500">
+                    </div>
+                    <div id="fp-img-4bhk" class="hidden w-full h-[300px] sm:h-[400px] flex items-center justify-center bg-black/45 rounded-2xl overflow-hidden group">
+                        <img src="https://i.ibb.co/YxKMDDG/image.png" alt="4 BHK Layout Blueprint Map" class="max-w-full max-h-full object-contain p-4 group-hover:scale-[1.03] transition duration-500">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proximity transit Index Map -->
+    <section id="location" class="reveal-hidden py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 space-y-12 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
             <div class="lg:col-span-5 space-y-4 sm:space-y-6">
-                <span class="text-xs font-bold uppercase tracking-wider text-amber-500">Location Details</span>
-                <h2 class="text-2xl sm:text-3xl font-bold dark:text-white text-slate-900 font-extrabold">Map & Coordinates</h2>
-                <p class="text-sm sm:text-base text-slate-400 leading-relaxed font-medium">Built along the active Khagaul-Anisabad Road near New Sabajpura, offering direct road connectivity to schools, shopping malls, and hospitals.</p>
-                <div class="glass-card p-5 rounded-2xl space-y-4 text-sm font-medium">
-                    <div class="flex items-center space-x-3">
-                        <i class="fa-solid fa-location-arrow text-amber-500 flex-shrink-0"></i>
-                        <span>Pin Code Index: 801105</span>
+                <span class="text-xs font-bold uppercase tracking-wider text-cyan-500 font-outfit">Location Details</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold dark:text-white text-slate-900 font-outfit">Coordinates & Map</h2>
+                <p class="text-sm text-slate-400 leading-relaxed font-medium">Built along the active Khagaul-Anisabad Road near New Sabajpura, offering direct road connectivity to schools, shopping malls, and hospitals.</p>
+                <div class="glass-premium p-5 rounded-2xl space-y-4 text-xs font-semibold">
+                    <div class="flex items-center space-x-3.5">
+                        <i class="fa-solid fa-location-crosshairs text-cyan-500 flex-shrink-0 text-sm"></i>
+                        <span>Postal Index Number: 801105</span>
                     </div>
-                    <div class="flex items-center space-x-3">
-                        <i class="fa-solid fa-pizza-slice text-amber-500 flex-shrink-0"></i>
-                        <span>Domino's Pizza (Ground & 1st Floor)</span>
+                    <div class="flex items-center space-x-3.5">
+                        <i class="fa-solid fa-pizza-slice text-cyan-500 flex-shrink-0 text-sm"></i>
+                        <span>Domino's Pizza (Ground & 1st floor stores)</span>
                     </div>
                 </div>
             </div>
             <div class="lg:col-span-7 w-full">
-                <div class="glass-panel p-1.5 sm:p-2 rounded-[2rem] overflow-hidden shadow-2xl h-[300px] sm:h-[400px]">
+                <div class="glass-premium p-1.5 rounded-[2rem] overflow-hidden shadow-2xl h-[300px] sm:h-[380px]">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d301.81856069456273!2d85.05536496001507!3d25.57873395631416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f2a9250fbad2a9%3A0xe72a3dc25a1e60ff!2sRKM%20SQUARE!5e0!3m2!1sen!2sin!4v1781419978079!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-[1.8rem]"></iframe>
                 </div>
             </div>
         </div>
         
-        <div class="w-full glass-panel rounded-3xl p-5 sm:p-8 overflow-hidden border">
+        <!-- Distance details table -->
+        <div class="w-full glass-premium rounded-3xl p-5 sm:p-8 overflow-hidden border border-white/10">
             <div class="mb-6">
-                <h4 class="text-lg sm:text-xl font-bold dark:text-white text-slate-900 flex items-center gap-2">
-                    <i class="fa-solid fa-route text-amber-500"></i> Proximity Network Index
+                <h4 class="text-lg sm:text-xl font-bold dark:text-white text-slate-900 flex items-center gap-2 font-outfit">
+                    <i class="fa-solid fa-route text-cyan-500"></i> Proximity Network Index
                 </h4>
-                <p class="text-xs text-slate-500 mt-1">Estimated travel times and distances to major transit points from the complex gates.</p>
+                <p class="text-xs text-slate-500 mt-1 font-semibold">Transit metrics from complex main gates.</p>
             </div>
             <div class="overflow-x-auto">
-                <table class="w-full text-left border-collapse text-sm">
+                <table class="w-full text-left border-collapse text-xs sm:text-sm">
                     <thead>
-                        <tr class="border-b dark:border-white/10 border-slate-200 text-slate-400 font-bold uppercase tracking-wider text-xs">
-                            <th class="pb-3 pr-4">Destination</th>
-                            <th class="pb-3 px-4">Distance</th>
-                            <th class="pb-3 pl-4 text-right">Estimated Transit Time</th>
+                        <tr class="border-b dark:border-white/10 border-slate-200 text-slate-400 font-bold uppercase tracking-widest text-[10px] font-outfit">
+                            <th class="pb-3 pr-4">Destination Points</th>
+                            <th class="pb-3 px-4">Distance Scale</th>
+                            <th class="pb-3 pl-4 text-right">Transit Travel Hours</th>
                         </tr>
                     </thead>
-                    <tbody class="divide-y dark:divide-white/5 divide-slate-100 font-semibold text-slate-300">
+                    <tbody class="divide-y dark:divide-white/5 divide-slate-100 font-semibold dark:text-slate-300 text-slate-600">
                         <tr class="hover:bg-white/[0.01] transition-colors">
-                            <td class="py-4 pr-4 text-white flex items-center gap-2">
-                                <i class="fa-solid fa-train text-slate-500 w-4 text-sm"></i> Danapur Railway Station
+                            <td class="py-4 pr-4 dark:text-white text-slate-800 flex items-center gap-2.5">
+                                <i class="fa-solid fa-train text-slate-500 text-base w-5 text-center"></i> Danapur Railway Station
                             </td>
-                            <td class="py-4 px-4 font-mono text-slate-400">~ 2.4 km</td>
-                            <td class="py-4 pl-4 text-right text-amber-500 font-bold">8 mins via Khagaul Road</td>
+                            <td class="py-4 px-4 font-mono text-slate-500">~ 2.4 km</td>
+                            <td class="py-4 pl-4 text-right text-cyan-500 font-bold font-outfit">8 mins via Khagaul Road</td>
                         </tr>
                         <tr class="hover:bg-white/[0.01] transition-colors">
-                            <td class="py-4 pr-4 text-white flex items-center gap-2">
-                                <i class="fa-solid fa-hospital-user text-slate-500 w-4 text-sm"></i> AIIMS Patna Complex
+                            <td class="py-4 pr-4 dark:text-white text-slate-800 flex items-center gap-2.5">
+                                <i class="fa-solid fa-hospital-user text-slate-500 text-base w-5 text-center"></i> AIIMS Patna Complex
                             </td>
-                            <td class="py-4 px-4 font-mono text-slate-400">~ 4.1 km</td>
-                            <td class="py-4 pl-4 text-right text-amber-500 font-bold">12 mins via Anisabad Corridor</td>
+                            <td class="py-4 px-4 font-mono text-slate-500">~ 4.1 km</td>
+                            <td class="py-4 pl-4 text-right text-cyan-500 font-bold font-outfit">12 mins via Anisabad Corridor</td>
                         </tr>
                         <tr class="hover:bg-white/[0.01] transition-colors">
-                            <td class="py-4 pr-4 text-white flex items-center gap-2">
-                                <i class="fa-solid fa-plane text-slate-500 w-4 text-sm"></i> Patna International Airport
+                            <td class="py-4 pr-4 dark:text-white text-slate-800 flex items-center gap-2.5">
+                                <i class="fa-solid fa-plane text-slate-500 text-base w-5 text-center"></i> Patna International Airport
                             </td>
-                            <td class="py-4 px-4 font-mono text-slate-400">~ 9.5 km</td>
-                            <td class="py-4 pl-4 text-right text-amber-500 font-bold">25 mins via Phulwari Sharif</td>
+                            <td class="py-4 px-4 font-mono text-slate-500">~ 9.5 km</td>
+                            <td class="py-4 pl-4 text-right text-cyan-500 font-bold font-outfit">25 mins via Phulwari Sharif</td>
                         </tr>
                     </tbody>
                 </table>
@@ -769,77 +1044,80 @@
         </div>
     </section>
 
-    <section class="reveal-hidden py-16 bg-slate-950/10 border-t dark:border-white/5 border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 space-y-10">
+    <!-- Testimonials slider -->
+    <section class="reveal-hidden py-20 sm:py-28 bg-slate-950/20 dark:bg-slate-950/45 border-t dark:border-white/5 border-slate-200 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 space-y-12">
             <div class="text-center max-w-2xl mx-auto space-y-2">
-                <span class="text-xs font-bold uppercase tracking-wider text-amber-500">Resident Experience Logs</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight dark:text-white text-slate-900 leading-tight">Complex Testimonials</h2>
-                <p class="text-sm text-slate-500 font-medium">Direct feedback shared under public resident listings.</p>
+                <span class="text-xs font-bold uppercase tracking-wider text-cyan-500 font-outfit">Resident Experience Logs</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight dark:text-white text-slate-900 leading-tight font-outfit">Complex Testimonials</h2>
+                <p class="text-sm text-slate-500 font-semibold font-sans">Verified feedback shared under public resident listings.</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="glass-panel rounded-3xl p-6 flex flex-col justify-between space-y-4">
-                    <div class="space-y-3">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass-premium rounded-3xl p-6 sm:p-8 flex flex-col justify-between space-y-4 border border-white/5">
+                    <div class="space-y-4">
                         <div class="flex justify-between items-center">
                             <div>
-                                <h4 class="text-base font-bold text-slate-900 dark:text-white">Saif</h4>
-                                <span class="text-xs bg-amber-500/10 text-amber-400 font-mono px-2.5 py-1 rounded border border-amber-500/20 font-bold">Tenant | 1 year ago</span>
+                                <h4 class="text-base font-bold text-slate-900 dark:text-white font-outfit">Saif</h4>
+                                <span class="text-[9px] bg-cyan-500/10 text-cyan-400 font-mono px-2 py-0.5 rounded border border-cyan-500/20 font-bold uppercase tracking-wider mt-1 inline-block">Tenant | 1 year ago</span>
                             </div>
-                            <div class="flex text-amber-400 text-xs gap-0.5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            <div class="flex text-cyan-500 text-xs gap-0.5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
                         </div>
                         <p class="text-sm dark:text-slate-300 text-slate-600 leading-relaxed italic font-medium">
                             "It is a very good place and everything is there. It has big rooms, kitchen, and bathroom. Everything is available near the house, a great place to roam around, no problems at all."
                         </p>
                     </div>
-                    <p class="text-xs font-bold text-slate-500 border-t dark:border-white/5 border-slate-200 pt-3"><i class="fa-solid fa-circle-info mr-1 text-amber-500"></i> Local Note: General quiet surroundings during late-night window margins.</p>
+                    <p class="text-[10px] font-bold text-slate-500 border-t dark:border-white/5 border-slate-200 pt-3"><i class="fa-solid fa-circle-info mr-1 text-cyan-500 animate-pulse"></i> Quiet surroundings during late-night window margins.</p>
                 </div>
-                <div class="glass-panel rounded-3xl p-6 flex flex-col justify-between space-y-4">
-                    <div class="space-y-3">
+                <div class="glass-premium rounded-3xl p-6 sm:p-8 flex flex-col justify-between space-y-4 border border-white/5">
+                    <div class="space-y-4">
                         <div class="flex justify-between items-center">
                             <div>
-                                <h4 class="text-base font-bold text-slate-900 dark:text-white">Verified Resident</h4>
-                                <span class="text-xs bg-slate-500/10 dark:text-slate-300 text-slate-600 font-mono px-2.5 py-1 rounded border dark:border-white/5 border-slate-200 font-bold">Owner | 2 years ago</span>
+                                <h4 class="text-base font-bold text-slate-900 dark:text-white font-outfit">Verified Resident</h4>
+                                <span class="text-[9px] bg-slate-500/10 dark:text-slate-300 text-slate-600 font-mono px-2 py-0.5 rounded border dark:border-white/5 border-slate-200 font-bold uppercase tracking-wider mt-1 inline-block">Owner | 2 years ago</span>
                             </div>
-                            <div class="flex text-amber-400 text-xs gap-0.5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            <div class="flex text-cyan-500 text-xs gap-0.5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
                         </div>
                         <p class="text-sm dark:text-slate-300 text-slate-600 leading-relaxed italic font-medium">
-                            "It is the best place in the area. Street lights stay active past 12 PM midnight safely, water is reliably available 24 hours without drops, and the overall food quality around is perfect."
+                            "It is the best place in the area. Street lights stay active past midnight safely, water is reliably available 24 hours without drops, and the overall food quality around is perfect."
                         </p>
                     </div>
-                    <p class="text-xs font-bold text-slate-500 border-t dark:border-white/5 border-slate-200 pt-3"><i class="fa-solid fa-droplet mr-1 text-blue-400"></i> Utilities: Consistent water access across plumbing configurations.</p>
+                    <p class="text-[10px] font-bold text-slate-500 border-t dark:border-white/5 border-slate-200 pt-3"><i class="fa-solid fa-droplet mr-1 text-blue-400"></i> Consistent water access across plumbing configs.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="faq" class="reveal-hidden py-16 sm:py-24 bg-slate-950/20 border-y dark:border-white/5 border-slate-200">
+    <!-- FAQ Accordion -->
+    <section id="faq" class="reveal-hidden py-20 sm:py-28 bg-slate-950/10 dark:bg-slate-950/30 border-b dark:border-white/5 border-slate-200 relative z-10">
         <div class="max-w-4xl mx-auto px-4 sm:px-6">
             <div class="text-center mb-12">
-                <span class="text-xs font-bold uppercase tracking-wider text-amber-500">Information Desk</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold dark:text-white text-slate-900 mt-2 tracking-tight">Frequently Asked Questions</h2>
+                <span class="text-xs font-bold uppercase tracking-wider text-cyan-500 font-outfit">Information Desk</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold dark:text-white text-slate-900 mt-2 tracking-tight font-outfit">Frequently Asked Questions</h2>
             </div>
             <div class="space-y-4">
-                <div class="faq-item glass-card rounded-2xl p-6 cursor-pointer" onclick="toggleFaq(this)">
+                <div class="faq-item glass-premium rounded-2xl p-6 cursor-pointer" onclick="toggleFaq(this)">
                     <div class="flex justify-between items-center gap-4">
-                        <h4 class="font-bold text-sm sm:text-base">What is the completion status of the property?</h4>
-                        <i class="fa-solid fa-chevron-down faq-icon transition-transform text-amber-500 flex-shrink-0 text-sm"></i>
+                        <h4 class="font-bold text-xs sm:text-sm md:text-base">What is the completion status of the property?</h4>
+                        <i class="fa-solid fa-chevron-down faq-icon transition-transform text-cyan-500 flex-shrink-0 text-sm"></i>
                     </div>
                     <div class="faq-content mt-4 text-xs sm:text-sm text-slate-400 leading-relaxed font-medium">
                         Shivam RKM Square is an entirely completed ready-to-move apartment complex. Occupancy and residential possession records successfully began in July 2021.
                     </div>
                 </div>
-                <div class="faq-item glass-card rounded-2xl p-6 cursor-pointer" onclick="toggleFaq(this)">
+                <div class="faq-item glass-premium rounded-2xl p-6 cursor-pointer" onclick="toggleFaq(this)">
                     <div class="flex justify-between items-center gap-4">
-                        <h4 class="font-bold text-sm sm:text-base">Is there commercial retail on-site?</h4>
-                        <i class="fa-solid fa-chevron-down faq-icon transition-transform text-amber-500 flex-shrink-0 text-sm"></i>
+                        <h4 class="font-bold text-xs sm:text-sm md:text-base">Is there commercial retail on-site?</h4>
+                        <i class="fa-solid fa-chevron-down faq-icon transition-transform text-cyan-500 flex-shrink-0 text-sm"></i>
                     </div>
                     <div class="faq-content mt-4 text-xs sm:text-sm text-slate-400 leading-relaxed font-medium">
                         Yes, RKM Square is a prominent mixed-use development. The lower commercial tiers house an operational Domino's Pizza store open daily for dining and takeaway.
                     </div>
                 </div>
-                <div class="faq-item glass-card rounded-2xl p-6 cursor-pointer" onclick="toggleFaq(this)">
+                <div class="faq-item glass-premium rounded-2xl p-6 cursor-pointer" onclick="toggleFaq(this)">
                     <div class="flex justify-between items-center gap-4">
-                        <h4 class="font-bold text-sm sm:text-base">What size formats are the apartments built in?</h4>
-                        <i class="fa-solid fa-chevron-down faq-icon transition-transform text-amber-500 flex-shrink-0 text-sm"></i>
+                        <h4 class="font-bold text-xs sm:text-sm md:text-base">What size formats are the apartments built in?</h4>
+                        <i class="fa-solid fa-chevron-down faq-icon transition-transform text-cyan-500 flex-shrink-0 text-sm"></i>
                     </div>
                     <div class="faq-content mt-4 text-xs sm:text-sm text-slate-400 leading-relaxed font-medium">
                         The property features classic 3 BHK and 4 BHK residential apartments. Net covered carpet dimensions range between 882 sq.ft. to 900 sq.ft.
@@ -849,58 +1127,89 @@
         </div>
     </section>
 
-    <footer class="border-t dark:border-white/5 border-slate-200 bg-slate-950/40 pt-12 sm:pt-16 pb-8 text-xs text-slate-400 relative z-10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 grid grid-cols-1 md:grid-cols-12 gap-10 pb-10 border-b dark:border-white/5 border-slate-200">
+    <!-- Footer -->
+    <footer class="border-t dark:border-white/5 border-slate-200 bg-slate-950/45 pt-12 sm:pt-16 pb-8 text-xs text-slate-400 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 grid grid-cols-1 md:grid-cols-12 gap-10 pb-10 border-b dark:border-white/5 border-slate-200 font-sans">
             <div class="md:col-span-5 space-y-4">
-                <span class="text-xl sm:text-2xl font-black tracking-tight dark:text-white text-slate-900">RKM <span class="text-amber-500">SQUARE</span></span>
+                <span class="text-xl sm:text-2xl font-black tracking-tight dark:text-white text-slate-900 font-outfit">RKM <span class="text-cyan-500">SQUARE</span></span>
                 <p class="leading-relaxed text-slate-500 max-w-sm font-medium">
                     A prominent mixed-use complex located on the Khagaul-Anisabad Road, New Sabajpura, Khagaul, Patna, Bihar (Pin: 801105). Configured by Shivam Constructions Patna.
                 </p>
             </div>
             <div class="md:col-span-3 space-y-4">
-                <h5 class="text-xs uppercase font-extrabold tracking-wider dark:text-slate-300 text-slate-800">Navigation Links</h5>
+                <h5 class="text-xs uppercase font-bold tracking-widest dark:text-slate-300 text-slate-800 font-outfit">Quick Navigation</h5>
                 <ul class="space-y-3 font-semibold text-slate-500">
-                    <li><a href="index.html" class="hover:text-amber-500 transition">Home Overview</a></li>
-                    <li><a href="about.html" class="hover:text-amber-500 transition">About Architecture</a></li>
-                    <li><a href="gallery.html" class="hover:text-amber-500 transition">Media Gallery</a></li>
-                    <li><a href="contact.html" class="hover:text-amber-500 transition">Enquire Portals</a></li>
+                    <li><a href="index.html" class="hover:text-cyan-500 transition">Home Overview</a></li>
+                    <li><a href="about.html" class="hover:text-cyan-500 transition">About Architecture</a></li>
+                    <li><a href="gallery.html" class="hover:text-cyan-500 transition">Media Gallery</a></li>
+                    <li><a href="contact.html" class="hover:text-cyan-500 transition">Enquiry Portals</a></li>
                 </ul>
             </div>
             <div class="md:col-span-4 space-y-4">
-                <h5 class="text-xs uppercase font-extrabold tracking-wider dark:text-slate-300 text-slate-800">Regulatory Compliance</h5>
+                <h5 class="text-xs uppercase font-bold tracking-widest dark:text-slate-300 text-slate-800 font-outfit">Regulatory Compliance</h5>
                 <p class="leading-relaxed text-slate-500 font-medium">
                     Registered transparently with the Bihar Real Estate Regulatory Authority under registration reference ID: <span class="font-mono font-bold dark:text-slate-400 text-slate-700">BRERAP00085-2/815/R-514/2019</span>.
                 </p>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-slate-500 font-semibold">
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-slate-500 font-semibold font-sans">
             <p class="text-center sm:text-left">© 2026 Shivam Constructions Patna. All layouts map securely to official records.</p>
             <p class="flex items-center gap-2 bg-white/5 border dark:border-white/5 border-slate-200 px-4 py-2 rounded-xl font-mono text-xs dark:text-slate-400 text-slate-600">
                 <span>Built with</span>
-                <i class="fa-solid fa-heart text-rose-500"></i>
+                <i class="fa-solid fa-heart text-rose-500 animate-pulse"></i>
                 <span>by</span>
-                <a href="developer.html" class="text-amber-500 hover:underline">BeatLabs</a>
+                <a href="developer.html" class="text-cyan-500 hover:underline">ZephyrDevs</a>
             </p>
         </div>
     </footer>
 
+    <!-- Mobile Bottom Tab Navigation -->
+    <div class="md:hidden fixed bottom-0 left-0 w-full bg-slate-950/90 backdrop-blur-xl border-t border-white/5 z-50 py-3 px-6 flex justify-between items-center shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
+        <a href="index.html" class="flex flex-col items-center gap-1 text-cyan-500 font-bold">
+            <i class="fa-solid fa-house-chimney text-base"></i>
+            <span class="text-[9px] uppercase tracking-widest font-bold font-outfit">Home</span>
+        </a>
+        <a href="gallery.html" class="flex flex-col items-center gap-1 text-slate-400 hover:text-cyan-500 transition">
+            <i class="fa-solid fa-images text-base"></i>
+            <span class="text-[9px] uppercase tracking-widest font-bold font-outfit">Gallery</span>
+        </a>
+        <a href="#dashboard" class="flex flex-col items-center gap-1 text-slate-400 hover:text-cyan-500 transition">
+            <i class="fa-solid fa-folder-open text-base"></i>
+            <span class="text-[9px] uppercase tracking-widest font-bold font-outfit">Portal</span>
+        </a>
+        <a href="contact.html" class="flex flex-col items-center gap-1 text-slate-400 hover:text-cyan-500 transition">
+            <i class="fa-solid fa-paper-plane text-base"></i>
+            <span class="text-[9px] uppercase tracking-widest font-bold font-outfit">Contact</span>
+        </a>
+        <button onclick="toggleAdminViewGate()" class="flex flex-col items-center gap-1 text-slate-400 hover:text-cyan-500 transition focus:outline-none">
+            <i class="fa-solid fa-key text-base"></i>
+            <span class="text-[9px] uppercase tracking-widest font-bold font-outfit">Admin</span>
+        </button>
+    </div>
+
+    <!-- Application Code Interactions Script -->
     <script>
+        let selectedFormMode = 'complaint';
+        let secretKeyData = null;
+        let dbRef = null;
+        let isAdminAuthenticated = false;
+
         function triggerMacFlight(mode) {
             const heading = document.getElementById('mac-flight-title');
             if (!heading) return;
 
-            heading.classList.remove('mac-text-flight');
-            void heading.offsetWidth;
-
-            if (mode === 'primary') {
-                heading.innerHTML = `Modern Living & Dining on <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">Khagaul Road</span>`;
-            } else if (mode === 'secondary') {
-                heading.innerHTML = `Premium Architectural Space <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">New Sabajpura</span>`;
-            } else if (mode === 'tertiary') {
-                heading.innerHTML = `Elite Commercial Tiers Near <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-600">Danapur Transit</span>`;
-            }
-
-            heading.classList.add('mac-text-flight');
+            heading.style.opacity = 0;
+            setTimeout(() => {
+                if (mode === 'primary') {
+                    heading.innerHTML = `Modern Living & <br>Dining on <span class="gradient-text-amber">Khagaul Road</span>`;
+                } else if (mode === 'secondary') {
+                    heading.innerHTML = `Architectural Space & <br><span class="gradient-text-amber">New Sabajpura</span>`;
+                } else if (mode === 'tertiary') {
+                    heading.innerHTML = `Elite Commercial Tiers <br>Near <span class="gradient-text-amber">Danapur Transit</span>`;
+                }
+                heading.style.opacity = 1;
+            }, 200);
         }
 
         function updateGuardShift() {
@@ -910,11 +1219,17 @@
             const guardPhone = document.getElementById('active-guard-phone');
             if (!guardLabel || !guardPhone) return;
 
+            if (window.guardOverride && window.guardOverride.name && window.guardOverride.phone) {
+                guardLabel.innerHTML = `${window.guardOverride.name}<br><span class='text-xs font-semibold text-cyan-500/70'>(Emergency Shift)</span>`;
+                guardPhone.href = `tel:${window.guardOverride.phone}`;
+                return;
+            }
+
             if (hours >= 8 && hours < 18) {
-                guardLabel.innerHTML = "Mahesh Guard<br><span class='text-xs font-semibold text-amber-500/70'>(6PM-6AM)</span>";
+                guardLabel.innerHTML = "Mahesh Guard<br><span class='text-xs font-semibold text-cyan-500/70'>(8AM-6PM)</span>";
                 guardPhone.href = "tel:9934013773";
             } else {
-                guardLabel.innerHTML = "Kaushal Guard<br><span class='text-xs font-semibold text-amber-500/70'>(6PM - 6AM)</span>";
+                guardLabel.innerHTML = "Kaushal Guard<br><span class='text-xs font-semibold text-cyan-500/70'>(6PM-8AM)</span>";
                 guardPhone.href = "tel:8294952601";
             }
         }
@@ -930,11 +1245,6 @@
             const message = `*Announcement!* 🚨\n\n*${title.toUpperCase()}*\n\n_${body}_\n\n📅 *Event Time:* ${time || 'Check Board'}\n\n_Thanks!_`;
             window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank');
         }
-
-        let selectedFormMode = 'complaint';
-        let secretKeyData = null;
-        let dbRef = null;
-        let isAdminAuthenticated = false;
 
         function toggleNotificationHubDropdown() {
             const dropdown = document.getElementById('notification-hub-dropdown');
@@ -953,7 +1263,21 @@
             const preloaderTimeout = setTimeout(() => {
                 const loader = document.getElementById('loading-screen');
                 if(loader) loader.classList.add('fade-out');
-            }, 1000);
+            }, 800);
+
+            const fallbackSecretData = {
+                "adminPassword": "admin00",
+                "firebaseConfig": {
+                    "apiKey": "AIzaSyCf_8gyPMTdDplCMpd7D-wuw1au8SgzM30",
+                    "authDomain": "rkmsquare-1c15e.firebaseapp.com",
+                    "databaseURL": "https://rkmsquare-1c15e-default-rtdb.firebaseio.com",
+                    "projectId": "rkmsquare-1c15e",
+                    "storageBucket": "rkmsquare-1c15e.firebasestorage.app",
+                    "messagingSenderId": "652335930410",
+                    "appId": "1:652335930410:web:7560832ff7769ff1a47753",
+                    "measurementId": "G-C93KNTDZ8X"
+                }
+            };
 
             fetch('api.html')
                 .then(response => response.json())
@@ -965,16 +1289,15 @@
                     if(loader) loader.classList.add('fade-out');
                 })
                 .catch(error => {
+                    console.warn("api.html load failed, using local credentials fallback:", error);
+                    secretKeyData = fallbackSecretData;
+                    initializeFirebaseRealtimeStream(fallbackSecretData.firebaseConfig);
                     clearTimeout(preloaderTimeout);
                     const loader = document.getElementById('loading-screen');
                     if(loader) loader.classList.add('fade-out');
-                    const container = document.getElementById('notice-board-container');
-                    if(container) {
-                        container.innerHTML = `<p class="text-xs text-rose-400 font-mono">Failed to map cloud sync endpoints from api.html references.</p>`;
-                    }
                 });
 
-            const structuralRevealObserver = new IntersectionObserver((entries) => {
+            const revealObserver = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('reveal-visible');
@@ -983,7 +1306,7 @@
             }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
 
             document.querySelectorAll('.reveal-hidden').forEach(element => {
-                structuralRevealObserver.observe(element);
+                revealObserver.observe(element);
             });
         });        
         
@@ -1049,16 +1372,54 @@
                     const itemExecutionTimeMarkup = item.time ? `<span class="text-slate-400 block text-xs font-mono pt-1 font-semibold"><i class="fa-solid fa-clock mr-1 text-purple-400"></i> Scheduled Execution: ${escapeHTML(item.time)}</span>` : '';
                     card.innerHTML = `
                         <div class="flex justify-between items-center text-xs font-mono font-bold">
-                            <span class="uppercase tracking-wider px-2.5 py-1 rounded border text-amber-400 bg-amber-500/10 border-amber-500/20"><i class="fa-solid fa-circle-info mr-1"></i> ${escapeHTML(item.tag)}</span>
+                            <span class="uppercase tracking-wider px-2.5 py-1 rounded border text-cyan-400 bg-cyan-500/10 border-cyan-500/20"><i class="fa-solid fa-circle-info mr-1"></i> ${escapeHTML(item.tag)}</span>
                             <span class="text-slate-500 pr-6 sm:pr-0">Real-Time Sync</span>
                         </div>
-                        <h5 class="text-sm sm:text-base text-white font-bold mt-2">${escapeHTML(item.title)}</h5>
+                        <h5 class="text-sm sm:text-base text-white dark:text-white text-slate-900 font-bold mt-2">${escapeHTML(item.title)}</h5>
                         <p class="text-xs sm:text-sm text-slate-400 leading-relaxed font-medium">${escapeHTML(item.body)}</p>
                         ${itemExecutionTimeMarkup}
                         ${deleteButtonMarkup}
                     `;
                     container.appendChild(card);
                 });
+            });
+
+            // Listen to settings for rents & guard override
+            firebase.database().ref('settings').on('value', (snapshot) => {
+                const settings = snapshot.val();
+                if (settings) {
+                    const r3 = Number(settings.rent3bhk || 15000);
+                    const r4 = Number(settings.rent4bhk || 20000);
+                    const s3 = settings.status3bhk || "Available";
+                    const s4 = settings.status4bhk || "Available";
+
+                    document.querySelectorAll('.rent-3bhk-val').forEach(el => el.innerText = `₹${r3.toLocaleString('en-IN')}`);
+                    document.querySelectorAll('.rent-4bhk-val').forEach(el => el.innerText = `₹${r4.toLocaleString('en-IN')}`);
+
+                    document.querySelectorAll('.status-3bhk-badge').forEach(el => {
+                        el.innerText = s3;
+                        if (s3 === 'Available') {
+                            el.className = "status-3bhk-badge px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 border border-cyan-500/20 text-xs font-bold uppercase tracking-wider";
+                        } else {
+                            el.className = "status-3bhk-badge px-2.5 py-1 rounded-lg bg-rose-500/10 text-rose-400 border border-rose-500/20 text-xs font-bold uppercase tracking-wider";
+                        }
+                    });
+
+                    document.querySelectorAll('.status-4bhk-badge').forEach(el => {
+                        el.innerText = s4;
+                        if (s4 === 'Available') {
+                            el.className = "status-4bhk-badge px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 border border-cyan-500/20 text-xs font-bold uppercase tracking-wider";
+                        } else {
+                            el.className = "status-4bhk-badge px-2.5 py-1 rounded-lg bg-rose-500/10 text-rose-400 border border-rose-500/20 text-xs font-bold uppercase tracking-wider";
+                        }
+                    });
+
+                    window.guardOverride = {
+                        name: settings.guardOverrideName || "",
+                        phone: settings.guardOverridePhone || ""
+                    };
+                    updateGuardShift();
+                }
             });
         }
 
@@ -1080,12 +1441,12 @@
             const textAreaLabel = document.getElementById('label-textarea-title');
 
             if (mode === 'complaint') {
-                btnComplaint.className = "py-2.5 px-4 rounded-xl font-bold transition border border-amber-500 bg-amber-500/10 text-amber-400";
-                btnSuggestion.className = "py-2.5 px-4 rounded-xl font-bold transition border dark:border-white/10 border-slate-200 bg-white/5 text-slate-400 hover:bg-white/10";
+                btnComplaint.className = "py-3 px-4 rounded-xl font-bold transition border border-cyan-500 bg-cyan-500/10 text-cyan-400 text-xs";
+                btnSuggestion.className = "py-3 px-4 rounded-xl font-bold transition border dark:border-white/10 border-slate-200 bg-white/5 text-slate-400 hover:bg-white/10 text-xs";
                 textAreaLabel.innerText = "Detailed Complaint Description";
             } else {
-                btnSuggestion.className = "py-2.5 px-4 rounded-xl font-bold transition border border-amber-500 bg-amber-500/10 text-amber-400";
-                btnComplaint.className = "py-2.5 px-4 rounded-xl font-bold transition border dark:border-white/10 border-slate-200 bg-white/5 text-slate-400 hover:bg-white/10";
+                btnSuggestion.className = "py-3 px-4 rounded-xl font-bold transition border border-cyan-500 bg-cyan-500/10 text-cyan-400 text-xs";
+                btnComplaint.className = "py-3 px-4 rounded-xl font-bold transition border dark:border-white/10 border-slate-200 bg-white/5 text-slate-400 hover:bg-white/10 text-xs";
                 textAreaLabel.innerText = "Detailed Suggestion Description";
             }
         }
@@ -1108,14 +1469,30 @@
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ content: formattedContentString })
-            })
-            .then(() => {
-                document.getElementById('success-type-label').innerText = selectedFormMode;
-                document.getElementById('ticket-success-card').classList.remove('hidden');
-            })
-            .catch(error => {
-                alert("Failed to submit feedback onto cloud servers. Please recheck network status.");
-            });
+            }).catch(e => console.log("Discord sync bypassed or offline"));
+
+            if (firebase.apps.length > 0) {
+                firebase.database().ref('tickets').push({
+                    name: name,
+                    flatNo: flatNo,
+                    body: messageBody,
+                    urgency: urgency,
+                    classification: selectedFormMode,
+                    timestamp: firebase.database.ServerValue.TIMESTAMP,
+                    status: 'pending'
+                }).then(() => {
+                    document.getElementById('success-type-label').innerText = selectedFormMode;
+                    document.getElementById('ticket-success-card').classList.remove('hidden');
+                }).catch(error => {
+                    alert("Failed to submit feedback onto cloud servers. Please recheck network status.");
+                });
+            } else {
+                alert("Cloud services not initialized.");
+            }
+        }
+
+        function resetTicketFormLayout() {
+            document.getElementById('ticket-success-card').classList.add('hidden');
         }
 
         function toggleAdminViewGate() {
@@ -1134,14 +1511,38 @@
                 document.getElementById('password-gate-panel').classList.add('hidden');
                 document.getElementById('admin-panel').classList.remove('hidden');
                 document.getElementById('gate-password-input').value = "";
+                
+                firebase.database().ref('settings').once('value').then(snapshot => {
+                    const settings = snapshot.val();
+                    if (settings) {
+                        document.getElementById('setting-rent-3bhk').value = settings.rent3bhk || 15000;
+                        document.getElementById('setting-rent-4bhk').value = settings.rent4bhk || 20000;
+                        document.getElementById('setting-status-3bhk').value = settings.status3bhk || "Available";
+                        document.getElementById('setting-status-4bhk').value = settings.status4bhk || "Available";
+                        document.getElementById('setting-guard-name').value = settings.guardOverrideName || "";
+                        document.getElementById('setting-guard-phone').value = settings.guardOverridePhone || "";
+                    } else {
+                        document.getElementById('setting-rent-3bhk').value = 15000;
+                        document.getElementById('setting-rent-4bhk').value = 20000;
+                        document.getElementById('setting-status-3bhk').value = "Available";
+                        document.getElementById('setting-status-4bhk').value = "Available";
+                    }
+                });
+
+                loadTicketsStream();
+
+                if (dbRef) dbRef.off();
+                initializeFirebaseRealtimeStream(secretKeyData.firebaseConfig);
             } else {
-                alert("Invalid configuration credentials provided.");
+                alert("Invalid credentials provided.");
             }
         }
 
         function deauthenticateAdmin() {
             isAdminAuthenticated = false;
             document.getElementById('admin-panel').classList.add('hidden');
+            if (dbRef) dbRef.off();
+            initializeFirebaseRealtimeStream(secretKeyData.firebaseConfig);
         }
 
         function dispatchCloudAnnouncement() {
@@ -1166,7 +1567,7 @@
                 document.getElementById('admin-notice-title').value = "";
                 document.getElementById('admin-notice-time').value = "";
                 document.getElementById('admin-notice-body').value = "";
-                document.getElementById('admin-panel').classList.add('hidden');
+                alert('Announcement broadcasted successfully to resident panels!');
             });
         }
 
@@ -1174,6 +1575,129 @@
             if (!confirm("Are you sure you want to permanently delete this announcement?")) return;
             if (!dbRef) return;
             dbRef.child(nodeKey).remove();
+        }
+
+        function selectAdminTab(tabName) {
+            const tabs = ['notices', 'feedbacks', 'settings'];
+            tabs.forEach(t => {
+                const btn = document.getElementById(`admin-tab-btn-${t}`);
+                const pane = document.getElementById(`admin-tab-pane-${t}`);
+                if (!btn || !pane) return;
+                if (t === tabName) {
+                    btn.className = "px-4 py-2 text-xs font-bold uppercase tracking-wider border-b-2 border-cyan-500 text-cyan-500 transition focus:outline-none shrink-0";
+                    pane.classList.remove('hidden');
+                } else {
+                    btn.className = "px-4 py-2 text-xs font-bold uppercase tracking-wider text-slate-400 border-b-2 border-transparent hover:text-slate-200 transition focus:outline-none shrink-0";
+                    pane.classList.add('hidden');
+                }
+            });
+        }
+
+        function loadTicketsStream() {
+            firebase.database().ref('tickets').on('value', (snapshot) => {
+                const container = document.getElementById('admin-tickets-container');
+                if (!container) return;
+                container.innerHTML = "";
+                const data = snapshot.val();
+                if (!data) {
+                    container.innerHTML = `<p class="text-xs text-slate-500 italic text-center py-4">No active suggestions or complaints logged.</p>`;
+                    return;
+                }
+                const keys = Object.keys(data).reverse();
+                keys.forEach(key => {
+                    const ticket = data[key];
+                    const div = document.createElement('div');
+                    div.className = `p-4 rounded-xl border relative text-left ${ticket.urgency === 'important' ? 'bg-rose-500/5 border-rose-500/20' : 'bg-white/[0.01] border-white/5'}`;
+                    
+                    const classificationBadge = ticket.classification === 'complaint' 
+                        ? `<span class="px-2 py-0.5 rounded bg-rose-500/10 text-rose-400 text-[10px] font-bold uppercase tracking-wider"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Complaint</span>`
+                        : `<span class="px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-400 text-[10px] font-bold uppercase tracking-wider"><i class="fa-solid fa-lightbulb mr-1"></i> Suggestion</span>`;
+                        
+                    const urgencyBadge = ticket.urgency === 'important'
+                        ? `<span class="px-2 py-0.5 rounded bg-red-500 text-white text-[9px] font-extrabold uppercase tracking-widest animate-pulse">Emergency</span>`
+                        : `<span class="px-2 py-0.5 rounded bg-slate-500/10 text-slate-400 text-[9px] font-bold uppercase tracking-wider">Normal</span>`;
+                        
+                    div.innerHTML = `
+                        <div class="flex items-center gap-2 flex-wrap mb-2">
+                            ${classificationBadge}
+                            ${urgencyBadge}
+                            <span class="text-[10px] font-mono text-slate-500">${new Date(ticket.timestamp).toLocaleString()}</span>
+                        </div>
+                        <h5 class="text-xs font-bold text-white dark:text-white text-slate-900">Flat: ${escapeHTML(ticket.flatNo)} &bull; ${escapeHTML(ticket.name)}</h5>
+                        <p class="text-xs text-slate-400 dark:text-slate-400 text-slate-600 leading-relaxed mt-1 font-medium">${escapeHTML(ticket.body)}</p>
+                        <div class="mt-3 flex justify-end">
+                            <button onclick="resolveTicket('${key}')" class="px-3 py-1 bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-[10px] font-extrabold uppercase tracking-wider rounded transition">
+                                <i class="fa-solid fa-check mr-1"></i> Resolve Ticket
+                            </button>
+                        </div>
+                    `;
+                    container.appendChild(div);
+                });
+            });
+        }
+
+        function resolveTicket(key) {
+            if (!confirm("Are you sure you want to resolve and remove this ticket?")) return;
+            firebase.database().ref('tickets').child(key).remove();
+        }
+
+        function saveRentSettings(e) {
+            if(e) e.preventDefault();
+            const r3 = document.getElementById('setting-rent-3bhk').value.trim();
+            const r4 = document.getElementById('setting-rent-4bhk').value.trim();
+            const s3 = document.getElementById('setting-status-3bhk').value;
+            const s4 = document.getElementById('setting-status-4bhk').value;
+            const gName = document.getElementById('setting-guard-name').value.trim();
+            const gPhone = document.getElementById('setting-guard-phone').value.trim();
+
+            if (!r3 || !r4) {
+                alert("Please enter valid rent values.");
+                return;
+            }
+
+            firebase.database().ref('settings').set({
+                rent3bhk: Number(r3),
+                rent4bhk: Number(r4),
+                status3bhk: s3,
+                status4bhk: s4,
+                guardOverrideName: gName,
+                guardOverridePhone: gPhone
+            }).then(() => {
+                alert("System settings updated successfully!");
+            }).catch(err => {
+                alert("Failed to update system settings.");
+            });
+        }
+
+        function switchFloorPlan(type) {
+            const btn3 = document.getElementById('btn-fp-3bhk');
+            const btn4 = document.getElementById('btn-fp-4bhk');
+            
+            const det3 = document.getElementById('fp-details-3bhk');
+            const det4 = document.getElementById('fp-details-4bhk');
+            
+            const img3 = document.getElementById('fp-img-3bhk');
+            const img4 = document.getElementById('fp-img-4bhk');
+
+            if (type === '3bhk') {
+                btn3.className = "px-6 py-3 rounded-xl font-bold text-xs uppercase tracking-widest transition duration-300 bg-gradient-to-r from-cyan-500 to-indigo-600 text-slate-950 shadow-md";
+                btn4.className = "px-6 py-3 rounded-xl font-bold text-xs uppercase tracking-widest transition duration-300 text-slate-400 hover:text-white";
+                
+                det3.classList.remove('hidden');
+                det4.classList.add('hidden');
+                
+                img3.classList.remove('hidden');
+                img4.classList.add('hidden');
+            } else {
+                btn4.className = "px-6 py-3 rounded-xl font-bold text-xs uppercase tracking-widest transition duration-300 bg-gradient-to-r from-cyan-500 to-indigo-600 text-slate-950 shadow-md";
+                btn3.className = "px-6 py-3 rounded-xl font-bold text-xs uppercase tracking-widest transition duration-300 text-slate-400 hover:text-white";
+                
+                det4.classList.remove('hidden');
+                det3.classList.add('hidden');
+                
+                img4.classList.remove('hidden');
+                img3.classList.add('hidden');
+            }
         }
 
         function escapeHTML(str) {
@@ -1188,9 +1712,9 @@
             drawerElement.classList.toggle('active');
 
             if (drawerElement.classList.contains('active')) {
-                transformationIconGroup[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+                transformationIconGroup[0].style.transform = 'rotate(45deg) translate(6px, 5px)';
                 transformationIconGroup[1].style.opacity = '0';
-                transformationIconGroup[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+                transformationIconGroup[2].style.transform = 'rotate(-45deg) translate(6px, -5px)';
             } else {
                 transformationIconGroup[0].style.transform = 'none';
                 transformationIconGroup[1].style.opacity = '1';

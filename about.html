@@ -2,18 +2,37 @@
 <html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- High-Fidelity Custom Asset Favicon -->
-<link rel="icon" type="image/png" href="https://i.ibb.co/CpWcZsp6/image.png">
-    <title>About Us | Shivam RKM Squire Operational Manifesto</title>
-    <!-- Tailwind CSS CDN -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" type="image/png" href="https://i.ibb.co/CpWcZsp6/image.png">
+    
+    <title>About Shivam Constructions | RKM Square Developers, Patna</title>
+    <meta name="description" content="Learn about Shivam Constructions, established in 2007, a premier real estate developer in Patna, Bihar. Building high-quality residential and commercial spaces like Shivam RKM Square on Khagaul Road." />
+    <meta name="keywords" content="Shivam Constructions Patna, RKM Square developer, about Shivam Constructions, real estate developer Patna Bihar, RKM Square Patna, builders in Patna" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://beatlabs790.github.io/Rkm-Square/about.html" />
+    <meta property="og:title" content="About Shivam Constructions | RKM Square Developers, Patna" />
+    <meta property="og:description" content="Learn about Shivam Constructions, established in 2007, a premier real estate developer in Patna, Bihar. Building high-quality residential and commercial spaces like Shivam RKM Square on Khagaul Road." />
+    <meta property="og:image" content="https://i.ibb.co/1tkpRtjW/image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://beatlabs790.github.io/Rkm-Square/about.html" />
+    <meta property="twitter:title" content="About Shivam Constructions | RKM Square Developers, Patna" />
+    <meta property="twitter:description" content="Learn about Shivam Constructions, established in 2007, a premier real estate developer in Patna, Bihar. Building high-quality residential and commercial spaces like Shivam RKM Square on Khagaul Road." />
+    <meta property="twitter:image" content="https://i.ibb.co/1tkpRtjW/image.png" />
+
+    <link rel="canonical" href="https://beatlabs790.github.io/Rkm-Square/about.html" />
+
+    <!-- Tailwind & Icons -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Premium Google Font -->
+    
+    <!-- Modern Typography Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <script>
         tailwind.config = {
@@ -21,298 +40,401 @@
             theme: {
                 extend: {
                     colors: {
-                        brandDark: '#060913',
-                        brandDeepBlack: '#020307',
-                        glassWhite: 'rgba(255, 255, 255, 0.03)',
-                        glassBorder: 'rgba(255, 255, 255, 0.08)'
+                        brandDark: '#030712',
+                        brandDeepBlack: '#02040a',
+                        brandCardDark: '#0b0f19',
+                        brandAccent: '#06b6d4',
+                        brandOrange: '#6366f1',
+                        glassBorder: 'rgba(255, 255, 255, 0.05)',
+                        glassWhite: 'rgba(255, 255, 255, 0.02)'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        outfit: ['Outfit', 'sans-serif']
                     }
                 }
             }
         }
     </script>
-
+    
     <style>
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
+        html, body {
+            max-width: 100vw;
             overflow-x: hidden;
-            transition: background-color 0.5s ease, color 0.5s ease;
-        }
-        html {
+            position: relative;
             scroll-behavior: smooth;
+            transition: background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
-        /* Pure Glassmorphic Rules */
-        .glass-base {
-            background: rgba(255, 255, 255, 0.02);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
+        .glass-premium {
+            background: rgba(11, 15, 25, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.06);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
         }
         
-        .glass-panel {
-            background: rgba(10, 15, 30, 0.65);
-            backdrop-filter: blur(24px);
-            -webkit-backdrop-filter: blur(24px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        .light .glass-premium {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(15, 23, 42, 0.06);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
         }
 
-        .glass-card {
-            background: rgba(255, 255, 255, 0.01);
+        .glass-capsule {
+            background: rgba(11, 15, 25, 0.6);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .light .glass-capsule {
+            background: rgba(255, 255, 255, 0.75);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+        }
+
+        .card-premium {
+            background: rgba(255, 255, 255, 0.01);
             border: 1px solid rgba(255, 255, 255, 0.04);
             transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .glass-card:hover {
-            background: rgba(255, 255, 255, 0.05);
-            border-color: rgba(255, 255, 255, 0.12);
-            transform: translateY(-4px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            transform: translateZ(0);
         }
 
-        /* Theme Overrides */
-        .dark body { background-color: #060913; color: #f1f5f9; }
-        .light body { background-color: #f8fafc; color: #0f172a; }
+        .card-premium:hover {
+            background: rgba(255, 255, 255, 0.03);
+            border-color: rgba(6, 182, 212, 0.2);
+            box-shadow: 0 15px 35px rgba(6, 182, 212, 0.04), 0 0 1px 1px rgba(6, 182, 212, 0.1) inset;
+            transform: translateY(-6px);
+        }
 
-        .light .glass-base { background: rgba(15, 23, 42, 0.02); border-color: rgba(15, 23, 42, 0.06); }
-        .light .glass-panel { background: rgba(255, 255, 255, 0.85); border-color: rgba(15, 23, 42, 0.08); box-shadow: 0 20px 40px rgba(0,0,0,0.04); }
-        .light .glass-card { background: rgba(15, 23, 42, 0.01); border-color: rgba(15, 23, 42, 0.04); }
-        .light .glass-card:hover { background: rgba(15, 23, 42, 0.03); border-color: rgba(15, 23, 42, 0.08); }
+        .light .card-premium {
+            background: rgba(15, 23, 42, 0.01);
+            border-color: rgba(15, 23, 42, 0.03);
+        }
 
-        /* Navigation Menu Drawer Controller */
-        #menu-drawer { transform: translateX(100%); transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
-        #menu-drawer.active { transform: translateX(0); }
+        .light .card-premium:hover {
+            background: rgba(15, 23, 42, 0.02);
+            border-color: rgba(6, 182, 212, 0.3);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.03);
+        }
 
-        /* Integrated Preloader Module */
+        html.dark {
+            --bg-base: #030712;
+            --grid-line: rgba(6, 182, 212, 0.04);
+            --radial-glow: rgba(6, 182, 212, 0.03);
+        }
+        html.light {
+            --bg-base: #f8fafc;
+            --grid-line: rgba(6, 182, 212, 0.02);
+            --radial-glow: rgba(6, 182, 212, 0.01);
+        }
+
+        .dark body { background-color: var(--bg-base); color: #f3f4f6; }
+        .light body { background-color: var(--bg-base); color: #1e293b; }
+
+        .interactive-canvas {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            background-color: var(--bg-base);
+            overflow: hidden;
+            transform: translateZ(0);
+        }
+
+        .mesh-grid {
+            position: absolute;
+            inset: -50%;
+            width: 200%;
+            height: 200%;
+            background-image: linear-gradient(var(--grid-line) 1px, transparent 1px), linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+            background-size: 50px 50px;
+            transform: perspective(1000px) rotateX(50deg);
+            mask-image: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), black, transparent 65%);
+            -webkit-mask-image: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), black, transparent 65%);
+        }
+
+        @media (pointer: coarse) {
+            .mesh-grid {
+                mask-image: none !important;
+                -webkit-mask-image: none !important;
+                transform: none !important;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0.5;
+            }
+        }
+
+        .mouse-glow {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), var(--radial-glow), transparent 60%);
+        }
+
+        .gradient-text-amber {
+            background: linear-gradient(to right, #fbbf24, #f97316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        #menu-drawer {
+            transform: translateX(100%);
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        #menu-drawer.active {
+            transform: translateX(0);
+        }
+
         #loading-screen {
             position: fixed;
             inset: 0;
             z-index: 100;
-            background-color: #020307;
+            background-color: #02040a;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: opacity 0.6s ease, visibility 0.6s ease;
+            transition: opacity 0.4s ease, visibility 0.4s ease;
         }
         #loading-screen.fade-out { opacity: 0; visibility: hidden; pointer-events: none; }
     </style>
 </head>
-<body class="antialiased selection:bg-amber-500 selection:text-slate-900">
+<body class="antialiased selection:bg-cyan-500 selection:text-slate-900 pb-20 md:pb-0">
 
-    <!-- Preloader Canvas Component -->
+    <div class="interactive-canvas">
+        <div class="mesh-grid"></div>
+        <div class="mouse-glow"></div>
+    </div>
+
+    <!-- Web App Preloader -->
     <div id="loading-screen" class="flex flex-col space-y-6">
         <div class="relative w-32 h-32 flex items-center justify-center">
-            <img src="https://i.ibb.co/CpWcZsp6/image.png" alt="RKM Identity Core" class="w-24 h-24 object-contain rounded-xl animate-pulse">
-            <div class="absolute inset-0 border-2 border-t-amber-500 border-r-transparent border-b-amber-500 border-l-transparent rounded-full animate-spin"></div>
+            <img src="https://i.ibb.co/CpWcZsp6/image.png" alt="RKM Core Logo" class="w-20 h-20 object-contain rounded-xl animate-pulse">
+            <div class="absolute inset-0 border-2 border-t-cyan-500 border-r-transparent border-b-cyan-500 border-l-transparent rounded-full animate-spin"></div>
         </div>
         <div class="text-center space-y-1">
-            <p class="text-xs uppercase tracking-[0.4em] text-amber-500 font-bold animate-pulse">Loading Corporate Files...</p>
-            <p class="text-[10px] uppercase tracking-widest text-slate-500">Shivam Constructions</p>
+            <p class="text-xs uppercase tracking-[0.4em] text-cyan-500 font-bold font-outfit animate-pulse">Loading Corporate Files</p>
+            <p class="text-[10px] uppercase tracking-widest text-slate-500 font-medium">Shivam Constructions Patna</p>
         </div>
     </div>
 
-    <!-- Persistent Navigation Module Header -->
-    <nav class="fixed top-0 left-0 w-full z-50 glass-base border-b px-6 lg:px-16 py-4 flex items-center justify-between">
-        <div class="flex flex-col">
-            <span class="text-2xl font-black tracking-tight dark:text-white text-slate-900">RKM <span class="text-amber-500">SQUARE</span></span>
-            <span class="text-[10px] uppercase tracking-[0.25em] text-slate-400 font-medium">Corporate Manifesto</span>
-        </div>
+    <!-- Capsule Sticky Header Navigation -->
+    <nav id="main-navigation" class="fixed top-0 left-0 w-full z-40 px-4 sm:px-8 lg:px-16 py-4 flex items-center justify-between transition-all duration-300">
+        <div class="glass-premium border rounded-3xl w-full max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex flex-col">
+                <span class="text-lg sm:text-2xl font-black tracking-tight font-outfit">RKM <span class="text-cyan-500">SQUARE</span></span>
+                <span class="text-[9px] uppercase tracking-[0.25em] text-slate-400 font-bold leading-none mt-0.5">Corporate Manifesto</span>
+            </div>
+            
+            <div class="flex items-center space-x-3 relative">
+                <button onclick="toggleThemeSystem()" class="p-3 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 hover:bg-cyan-500/20 text-cyan-500 transition">
+                    <i id="theme-toggle-icon" class="fa-solid fa-moon text-base"></i>
+                </button>
 
-        <div class="flex items-center space-x-4">
-            <button onclick="toggleThemeSystem()" aria-label="Switch Theme Matrix" class="p-3 rounded-xl bg-amber-500/10 border border-amber-500/20 hover:bg-amber-500/20 text-amber-500 transition">
-                <i id="theme-toggle-icon" class="fa-solid fa-moon text-sm"></i>
-            </button>
-            <button onclick="toggleDrawerMenu()" aria-label="Toggle Navigation Stack" class="p-3 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 dark:text-white text-slate-900 transition focus:outline-none">
-                <div id="hamburger-bars-container" class="space-y-1.5 w-6">
-                    <span class="block h-0.5 bg-current transition-all duration-300 origin-center"></span>
-                    <span class="block h-0.5 bg-current transition-all duration-300"></span>
-                    <span class="block h-0.5 bg-amber-500 transition-all duration-300 origin-center"></span>
+                <div class="hidden md:flex items-center space-x-1 text-cyan-500/80">
+                    <span class="text-[10px] font-extrabold uppercase tracking-widest font-outfit">Open Menu</span>
+                    <i class="fa-solid fa-arrow-right-long text-[10px]"></i>
                 </div>
-            </button>
+                
+                <button onclick="toggleDrawerMenu()" aria-label="Menu Switcher" class="p-3 rounded-2xl bg-white/5 border border-white/10 dark:text-white text-slate-900 transition focus:outline-none relative">
+                    <div id="hamburger-bars-container" class="space-y-1.5 w-6">
+                        <span class="block h-0.5 bg-current transition-all duration-300"></span>
+                        <span class="block h-0.5 bg-current transition-all duration-300"></span>
+                        <span class="block h-0.5 bg-cyan-500 transition-all duration-300"></span>
+                    </div>
+                </button>
+            </div>
         </div>
     </nav>
 
-    <!-- Slideout Glassmorphic Drawer Hub -->
-    <div id="menu-drawer" class="fixed inset-y-0 right-0 w-full sm:w-[420px] z-40 glass-panel border-l p-12 pt-32 flex flex-col justify-between shadow-2xl">
-        <div class="space-y-8">
-            <p class="text-[11px] font-bold uppercase tracking-[0.3em] text-amber-500">Navigation Matrix</p>
-            <div class="space-y-4 font-bold text-3xl sm:text-4xl tracking-tight">
-                <a href="index.html" class="block text-slate-400 hover:text-amber-500 dark:hover:text-white transition-colors">Home</a>
-                <a href="about.html" class="block text-amber-500 dark:text-white transition-colors">About</a>
-                <a href="contact.html" class="block text-slate-400 hover:text-amber-500 dark:hover:text-white transition-colors">Contact</a>
-                <a href="gallery.html" class="block text-slate-400 hover:text-amber-500 dark:hover:text-white transition-colors">Gallery</a>
-                <a href="developer.html" class="block text-slate-400 hover:text-amber-500 dark:hover:text-white transition-colors">Developer</a>
+    <!-- Slideout Side Drawer -->
+    <div id="menu-drawer" class="fixed inset-y-0 right-0 w-full sm:w-[420px] z-40 glass-premium border-l p-8 sm:p-12 pt-36 flex flex-col justify-between shadow-2xl">
+        <div class="space-y-10">
+            <p class="text-xs font-bold uppercase tracking-[0.25em] text-cyan-500 font-outfit">Navigation Matrix</p>
+            <div class="space-y-6 font-bold text-3xl sm:text-4xl tracking-tight font-outfit">
+                <a href="index.html" class="block text-slate-400 hover:text-cyan-500 dark:hover:text-white transition-colors py-1">Home</a>
+                <a href="about.html" class="block text-cyan-500 dark:text-white transition-colors py-1">About</a>
+                <a href="contact.html" class="block text-slate-400 hover:text-cyan-500 dark:hover:text-white transition-colors py-1">Contact</a>
+                <a href="gallery.html" class="block text-slate-400 hover:text-cyan-500 dark:hover:text-white transition-colors py-1">Gallery</a>
+                <a href="developer.html" class="block text-slate-400 hover:text-cyan-500 dark:hover:text-white transition-colors py-1">Developer</a>
             </div>
         </div>
         <div class="pt-8 border-t border-white/5 space-y-2">
-            <span class="text-[10px] uppercase tracking-widest text-slate-500 block">System Verification Logs</span>
-            <p class="text-sm text-slate-400 font-medium">Khagaul-Anisabad Road, New Sabajpura, Patna, Bihar (801105)</p>
+            <span class="text-xs uppercase tracking-widest text-slate-500 block font-bold font-outfit">Location Desk</span>
+            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed font-semibold">Khagaul-Anisabad Road, New Sabajpura, Patna, Bihar (801105)</p>
         </div>
     </div>
 
-    <!-- Main Content Stream Container -->
-    <main class="pt-36 pb-24 px-6 lg:px-16 max-w-7xl mx-auto space-y-24">
+    <!-- Main Content Container -->
+    <main class="pt-32 pb-24 px-4 sm:px-6 lg:px-16 max-w-7xl mx-auto space-y-20 relative z-10">
         
         <!-- Section Header: Corporate Origins -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center border-b dark:border-white/5 border-slate-200 pb-12">
             <div class="lg:col-span-7 space-y-4">
-                <span class="text-xs font-bold uppercase tracking-[0.3em] text-amber-500 block">The Benchmark Entity</span>
-                <h1 class="text-4xl sm:text-5xl font-black tracking-tight dark:text-white text-slate-900 leading-none">
+                <span class="text-xs font-bold uppercase tracking-[0.3em] text-cyan-500 block font-outfit">The Benchmark Entity</span>
+                <h1 class="text-4xl sm:text-5xl font-black tracking-tight dark:text-white text-slate-900 leading-tight font-outfit">
                     Shivam Constructions Patna
                 </h1>
-                <p class="text-sm text-slate-400 leading-relaxed">
+                <p class="text-sm text-slate-400 leading-relaxed font-medium">
                     Established firmly in **2007**, Shivam Constructions has evolved into a premier architectural benchmark across the real estate landscape of Bihar. Guided continuously by an unyielding corporate commitment to quality structural design, the entity has cleanly materialized high-value apartments, extensive integrated residential environments, and high-footfall commercial landmarks.
                 </p>
             </div>
             <div class="lg:col-span-5">
-                <div class="glass-panel rounded-3xl p-6 text-center border">
-                    <span class="text-[10px] uppercase tracking-widest text-slate-500 block">Structural Experience Track</span>
-                    <span class="text-5xl font-black text-amber-500 block mt-2">19+ Years</span>
-                    <p class="text-xs text-slate-400 mt-2 font-medium">Delivering Integrated Integrity Deployed in Bihar</p>
+                <div class="glass-premium rounded-3xl p-8 text-center border border-white/5 shadow-2xl">
+                    <span class="text-[10px] uppercase tracking-widest text-slate-500 block font-bold font-outfit">Structural Experience Track</span>
+                    <span class="text-4xl sm:text-5xl font-black text-cyan-500 block mt-2 font-outfit">19+ Years</span>
+                    <p class="text-xs text-slate-400 mt-2 font-semibold">Delivering Integrated Integrity Deployed in Bihar</p>
                 </div>
             </div>
         </div>
 
-        <!-- Vision & Mission High-Fidelity Twin Grid -->
+        <!-- Vision & Mission Twin Grid -->
         <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <!-- Vision Module -->
-            <div class="glass-card rounded-3xl p-8 border space-y-4 relative overflow-hidden group">
-                <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-amber-500 flex items-center justify-center text-xl">
+            <div class="p-8 rounded-3xl card-premium border space-y-4">
+                <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-500 flex items-center justify-center text-xl">
                     <i class="fa-solid fa-eye"></i>
                 </div>
-                <h3 class="text-xl font-bold dark:text-white text-slate-900">Our Strategic Vision</h3>
-                <p class="text-xs text-slate-400 leading-relaxed">
+                <h3 class="text-xl font-bold dark:text-white text-slate-900 font-outfit">Our Strategic Vision</h3>
+                <p class="text-xs text-slate-400 leading-relaxed font-medium">
                     To pioneer state-of-the-art master-planned architectural standards within developing regional corridors, introducing high-fidelity glassmorphic convenience, maximum structural life expectancies, and elite multi-use development blueprints that systematically elevate neighborhood values.
                 </p>
             </div>
 
             <!-- Mission Module -->
-            <div class="glass-card rounded-3xl p-8 border space-y-4 relative overflow-hidden group">
-                <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-amber-500 flex items-center justify-center text-xl">
+            <div class="p-8 rounded-3xl card-premium border space-y-4">
+                <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-500 flex items-center justify-center text-xl">
                     <i class="fa-solid fa-bullseye"></i>
                 </div>
-                <h3 class="text-xl font-bold dark:text-white text-slate-900">Our Operational Mission</h3>
-                <p class="text-xs text-slate-400 leading-relaxed">
-                    To deliver zero-brokerage, RERA-approved infrastructure assets engineered strictly with modern seismic safety configurations. We combine residential tranquility with top-tier commercial assets like Domino's Pizza, ensuring absolute multi-generational lifestyle security.
+                <h3 class="text-xl font-bold dark:text-white text-slate-900 font-outfit">Our Operational Mission</h3>
+                <p class="text-xs text-slate-400 leading-relaxed font-medium">
+                    To deliver zero-brokerage, RERA-approved infrastructure assets engineered strictly with modern seismic safety configurations. We combine residential tranquility with top-tier commercial assets like Domino's Pizza, ensuring absolute lifestyle security.
                 </p>
             </div>
         </section>
-
-        <!-- Core Foundational Values Grid Matrix -->
-        <section class="space-y-8">
-            <div class="text-center space-y-2">
-                <span class="text-xs font-bold uppercase tracking-[0.25em] text-amber-500">Corporate Pillars</span>
-                <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight dark:text-white text-slate-900">Foundational Values</h2>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="glass-base p-6 rounded-2xl border text-center space-y-2">
-                    <h4 class="text-sm font-bold dark:text-white text-slate-800 uppercase tracking-wide">1. Structural Quality</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed">Utilizing highest standard stress-tested compound steel and concrete to safely manage high seismic variations.</p>
-                </div>
-                <div class="glass-base p-6 rounded-2xl border text-center space-y-2">
-                    <h4 class="text-sm font-bold dark:text-white text-slate-800 uppercase tracking-wide">2. Transparency Integration</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed">Maintaining full regulatory open records backed cleanly by official Bihar RERA project authorizations.</p>
-                </div>
-                <div class="glass-base p-6 rounded-2xl border text-center space-y-2">
-                    <h4 class="text-sm font-bold dark:text-white text-slate-800 uppercase tracking-wide">3. Customer-First Logistics</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed">Enforcing efficient spatial floor plan allocations alongside dependable 24/7 common infrastructure services.</p>
-                </div>
-            </div>
-        </section>
-
     </main>
 
-    <!-- Expanded Corporate Compliance Footer Matrix -->
-    <footer class="border-t dark:border-white/5 border-slate-200 bg-slate-950/40 pt-16 pb-8 text-xs text-slate-400 relative z-10">
-        <div class="max-w-7xl mx-auto px-6 lg:px-16 grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b dark:border-white/5 border-slate-200">
+    <!-- Footer -->
+    <footer class="border-t dark:border-white/5 border-slate-200 bg-slate-950/45 pt-12 sm:pt-16 pb-8 text-xs text-slate-400 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 grid grid-cols-1 md:grid-cols-12 gap-10 pb-10 border-b dark:border-white/5 border-slate-200 font-sans">
             <div class="md:col-span-5 space-y-4">
-                <span class="text-lg font-black tracking-tight dark:text-white text-slate-900">RKM <span class="text-amber-500">SQUARE</span></span>
-                <p class="leading-relaxed text-slate-500 max-w-sm">
-                    A prominent multi-use lifestyle development hub configured securely on Khagaul-Anisabad Road, New Sabajpura, Khagaul, Patna, Bihar (Pin: 801105). Deployed by Shivam Constructions Patna.
+                <span class="text-xl sm:text-2xl font-black tracking-tight dark:text-white text-slate-900 font-outfit">RKM <span class="text-cyan-500">SQUARE</span></span>
+                <p class="leading-relaxed text-slate-500 max-w-sm font-medium">
+                    A prominent mixed-use complex located on the Khagaul-Anisabad Road, New Sabajpura, Khagaul, Patna, Bihar (Pin: 801105). Configured by Shivam Constructions Patna.
                 </p>
             </div>
-            <div class="md:col-span-3 space-y-3">
-                <h5 class="text-xs uppercase font-bold tracking-widest dark:text-slate-300 text-slate-800">Quick Navigation</h5>
-                <ul class="space-y-2 font-medium">
-                    <li><a href="index.html" class="hover:text-amber-500 transition">Home Overview</a></li>
-                    <li><a href="about.html" class="hover:text-amber-500 transition">About Architecture</a></li>
-                    <li><a href="gallery.html" class="hover:text-amber-500 transition">Media Gallery</a></li>
-                    <li><a href="contact.html" class="hover:text-amber-500 transition">Enquire Portals</a></li>
+            <div class="md:col-span-3 space-y-4">
+                <h5 class="text-xs uppercase font-bold tracking-widest dark:text-slate-300 text-slate-800 font-outfit">Quick Navigation</h5>
+                <ul class="space-y-3 font-semibold text-slate-500">
+                    <li><a href="index.html" class="hover:text-cyan-500 transition">Home Overview</a></li>
+                    <li><a href="about.html" class="hover:text-cyan-500 transition">About Architecture</a></li>
+                    <li><a href="gallery.html" class="hover:text-cyan-500 transition">Media Gallery</a></li>
+                    <li><a href="contact.html" class="hover:text-cyan-500 transition">Enquire Portals</a></li>
                 </ul>
             </div>
-            <div class="md:col-span-4 space-y-3">
-                <h5 class="text-xs uppercase font-bold tracking-widest dark:text-slate-300 text-slate-800">RERA Authorization</h5>
-                <p class="leading-relaxed text-slate-500">
-                    Registered transparently under Bihar Real Estate Regulatory Authority Identification: <span class="font-mono font-bold dark:text-slate-400 text-slate-700">BRERAP00085-2/815/R-514/2019</span>. All rights reserved.
+            <div class="md:col-span-4 space-y-4">
+                <h5 class="text-xs uppercase font-bold tracking-widest dark:text-slate-300 text-slate-800 font-outfit">Regulatory Compliance</h5>
+                <p class="leading-relaxed text-slate-500 font-medium">
+                    Registered transparently with the Bihar Real Estate Regulatory Authority under registration reference ID: <span class="font-mono font-bold dark:text-slate-400 text-slate-700">BRERAP00085-2/815/R-514/2019</span>.
                 </p>
             </div>
         </div>
-
-        <div class="max-w-7xl mx-auto px-6 lg:px-16 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] text-slate-500 font-medium">
-            <p>&copy; 2026 Shivam Constructions Patna. Structural blueprints mapped securely.</p>
-            <p class="flex items-center gap-1.5 bg-white/5 border dark:border-white/5 border-slate-200 px-3 py-1.5 rounded-xl font-mono text-xs dark:text-slate-400 text-slate-600">
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-slate-500 font-semibold font-sans">
+            <p class="text-center sm:text-left">© 2026 Shivam Constructions Patna. All layouts map securely to official records.</p>
+            <p class="flex items-center gap-2 bg-white/5 border dark:border-white/5 border-slate-200 px-4 py-2 rounded-xl font-mono text-xs dark:text-slate-400 text-slate-600">
                 <span>Built with</span>
                 <i class="fa-solid fa-heart text-rose-500 animate-pulse"></i>
                 <span>by</span>
-                <a href="developer.html" class="text-amber-500 hover:underline">BeatLabs</a>
+                <a href="developer.html" class="text-cyan-500 hover:underline">ZephyrDevs</a>
             </p>
         </div>
     </footer>
 
-    <!-- Global Dynamic Interactions Scripts -->
+    <!-- Mobile Bottom Tab Navigation -->
+    <div class="md:hidden fixed bottom-0 left-0 w-full bg-slate-950/90 backdrop-blur-xl border-t border-white/5 z-50 py-3 px-6 flex justify-between items-center shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
+        <a href="index.html" class="flex flex-col items-center gap-1 text-slate-400 hover:text-cyan-500 transition">
+            <i class="fa-solid fa-house-chimney text-base"></i>
+            <span class="text-[9px] uppercase tracking-widest font-bold font-outfit">Home</span>
+        </a>
+        <a href="gallery.html" class="flex flex-col items-center gap-1 text-slate-400 hover:text-cyan-500 transition">
+            <i class="fa-solid fa-images text-base"></i>
+            <span class="text-[9px] uppercase tracking-widest font-bold font-outfit">Gallery</span>
+        </a>
+        <a href="index.html#dashboard" class="flex flex-col items-center gap-1 text-slate-400 hover:text-cyan-500 transition">
+            <i class="fa-solid fa-folder-open text-base"></i>
+            <span class="text-[9px] uppercase tracking-widest font-bold font-outfit">Portal</span>
+        </a>
+        <a href="contact.html" class="flex flex-col items-center gap-1 text-slate-400 hover:text-cyan-500 transition">
+            <i class="fa-solid fa-paper-plane text-base"></i>
+            <span class="text-[9px] uppercase tracking-widest font-bold font-outfit">Contact</span>
+        </a>
+        <a href="index.html#dashboard" class="flex flex-col items-center gap-1 text-slate-400 hover:text-cyan-500 transition">
+            <i class="fa-solid fa-key text-base"></i>
+            <span class="text-[9px] uppercase tracking-widest font-bold font-outfit">Admin</span>
+        </a>
+    </div>
+
+    <!-- Interactions script -->
     <script>
-        // Trigger preloader fade sequence
         window.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
-                document.getElementById('loading-screen').classList.add('fade-out');
+                const loader = document.getElementById('loading-screen');
+                if(loader) loader.classList.add('fade-out');
             }, 800);
         });
 
-        // Sidebar Navigation Controls
         function toggleDrawerMenu() {
             const drawerElement = document.getElementById('menu-drawer');
             const transformationIconGroup = document.getElementById('hamburger-bars-container').children;
-            
             drawerElement.classList.toggle('active');
-            
+
             if (drawerElement.classList.contains('active')) {
-                transformationIconGroup[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+                transformationIconGroup[0].style.transform = 'rotate(45deg) translate(6px, 5px)';
                 transformationIconGroup[1].style.opacity = '0';
-                transformationIconGroup[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
-                transformationIconGroup[2].style.width = '100%';
+                transformationIconGroup[2].style.transform = 'rotate(-45deg) translate(6px, -5px)';
             } else {
                 transformationIconGroup[0].style.transform = 'none';
                 transformationIconGroup[1].style.opacity = '1';
                 transformationIconGroup[2].style.transform = 'none';
-                transformationIconGroup[2].style.width = '66.666667%';
             }
         }
 
-        // Adaptive Dark/Light Theme Switching Engine
         function toggleThemeSystem() {
             const htmlRoot = document.documentElement;
             const themeIcon = document.getElementById('theme-toggle-icon');
-            
             htmlRoot.classList.toggle('dark');
             htmlRoot.classList.toggle('light');
-            
+
             if(htmlRoot.classList.contains('dark')) {
-                themeIcon.className = "fa-solid fa-moon text-sm";
+                themeIcon.className = "fa-solid fa-moon text-base";
                 localStorage.setItem('rkm-theme-preference', 'dark');
             } else {
-                themeIcon.className = "fa-solid fa-sun text-sm";
+                themeIcon.className = "fa-solid fa-sun text-base";
                 localStorage.setItem('rkm-theme-preference', 'light');
             }
         }
 
-        // Apply theme preference immediately on layout ready routine
         if (localStorage.getItem('rkm-theme-preference') === 'light') {
             document.documentElement.classList.remove('dark');
             document.documentElement.classList.add('light');
-            document.getElementById('theme-toggle-icon').className = "fa-solid fa-sun text-sm";
+            document.getElementById('theme-toggle-icon').className = "fa-solid fa-sun text-base";
         }
+
+        let ticking = false;
+        document.addEventListener('mousemove', (e) => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    const x = (e.clientX / window.innerWidth) * 100;
+                    const y = (e.clientY / window.innerHeight) * 100;
+                    document.documentElement.style.setProperty('--mouse-x', `${x}%`);
+                    document.documentElement.style.setProperty('--mouse-y', `${y}%`);
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
     </script>
 </body>
 </html>
